@@ -1,0 +1,23 @@
+@import 'variables';
+
+@mixin PrimarySubTitle($size){
+    font-size: $size;
+    font-family: $primary-text-font;
+    color: $primary-text-color;
+}
+
+@mixin SecondarySubTitle($size){
+    font-size: $size;
+    font-family: $primary-text-font;
+    color: $secondary-text-color;
+}
+
+@mixin MarginTopBottom($val){
+    margin-top: $val;
+    margin-bottom: $val;
+}
+
+@mixin MarginLeftRight($val){
+    margin-left: $val;
+    margin-right: $val;
+}

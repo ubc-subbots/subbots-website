@@ -1,0 +1,7 @@
+@import "../../styles/index.scss";
+
+.AccordianImage{
+    height: 150px;
+    -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(75%);
+}

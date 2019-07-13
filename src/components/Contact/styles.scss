@@ -1,0 +1,22 @@
+@import '../../styles/index.scss';
+
+.ContactButton{
+    position: fixed;
+    bottom: 12px;
+    right: 25px;
+    z-index: 1000;
+    min-width: 100px;
+    min-height: 40px;
+    text-align: left !important;
+    @extend .PrimaryButton;
+    // @extend .PrimaryOutlineButton;
+}
+
+.ContactText{
+    @include SecondarySubTitle(20px);
+}
+
+.MailIcon{
+    margin-right: 10px;
+    color: $secondary-text-color;
+}

@@ -1,0 +1,16 @@
+@import 'variables';
+
+.PrimaryButton{
+    border-color: $accent-color;
+    color: $accent-color;
+    background-color: $accent-color;
+}
+
+.PrimaryOutlineButton{
+    color: $accent-color;
+    border-color: $accent-color;
+}
+
+.PrimaryOutlineButton:hover{
+    background-color: $accent-color;
+}

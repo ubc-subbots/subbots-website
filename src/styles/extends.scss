@@ -1,0 +1,8 @@
+@import 'variables';
+
+$gradient-start: #2a4e56;
+$gradient-end: $secondary-text-color;
+
+%Gradient{
+    background-image: linear-gradient(to right, $gradient-start , $gradient-end);
+}

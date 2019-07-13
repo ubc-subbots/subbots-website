@@ -1,0 +1,36 @@
+@import "../../styles/index.scss";
+
+$form-color: $secondary-color;
+$form-border-radius: 10px;
+$form-opacity: 0.8;
+
+.JoinForm{
+    margin: 25px;
+    background-color:rgba($form-color, 0) !important;
+}
+
+.JoinFormContainer{
+    border-radius: $form-border-radius !important;
+    background-color:rgba($form-color, $form-opacity) !important;
+}
+
+.JoinFormBorder{
+    @include MarginTopBottom(20px);
+    padding: 3px;
+    border: 3px solid $form-color;
+    border-radius: $form-border-radius;
+    border-color:rgba($form-color, $form-opacity) !important;
+}
+
+.JoinFormHeader{
+    border-top-left-radius: $form-border-radius !important;
+    border-top-right-radius: $form-border-radius !important;
+    font-size: 25px;
+    font-weight: 500;
+    background-color: $accent-color !important;
+    @include SecondarySubTitle(20px);
+}
+
+.ApplyButtonText{
+    @include SecondarySubTitle(15px);
+}
