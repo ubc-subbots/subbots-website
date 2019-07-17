@@ -5,12 +5,10 @@ import Button from 'react-bootstrap/Button';
 export default class MemberSignIn extends React.Component{
 
     componentWillUpdate(prevProps){
-        console.log(prevProps, this.props);
     }
 
     render(){
-        console.log(this.props);
-        return(
+            return(
             <Modal show={this.props.isOpen}>
                 <Modal.Header closeButton>
                     <Modal.Title>Modal title</Modal.Title>

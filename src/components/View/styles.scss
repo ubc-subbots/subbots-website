@@ -1,16 +1,16 @@
 @import '../../styles/index.scss';
 
 .ViewContainer{
-    min-height: 1200px;
+    min-height: 1400px;
 }
 
-.ViewHeader{
+.ViewTitle{
     color: $secondary-text-color;
     font-size: 100px;
     font-weight: 1000;
     min-height: 120px;
     text-align: center;
-    @include MarginTopBottom(15px);
+    @include MarginTopBottom(10px);
 }
 
 .ViewBody{
@@ -18,7 +18,7 @@
     font-size: 20px;
     font-weight: 600;
     min-height: 100px;
-    max-width: 800px;
+    // max-width: 800px;
     display: block;
     @include MarginTopBottom(10px);
     margin-left: auto;

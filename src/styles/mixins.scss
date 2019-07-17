@@ -1,13 +1,13 @@
 @import 'variables';
 
 @mixin PrimarySubTitle($size){
-    font-size: $size;
+    font-size: $size !important;
     font-family: $primary-text-font;
     color: $primary-text-color;
 }
 
 @mixin SecondarySubTitle($size){
-    font-size: $size;
+    font-size: $size !important;
     font-family: $primary-text-font;
     color: $secondary-text-color;
 }
@@ -20,4 +20,9 @@
 @mixin MarginLeftRight($val){
     margin-left: $val;
     margin-right: $val;
+}
+
+@mixin PaddingTopBottom($val){
+    padding-top: $val;
+    padding-bottom: $val;
 }

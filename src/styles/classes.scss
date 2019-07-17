@@ -6,11 +6,29 @@
     background-color: $accent-color;
 }
 
-.PrimaryOutlineButton{
+.PrimaryButton:hover{
+    border-color: $accent-hover-color;
     color: $accent-color;
-    border-color: $accent-color;
+    background-color: $accent-hover-color;
+}
+
+.PrimaryOutlineButton{
+    color: $accent-color !important;
+    border-color: $accent-color !important;
 }
 
 .PrimaryOutlineButton:hover{
-    background-color: $accent-color;
+    background-color: $accent-color !important;
+}
+
+.SecondaryButton{
+    border-color: $primary-color;
+    color: $primary-text-color;
+    background-color: $primary-color;
+}
+
+.SecondaryButton:hover{
+    border-color: $secondary-color;
+    color: $secondary-text-color;
+    background-color: $secondary-color;
 }

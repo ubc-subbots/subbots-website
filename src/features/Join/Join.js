@@ -4,8 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import Fade from 'react-reveal/Fade';
 import content from './content';
-import { ViewBody, ViewContainer } from '../../components/View';
+import constants from '../../js/constants';
+import { ViewHeader, ViewContainer } from '../../components/View';
 import './styles.scss';
 
 export default class Join extends React.Component{
@@ -13,7 +15,8 @@ export default class Join extends React.Component{
     render() {
         return (
             <ViewContainer>
-                <ViewBody header={content.header} body={content.body}/>
+                <ViewHeader header={content.title} body={content.body}/>
+                <Fade bottom duration={constants.FADE_DURATION}>
                 <Row>
                     <Col sm={3}>
                     </Col>
@@ -73,6 +76,7 @@ export default class Join extends React.Component{
                     <Col sm={3}>
                     </Col>
                 </Row>
+                </Fade>
             </ViewContainer>
         )
     }

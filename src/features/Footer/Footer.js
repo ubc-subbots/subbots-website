@@ -16,11 +16,6 @@ export default class Footer extends React.Component{
         return (
             <div className="FooterContainer">
                 <Container fluid>
-                    <Row>
-                        <Col className="FooterHeader">
-                            Connect
-                        </Col>
-                    </Row>
                     <Row className="IconRow">
                             <Col>
                                 <FontAwesomeIcon className="Icon" icon={faFacebookF} size="2x"/>

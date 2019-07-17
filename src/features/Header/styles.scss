@@ -1,23 +1,55 @@
 @import "../../styles/index.scss";
 
-$subtitlesize: 15px;
+$subtitlesize: 16px;
 
-.NavBrand{
+.HeaderContainer{
+    background-color: transparent;
+    @include PaddingTopBottom(20px !important);
+    transition: all $transition-time ease-out;
+}
+
+.HeaderContainerShrunk{
+    background-color: $primary-color;
+    @include PaddingTopBottom(0px !important);
+    transition: all $transition-time ease-out;
+}
+
+%NavBrand {
     text-decoration: none !important;
     color: $accent-color;
-    font-size: 30px;
     font-family: $brand-font;
 }
 
-.NavBrand:hover{
-    color: $accent-hover-color;
+.NavBrand {
+    @extend %NavBrand;
+    font-size: 35px;
+    transition: font-size $transition-time;
+}
+
+.NavBrandShrunk {
+    @extend %NavBrand;
+    font-size: 25px;
+    transition: font-size $transition-time;
+}
+
+.NavBrandContainer:hover a{
+    color: $accent-hover-color !important;
+}
+
+.NavBrandContainer:hover svg{
+    transform: rotate(360deg);
+    color: $accent-hover-color !important;
 }
 
 .NavLink{
     margin-left: 10px;
     margin-right: 5px;
     text-decoration: none !important;
-    @include PrimarySubTitle($subtitlesize)
+    @include PrimarySubTitle($subtitlesize);
+}
+
+.NavLink:hover{
+    color: $primary-text-hover-color;
 }
 
 .NavLinkDropdown{
@@ -25,11 +57,6 @@ $subtitlesize: 15px;
     margin-right: 5px;
     text-decoration: none !important;
     @include SecondarySubTitle($subtitlesize)
-}
-
-
-.NavLink:hover{
-    color: $primary-text-hover-color;
 }
 
 .NavContainer:hover{
@@ -40,7 +67,11 @@ $subtitlesize: 15px;
 }
 
 .SignInButton{
-    @include PrimarySubTitle($subtitlesize)
+    @extend .PrimaryOutlineButton;
+    @include PrimarySubTitle($subtitlesize);
+}
+.SignInButton:hover{
+    color: $secondary-text-color !important;
 }
 
 .UBCLogo{
@@ -48,12 +79,9 @@ $subtitlesize: 15px;
     filter: brightness(0) invert(1);
 }
 
+
 .SubbotsLogo{
     color: $accent-color;
-    margin-bottom: 8px;
-}
+    transition: transform 1s ease;
 
-.HeaderContainer{
-    height: 15vh;
-    @extend %Gradient;
 }

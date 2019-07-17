@@ -5,24 +5,42 @@ import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
 import MemberSignIn from '../MemberSignIn';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCog } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
 export default class Header extends React.Component{
 
-    state = {
-        isSignInOpened: false
+    constructor(props){
+        super(props);
+
+        this.state = {
+            navbarClass: "HeaderContainer",
+            navbrandClass: "NavBrand",
+            isSignInOpened: false
+        }
+
+        window.onscroll = () => {
+            let shrinkThresh = 125;
+            if (document.body.scrollTop > shrinkThresh || document.documentElement.scrollTop > shrinkThresh){
+                this.setState({navbarClass: "HeaderContainerShrunk"});
+                this.setState({navbrandClass: "NavBrandShrunk"});
+            } else {
+                this.setState({navbarClass: "HeaderContainer"});
+                this.setState({navbrandClass: "NavBrand"});
+            }
+        }
     }
 
     render() {
         return (
-            <Navbar bg="dark" fixed="top"
-                    variant="dark" expand="lg"
-                    className="HeaderContainer">
-              <Navbar.Brand >
-                <Link to='/' className="NavBrand">
-                    <Image  className="SubbotsLogo" src="./subbots-logo.png"/>
+            <Navbar fixed="top" expand="lg"
+                    className={this.state.navbarClass}>
+              <Navbar.Brand className="NavBrandContainer">
+                <Link to='/' className={this.state.navbrandClass}>
+                    <FontAwesomeIcon className="SubbotsLogo" icon={faCog} size="lg"/>
                     {" UBC Subbots"}
                 </Link>
               </Navbar.Brand>
@@ -34,17 +52,9 @@ export default class Header extends React.Component{
                   <Nav.Link className="NavContainer">
                     <Link to='/projects'className="NavLink">Projects</Link>
                   </Nav.Link>
-                  <NavDropdown  className="NavContainer"title={<div style={{display: "inline-block"}} className="NavLink">The Teams</div>}>
-                    <NavDropdown.Item >
-                        <Link to="/teams/software" className="NavLinkDropdown">Software</Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                        <Link to="/teams/mechanical"className="NavLinkDropdown">Mechanical</Link>
-                    </NavDropdown.Item>
-                    <NavDropdown.Item>
-                        <Link to="/teams/electrical"className="NavLinkDropdown">Electrical</Link>
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <Nav.Link className="NavContainer">
+                    <Link to='/teams'className="NavLink">The Teams</Link>
+                  </Nav.Link>
                   <Nav.Link className="NavContainer">
                     <Link to='/join'className="NavLink">Join Us</Link>
                   </Nav.Link>
@@ -52,8 +62,8 @@ export default class Header extends React.Component{
                     <Link to='/sponsors'className="NavLink">Sponsorship</Link>
                   </Nav.Link>
                 </Nav>
-                <Button className="SignInButton PrimaryOutlineButton" variant="outline-warning"
-                        onClick={() => this.state.isSignInOpened = true}>
+                <Button className="SignInButton" variant="outline-warning"
+                        onClick={() => this.setState({isSignInOpened: true})}>
                     Member Sign In
                 </Button>
                 <MemberSignIn show={this.state.isSignInOpened}/>
