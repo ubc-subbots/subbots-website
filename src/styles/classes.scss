@@ -1,40 +1,50 @@
 @import 'variables';
 
 .PrimaryButton{
-    border-color: $accent-color;
-    color: $accent-color;
-    background-color: $accent-color;
-}
-
-.PrimaryButton:hover{
-    border-color: $accent-hover-color;
-    color: $accent-color;
-    background-color: $accent-hover-color;
+  border-color: $accent-color !important;
+  background-color: $accent-color !important;
+  &:hover{
+    border-color: $accent-hover-color !important;
+    background-color: $accent-hover-color !important;
+  }
+  &:active{
+    border-color: $accent-hover-color !important;
+    background-color: $accent-hover-color !important;
+  }
+  &:focus{
+    border-color: $accent-hover-color !important;
+    background-color: $accent-hover-color !important;
+    box-shadow: 0 0 0 0.2rem $accent-hover-color !important;
+  }
 }
 
 .PrimaryOutlineButton{
     color: $accent-color !important;
     border-color: $accent-color !important;
+    &:hover{
+      background-color: $accent-color !important;
+    }
+    &:active{
+      background-color: $accent-color !important;
+    }
+    &:focus{
+      box-shadow: 0 0 0 0.2rem $accent-hover-color !important;
+    }
 }
 
-.PrimaryOutlineButton:hover{
-    background-color: $accent-color !important;
-}
 
 .SecondaryButton{
-    border-color: $primary-color;
-    color: $primary-text-color;
-    background-color: $primary-color;
-}
-
-.SecondaryButton:hover{
-    border-color: $secondary-color;
-    color: $secondary-text-color;
-    background-color: $secondary-color;
-}
-
-.SecondaryButton:active{
-    border-color: $secondary-color !important;
-    color: $secondary-text-color !important;
-    background-color: $secondary-color !important;
+    border-color: $primary-color !important;
+    color: $primary-text-color !important;
+    background-color: $primary-color !important;
+    &:hover{
+      border-color: $secondary-color !important;
+      color: $secondary-text-color !important;
+      background-color: $secondary-color !important;
+    }
+    &:active{
+      border-color: $secondary-color !important;
+      color: $secondary-text-color !important;
+      background-color: $secondary-color !important;
+    }
 }

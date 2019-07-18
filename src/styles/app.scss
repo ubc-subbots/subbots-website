@@ -1,6 +1,7 @@
+@import './index.scss';
+
 .App{
-    background-color: lightblue;
-    background-image: linear-gradient(to bottom, #38abc1, #183c7b);
+    background-image: linear-gradient(to bottom, $background-color-top, $background-color-bottom);
     background-size: cover;
     background-position-x: 50%;
     background-position-y: 0px;

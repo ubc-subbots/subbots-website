@@ -23,7 +23,7 @@ export class TeamCard extends React.Component{
                 </Card.Header>
                 <Card.Body>
                     <FontAwesomeIcon className="TeamIcon" icon={this.icons[this.props.team]} size="6x"/>
-                    <Card.Text>
+                    <Card.Text className="TeamText">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                    </Card.Text>
                     <Button className="SecondaryButton" variant="primary">

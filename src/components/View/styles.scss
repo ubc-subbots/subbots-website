@@ -14,27 +14,25 @@
     font-size: 100px;
     font-weight: 600;
     width: 100%;
-    z-index: 100;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: $secondary-text-color;
 }
 
 .ViewBody{
-    color: $secondary-text-color;
+    color: $secondary-color;
     font-size: 20px;
     font-weight: 600;
     min-height: 100px;
     display: block;
     // text-align: center;
-    @include MarginTopBottom(30px);
+    @include MarginTopBottom(25px);
     margin-left: auto;
     margin-right: auto;
 }
 
 .ViewImage{
+    @include MarginTopBottom(25px);
     text-align: center;
     position: relative;
-    border: 2px solid $secondary-text-color;
+    border: 2px solid $secondary-color;
     border-radius: 5px;
     height: 300px;
     filter: grayscale(0.6);
