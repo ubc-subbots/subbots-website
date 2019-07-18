@@ -1,3 +1,3 @@
 export default {
-    FADE_DURATION: 2000,
+    FADE_DURATION: 1600,
 }

@@ -1,7 +1,7 @@
 @import "../../styles/index.scss";
 
 $form-color: $secondary-color;
-$form-border-radius: 10px;
+$form-border-radius: 5px;
 $form-opacity: 0.6;
 
 .JoinForm{
@@ -15,11 +15,11 @@ $form-opacity: 0.6;
 }
 
 .JoinFormBorder{
-    @include MarginTopBottom(20px);
-    padding: 3px;
-    border: 3px solid $form-color;
-    border-radius: $form-border-radius;
-    border-color:rgba($form-color, $form-opacity) !important;
+    // @include MarginTopBottom(20px);
+    // padding: 3px;
+    // border: 3px solid $form-color;
+    // border-radius: $form-border-radius;
+    // border-color:rgba($form-color, $form-opacity) !important;
 }
 
 .JoinFormHeader{

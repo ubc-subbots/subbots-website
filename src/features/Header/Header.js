@@ -23,7 +23,7 @@ export default class Header extends React.Component{
         }
 
         window.onscroll = () => {
-            let shrinkThresh = 125;
+            let shrinkThresh = 65;
             if (document.body.scrollTop > shrinkThresh || document.documentElement.scrollTop > shrinkThresh){
                 this.setState({navbarClass: "HeaderContainerShrunk"});
                 this.setState({navbrandClass: "NavBrandShrunk"});

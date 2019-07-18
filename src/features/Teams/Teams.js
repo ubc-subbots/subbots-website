@@ -16,15 +16,15 @@ export default class Teams extends React.Component{
                 <ViewHeader header={content.title} body={content.body}/>
                 <Fade bottom duration={constants.FADE_DURATION}>
                 <Row>
-                    <Col sm={1}></Col>
-                    <Col sm={10}>
+                    <Col sm={2}></Col>
+                    <Col sm={8}>
                         <Row>
                             <TeamCard team={'Software'}/>
                             <TeamCard team={'Electrical'}/>
                             <TeamCard team={'Mechanical'}/>
                         </Row>
                     </Col>
-                    <Col sm={1}></Col>
+                    <Col sm={2}></Col>
                 </Row>
                 </Fade>
             </ViewContainer>

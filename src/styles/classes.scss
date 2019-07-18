@@ -32,3 +32,9 @@
     color: $secondary-text-color;
     background-color: $secondary-color;
 }
+
+.SecondaryButton:active{
+    border-color: $secondary-color !important;
+    color: $secondary-text-color !important;
+    background-color: $secondary-color !important;
+}
