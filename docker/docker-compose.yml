@@ -1,0 +1,9 @@
+version: "2"
+services:
+  nodejs:
+    build: './nodejs'
+    container_name: 'subbots-nodejs'
+    volumes:
+      - ../:/home/nodejs
+    ports:
+      - "80:80"

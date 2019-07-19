@@ -1,5 +1,8 @@
-# npm
-/node_modules
+#backend
+/backend/node_modules
+/backend/npm-debug.log
 
-# build folder
-/build
+#frontend
+/frontend/node_modules
+/frontend/npm-debug.log
+/frontend/build
