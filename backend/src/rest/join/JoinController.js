@@ -1,17 +1,8 @@
 const emailCreds = require(__dirname + '/../../secrets/email_cred.json');
 const nodemailer = require("nodemailer");
 
-JoinController = (req, res) => {
-    // sendEtheralEmail(req, res);  
-    sendProductionEmail(req, res);
-};
-
-function sendProductionEmail(req, res) {
-    if (!emailCreds) {
-        res.json({status: false, message: "ERROR: Failed to load credentials"});
-    }
-
-    const {
+JoinController = async (req, res) => {
+    const params = {
         first_name,
         last_name,
         email,
@@ -19,6 +10,20 @@ function sendProductionEmail(req, res) {
         team,
         reason
     } = req.body;
+    
+    if (!emailCreds) {
+        res.json({status: false, message: "ERROR: Failed to load credentials"});
+    }
+
+    let [signeeRes, subbotRes] = await Promise.all([
+        sendSigneeToSubbots(params),
+        sendConfirmToSingee(params)
+    ]);
+
+    res.json({signee_email: signeeRes, subbot_email: subbotRes});
+};
+
+async function sendConfirmToSingee(params) {
 
     // Create a SMTP transporter object
     let transporter = nodemailer.createTransport({
@@ -34,23 +39,28 @@ function sendProductionEmail(req, res) {
     // Message object
     let message = {
         from: `${emailCreds.name} <${emailCreds.user}>`,
-        to: `${first_name} ${last_name} <${email}>`,
+        to: `${params.first_name} ${params.last_name} <${params.email}>`,
         subject: 'Thanks for your interest!',
-        text: `Hi ${first_name} ${last_name}!\n\n(TODO: Create actual html email)`
+        text: `Hi ${params.first_name} ${params.last_name}!\n\n(TODO: Create actual html email)`
         // html: '<p><b>Hello</b> to myself!</p>'
     };
 
-    transporter.sendMail(message, (err, info) => {
-        if (err) {
-            res.json({
-                status: false, 
-                message: "ERROR: Failed to send email",
-                error: err.message
-            });
-        }
+    try {
+        const res = await transporter.sendMail(message);
+        return {status: true, res: res};
+    } catch (error) {
+        return {
+            status: false, 
+            message: "ERROR: Failed to send email to signee",
+            params: params,
+            error: error
+        };
+    }
+}
 
-        res.json({status: true, email_id: info.messageId});
-    });
+async function sendSigneeToSubbots(params) {
+    //TODO: Send email to main subbots email, plus respective team lead
+    return {status: true};
 }
 
 //Used for testing
