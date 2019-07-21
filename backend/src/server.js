@@ -7,7 +7,7 @@ const HOSTNAME = '0.0.0.0';
 const HTTP_PORT = 80;
 
 const app = express();
-app.use(bodyParser.json); //Sets up request parsing for JSON (into req.body)
+app.use(bodyParser.json());
 app.use(router);
 
 const httpServer = http.createServer(app);

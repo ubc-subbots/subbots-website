@@ -15,11 +15,11 @@ export default function router(){
         <main>
             <ScrollToTop/>
             <Switch>
-                <Route exact path="/app" component={Home} />
-                <Route path="/app/teams" component={Teams} />
-                <Route path="/app/projects" component={Projects} />
-                <Route path="/app/sponsors" component={Sponsors} />
-                <Route path="/app/join" component={Join} />
+                <Route exact path="/" component={Home} />
+                <Route path="/teams" component={Teams} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/sponsors" component={Sponsors} />
+                <Route path="/join" component={Join} />
             </Switch>
         </main>
     )
