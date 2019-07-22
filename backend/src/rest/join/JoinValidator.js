@@ -1,3 +1,5 @@
+const CONSTANTS = require(__dirname + '/../../constants.json');
+
 JoinValidator = (req, res, next) => {
     const {
         first_name,
@@ -64,7 +66,13 @@ JoinValidator = (req, res, next) => {
          });
     }
 
-    //TODO: Setup enum for teams
+    if (![CONSTANTS.ELECTRICAL_TEAM, CONSTANTS.MECHANICAL_TEAM, CONSTANTS.SOFTWARE_TEAM].includes(team.toUpperCase())) {
+        res.json({
+            status: false,
+            code: 400,
+            error: "invalid_team" 
+         });
+    }
 
     next();
 };
