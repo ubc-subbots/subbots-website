@@ -1,17 +1,14 @@
 const http = require('http');
 const express = require('express');
-const path = require('path');
+const router = require(__dirname + '/router.js');
+const bodyParser = require('body-parser');
 
 const HOSTNAME = '0.0.0.0';
 const HTTP_PORT = 80;
 
 const app = express();
-
-//Nessesary for react-app build (see https://facebook.github.io/create-react-app/docs/deployment)
-app.use(express.static(path.join(__dirname, '../../frontend/build')))
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../frontend/build', 'index.html'));
-});
+app.use(bodyParser.json());
+app.use(router);
 
 const httpServer = http.createServer(app);
 
