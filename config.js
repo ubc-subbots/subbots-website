@@ -1,8 +1,10 @@
+//Main config file
+
 const config = {
     "emails": {
         "common_subbots_email": {
           "name": "UBC Subbots",
-          "value": "info.subbots@gmail.com" //Temporary until production
+          "value": "info.subbots@gmail.com" //Temporary until production, will be ubc.subbots@gmail.com
         },
         "elec_team_lead_email": {
             "name": "",
