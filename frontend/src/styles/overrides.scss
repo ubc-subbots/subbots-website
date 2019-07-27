@@ -21,3 +21,14 @@ a:focus {
 button::-moz-focus-inner {
   border: 0;
 }
+
+// overriding bootstrap classes
+
+.form-control:valid {
+  background-image: none !important;
+}
+
+
+.form-control:invalid {
+  background-image: none !important;
+}

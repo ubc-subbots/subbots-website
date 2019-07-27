@@ -5,7 +5,7 @@
   "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodejs ./src/server.js"
+    "start": "nodemon ./src/server.js"
   },
   "repository": {
     "type": "git"
@@ -14,8 +14,13 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "express-rate-limit": "^5.0.0",
+    "mongodb": "^3.3.0-beta2",
     "nodemailer": "^6.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

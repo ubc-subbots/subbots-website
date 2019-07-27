@@ -17,12 +17,12 @@ export default class Join extends React.Component{
         super(props)
 
         this.state = {
-            isFormValid: false,
+            validated: false,
             first_name: "",
             last_name: "",
             email: "",
-            year: 1,
-            team: "Electrical",
+            year: 0,
+            team: "",
             reason: ""
         }
     }
@@ -48,6 +48,7 @@ export default class Join extends React.Component{
                 last_name: this.state.last_name,
                 email: this.state.email,
                 year: this.state.year,
+                team: this.state.team,
                 reason: this.state.reason
             }
             axios.post('/rest/join', form_body)
@@ -61,7 +62,7 @@ export default class Join extends React.Component{
             console.log("invalid form");
             
         }
-        this.setState({isFormValid: true});
+        this.setState({validated: true});
             
     }
 
@@ -71,36 +72,36 @@ export default class Join extends React.Component{
                 <ViewHeader header={content.title} body={content.body}/>
                 <Fade bottom duration={constants.FADE_DURATION}>
                 <Row>
-                    <Col sm={3}>
-                    </Col>
+                    <Col sm={3}></Col>
                     <Col sm={6}>
                         <div className="JoinFormBorder">
                         <Card className="JoinFormContainer">
                         <Card.Header className="JoinFormHeader">
                             UBC Subbots 2019-2020 Application
                         </Card.Header>
-                        <Form noValidate validated={this.state.isFormValid} className="JoinForm" onSubmit={this.onFormSubmit.bind(this)}>
+                        <Form noValidate validated={this.state.validated} className="JoinForm" onSubmit={this.onFormSubmit.bind(this)}>
                             <Form.Row>
                                 <Form.Group as={Col}>
-                                    <Form.Label>First Name</Form.Label>
+                                    <Form.Label>First Name *</Form.Label>
                                     <Form.Control onChange={this.onFirstNameChange.bind(this)} placeholder="Enter first name" required />
                                     <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group as={Col}>
-                                    <Form.Label>Last Name</Form.Label>
+                                    <Form.Label>Last Name * </Form.Label>
                                     <Form.Control onChange={this.onLastNameChange.bind(this)} placeholder="Enter last name" required/>
                                     <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                                
                                 </Form.Group>
                             </Form.Row>
                             <Form.Group controlId="formBasicEmail">
-                                <Form.Label>Email address</Form.Label>
+                                <Form.Label>Email address * </Form.Label>
                                 <Form.Control onChange={this.onEmailChange.bind(this)} type="email" placeholder="Enter email" required/>
                                 <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                            
                             </Form.Group>
                             <Form.Row>
                                 <Form.Group as={Col}>
-                                    <Form.Label>Year</Form.Label>
-                                    <Form.Control onChange={this.onYearChange.bind(this)} as="select">
+                                    <Form.Label>Year *</Form.Label>
+                                    <Form.Control onChange={this.onYearChange.bind(this)} as="select" required>
+                                        <option selected disabled hidden></option>
                                         <option>1</option>
                                         <option>2</option>
                                         <option>3</option>
@@ -108,14 +109,17 @@ export default class Join extends React.Component{
                                         <option>5</option>
                                         <option>6</option>
                                     </Form.Control>
+                                    <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                            
                                 </Form.Group>
                                 <Form.Group as={Col}>
-                                    <Form.Label>Desired Team</Form.Label>
-                                    <Form.Control onChange={this.onTeamChange.bind(this)} as="select">
-                                        <option>Electrical</option>
-                                        <option>Software</option>
-                                        <option>Mechanical</option>
+                                    <Form.Label>Desired Team *</Form.Label>
+                                    <Form.Control onChange={this.onTeamChange.bind(this)} as="select" required>
+                                        <option selected disabled hidden></option>
+                                        <option>{constants.ELECTRICAL_TEAM}</option>
+                                        <option>{constants.SOFTWARE_TEAM}</option>
+                                        <option>{constants.MECHANICAL_TEAM}</option>
                                     </Form.Control>
+                                    <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                            
                                 </Form.Group>
                             </Form.Row>
                             <Form.Group controlId="exampleForm.ControlTextarea1">
@@ -129,8 +133,7 @@ export default class Join extends React.Component{
                         </Card>
                         </div>
                     </Col>
-                    <Col sm={3}>
-                    </Col>
+                    <Col sm={3}></Col>
                 </Row>
                 </Fade>
             </ViewContainer>
