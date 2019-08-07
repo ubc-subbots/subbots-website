@@ -48,3 +48,19 @@
       background-color: $secondary-color !important;
     }
 }
+
+.SeperatorTop {
+  height: 20px;
+  background-color: $primary-color;
+  margin-top: 100px;
+}
+
+.SeperatorBottom {
+  height: 20px;
+  background-color: $primary-color;
+  // margin-Bottom: 200px;
+}
+
+.HeaderBuffer {
+  height: 60px;
+}

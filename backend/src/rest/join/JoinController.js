@@ -1,6 +1,7 @@
-const emailCreds = require(__dirname + '/../../secrets/email_cred.json');
-const config = require(__dirname + '/../../../../config.js');
+// const emailCreds = require(__dirname + '/../../secrets/email_cred.json');
+// const config = require(__dirname + '/../../../../config.js');
 const CONSTANTS = require(__dirname + '/../../constants.json');
+const db = require(__dirname + '/../../mongodb.js').getDB();
 const nodemailer = require("nodemailer");
 
 JoinController = async (req, res) => {
@@ -13,10 +14,10 @@ JoinController = async (req, res) => {
         reason
     } = req.body;
     
-    if (!emailCreds) {
-        res.json({status: false, message: "ERROR: Failed to load credentials"});
-        return;
-    }
+    // if (!emailCreds) {
+    //     res.json({status: false, message: "ERROR: Failed to load credentials"});
+    //     return;
+    // }
 
     // Create a SMTP transporter object
     let transporter = nodemailer.createTransport({
@@ -24,8 +25,8 @@ JoinController = async (req, res) => {
         port: 465,
         secure: true,
         auth: {
-            user: emailCreds.user,
-            pass: emailCreds.pass
+            user: process.env.EMAIL_USER,
+            pass: process.env.EMAIL_PASS
         }
     });
 
@@ -37,14 +38,13 @@ JoinController = async (req, res) => {
         return;
     }
     
-
     //If failure, abort
     if (!subbotRes.status) {
         res.json(subbotRes);
         return;
     }
 
-    //Then attempt to send confirmation to signee
+    //Else, attempt to send confirmation to signee
     try {
         var signeeRes = await emailConfirmationToSignee(params, transporter);
     } catch (error) {
@@ -55,20 +55,26 @@ JoinController = async (req, res) => {
         });
         return;
     }
-    
+
+    var saveRes = await save(params);
+
+    //If database error
+    if (!saveRes.status){
+        res.json(saveRes);
+    }
     res.json({signee_email: signeeRes, subbot_email: subbotRes});
 };
 
 async function emailConfirmationToSignee(params, transporter) {
     // Message object
     let message = {
-        from: `${emailCreds.name} <${emailCreds.user}>`,
+        from: `${process.env.EMAIL_NAME} <${process.env.EMAIL_USER}>`,
         to: `${params.first_name} ${params.last_name} <${params.email}>`,
         subject: 'Thanks for your interest!',
         text: `Hi ${params.first_name} ${params.last_name}!\n\n(TODO: Create actual html email)`
         // html: '<p><b>Hello</b> to myself!</p>'
     };
-
+    
     try {
         const res = await transporter.sendMail(message);
         return {status: true, res: res};
@@ -83,33 +89,37 @@ async function emailConfirmationToSignee(params, transporter) {
 }
 
 async function emailDetailsToTeamLeadAndSubbots(params, transporter) {
-    let teamLeadDetails = {};
+    var teamLeadName = "";
+    var teamLeadEmail = 0;
 
     switch (params.team.toUpperCase()) {
         case CONSTANTS.ELECTRICAL_TEAM:
-            teamLeadDetails = config.emails.elec_team_lead_email;
+            teamLeadEmail = process.env.ELEC_LEAD_EMAIL;
+            teamLeadName=process.env.ELEC_LEAD_NAME
             break;
         case CONSTANTS.MECHANICAL_TEAM:
-            teamLeadDetails = config.emails.mech_team_lead_email;
+            teamLeadEmail = process.env.MECH_LEAD_EMAIL;
+            teamLeadName=process.env.MECH_LEAD_NAME
             break;
         case CONSTANTS.SOFTWARE_TEAM:
-            teamLeadDetails = config.emails.software_team_lead_email;
+            teamLeadEmail = process.env.SOFTWARE_LEAD_EMAIL;
+            teamLeadName=process.env.SOFTWARE_LEAD_NAME
             break;        
     }
 
-    if (!teamLeadDetails.value) {
+    if (!teamLeadEmail) {
         return {
             status: false, 
-            message: "ERROR: Team lead email not found in repo config file. Aborting email...",
+            message: "ERROR: Team lead email not found. Aborting email...",
             params: params
         };
     }
 
     // Message object
     let message = {
-        from: `${emailCreds.name} <${emailCreds.user}>`,
-        to: ` ${params.last_name} <${params.email}>`,
-        cc: `${config.emails.common_subbots_email.name} <${config.emails.common_subbots_email.value}>`,
+        from: `${process.env.EMAIL_NAME} <${process.env.EMAIL_USER}>`,
+        to: ` ${teamLeadName} <${teamLeadEmail}>`,
+        cc: `${process.env.EMAIL_NAME} <${process.env.EMAIL_USER}>`,
         subject: 'Someone has requested to join Subbots',
         text: `(TODO: Create actual html email)`
         // html: '<p><b>Hello</b> to myself!</p>'
@@ -126,6 +136,19 @@ async function emailDetailsToTeamLeadAndSubbots(params, transporter) {
             error: error
         };
     }
+}
+
+function save(join_form){
+    return new Promise((resolve, reject) => {
+        db.collection("join-forms").insertOne(join_form, (error, result) => {
+            if (error) resolve({
+                status: false,
+                message: "ERROR: Failed to save the join form to the db",
+                error: error
+            });
+            resolve({ status: true });
+        });
+    });
 }
 
 //Used for testing

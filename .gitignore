@@ -1,6 +1,7 @@
 #backend
 /backend/node_modules
 /backend/npm-debug.log
+/backend/.env
 
 #frontend
 /frontend/node_modules

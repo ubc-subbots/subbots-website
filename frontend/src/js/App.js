@@ -14,8 +14,8 @@ export default function App() {
         <BrowserRouter>
             <Header/>
             <Router/>
-            <Footer/>
             <ContactButton/>
+            <Footer/>
         </BrowserRouter>
     </div>
   );

@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 export default function ViewContainer(props){
     return(
         <div className="ViewContainer">
-            <Container fluid>
+            <Container fluid className="p-0">
                 {props.children}
             </Container>
         </div>

@@ -26,3 +26,30 @@
 .TeamCard:hover{
     transform: scale(1.15);
 }
+
+.TeamBodyContainer {
+    width: 100%;
+    background-color: white;
+}
+
+
+.TeamBodyHeader {
+    font-size: 35px;
+    // padding-top: 25px;
+    padding-bottom: 15px;
+    @include PaddingLeftRight(10px);
+    font-family: $primary-text-font;
+}
+
+.TeamBodyText {
+    @include MarginLeftRight(15px);
+    font-family: $secondary-text-font;
+}
+
+.TeamBodyFrame {
+    height: 50px;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    padding: 130px;
+    margin: 20px;
+}
