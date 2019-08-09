@@ -8,7 +8,7 @@ import Fade from 'react-reveal/Fade';
 import axios from 'axios';
 import content from './content';
 import constants from '../../js/constants';
-import { ViewHeader, ViewContainer } from '../../components/View';
+import { ViewHeader, ViewContainer } from '../../components';
 import './styles.scss';
 
 export default class Join extends React.Component{

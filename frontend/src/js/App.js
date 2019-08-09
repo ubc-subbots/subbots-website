@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom';
 import {
     Header,
     Footer
-} from '../features'
+} from '../components'
 import { ContactButton } from '../components/Contact';
 import Router from './Router';
 import '../styles/app.scss';
