@@ -5,7 +5,7 @@ import Fade from 'react-reveal/Fade';
 import content from './content';
 import constants from '../../js/constants';
 import { TeamCard, TeamBody } from './Components';
-import { ViewHeader, ViewContainer } from '../../components/View';
+import { ViewHeader, ViewContainer } from '../../components';
 import './styles.scss';
 
 export default class Teams extends React.Component {
@@ -34,7 +34,6 @@ export default class Teams extends React.Component {
                     <TeamBody team={'Mechanical'} />
                 </div>
                 <div className="SeperatorBottom"></div>
-
             </ViewContainer>
         )
     }
