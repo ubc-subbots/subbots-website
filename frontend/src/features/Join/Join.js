@@ -4,11 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import Fade from 'react-reveal/Fade';
 import axios from 'axios';
-import content from './content';
+import content from '../../content';
 import constants from '../../js/constants';
-import { ViewHeader, ViewContainer } from '../../components/View';
+import { ViewHeader, ViewContainer } from '../../components';
 import './styles.scss';
 
 export default class Join extends React.Component{
@@ -42,7 +41,7 @@ export default class Join extends React.Component{
     onFormSubmit(event){
         event.preventDefault();
         let form = event.currentTarget;
-        if (form.checkValidity() == true){
+        if (form.checkValidity() === true){
             let form_body = {
                 first_name: this.state.first_name,
                 last_name: this.state.last_name,
@@ -69,8 +68,7 @@ export default class Join extends React.Component{
     render() {
         return (
             <ViewContainer>
-                <ViewHeader header={content.title} body={content.body}/>
-                <Fade bottom duration={constants.FADE_DURATION}>
+                <ViewHeader title={content.join.title} blurb={content.join.blurb}/>
                 <Row>
                     <Col sm={3}></Col>
                     <Col sm={6}>
@@ -135,7 +133,6 @@ export default class Join extends React.Component{
                     </Col>
                     <Col sm={3}></Col>
                 </Row>
-                </Fade>
             </ViewContainer>
         )
     }

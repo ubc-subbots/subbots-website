@@ -19,17 +19,17 @@ export default class ViewHeader extends React.Component{
             <Row>
             <Col sm={1}></Col>
             <Col sm={10}>
-                    <div className="ViewImage">
-                        <img style={{visibility: 'hidden',width:'100%', height:'100%', opacity:'0.4'}} src="/software-team.jpg"/>
+                    <div className="ViewHeaderImage">
+                        <img style={{visibility: 'hidden',width:'100%', height:'100%', opacity:'0.4'}} src="/software-team.jpg" alt="Error!"/>
                     </div>
-                    <div style={{visibility: 'hidden'}} className="ViewTitle">{this.props.header}</div>
             </Col>
             <Col sm={1}></Col>
+            <div className="ViewHeaderTitle">{this.props.title}</div>
             </Row>
             <Row>
                 <Col sm={1}></Col>
                 <Col s={10}>
-                    <div className="ViewBody">{this.props.body}</div>
+                    <div className="ViewHeaderBlurb">{this.props.blurb}</div>
                 </Col>
                 <Col sm={1}></Col>
             </Row>
