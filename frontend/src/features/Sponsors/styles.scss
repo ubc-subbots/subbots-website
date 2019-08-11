@@ -1,1 +1,29 @@
 @import "../../styles/index.scss";
+
+.SponsorCard{
+    text-align: center;
+    background-color: $accent-color !important;
+    margin-bottom: 50px;
+    @include MarginLeftRight(10px);
+    width: 250px;
+    height: 250px;
+    transition: transform $transition-time;
+    &:hover{
+        transform: scale(1.15);
+        opacity: 0.8;
+    }
+}
+
+.SponsorCardBody {
+    display: table;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.SponsorRow {
+    @include MarginTopBottom(40px); 
+}
+
+.SponsorImage {
+    width: 100%;
+}

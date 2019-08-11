@@ -22,7 +22,8 @@ mongodb.connectDB( err => {
     
     httpServer.listen(HTTP_PORT, HOSTNAME, () => {
       console.log(`Server running at http://${HOSTNAME}:${HTTP_PORT}/`);
-    });
-    
+    }); 
+  } else {
+    console.log(" Error while connecting to MongoDB");
   }
 });

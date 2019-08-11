@@ -4,9 +4,6 @@ import Button from 'react-bootstrap/Button';
 
 export default class MemberSignIn extends React.Component{
 
-    componentWillUpdate(prevProps){
-    }
-
     render(){
             return(
             <Modal show={this.props.isOpen}>

@@ -10,8 +10,9 @@ var _db;
 const connectDB = (callback) => {
     try {
         MongoClient.connect(url, { useNewUrlParser: true } , (err, client) => {
+            if (err) return callback(err);            
             _db = client.db(MONGODB_DB);            
-            return callback(err);
+            return callback(null);
         })
     } catch (e){
         throw e;

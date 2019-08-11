@@ -4,19 +4,15 @@
     min-height: 2000px;
 }
 
-.ViewTitle{
-    position: absolute;
+.ViewHeaderTitle{
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: $accent-color;
-    font-size: 100px;
-    font-weight: 600;
+    font-size: 55px;
+    font-weight: 300;
     width: 100%;
 }
 
-.ViewBody{
+.ViewHeaderBlurb{
     color: $secondary-color;
     font-size: 20px;
     font-weight: 600;
@@ -28,7 +24,7 @@
     margin-right: auto;
 }
 
-.ViewImage{
+.ViewHeaderImage{
     @include MarginTopBottom(25px);
     text-align: center;
     position: relative;

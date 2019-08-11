@@ -1,0 +1,21 @@
+version: '3'
+services:
+  frontend:
+    container_name: frontend
+    image: node:10
+    ports: 
+      - "3000:3000"
+    volumes:
+      - "./frontend:/usr/local/src"
+    command: bash -c "cd /usr/local/src && npm install && npm cache clean --force && npm start"  
+  backend:
+    container_name: backend
+    image: node:10
+    ports:
+      - "80:80"
+    volumes:
+      - "./backend:/usr/local/src"
+    environment:
+      - STATIC_FOLDER=./views
+      - MONGODB_DB=subbots-website-dev
+    command: bash -c "cd /usr/local/src && npm install && npm start"

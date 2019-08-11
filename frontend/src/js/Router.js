@@ -1,7 +1,6 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import ScrollToTop from 'react-router-scroll-top';
-import Container from 'react-bootstrap/Container';
 import {
     Home,
     Projects,
