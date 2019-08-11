@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Nav from 'react-bootstrap/Nav';
 import Image from 'react-bootstrap/Image';
 import Button from 'react-bootstrap/Button';
@@ -68,7 +67,7 @@ export default class Header extends React.Component{
                 </Button>
                 <MemberSignIn show={this.state.isSignInOpened}/>
                 <a href="https://www.ubc.ca/">
-                    <Image className="UBCLogo" src="/ubc-logo.png" />
+                    <Image className="UBCLogo" src="/images/ubc-logo.png" />
                 </a>
               </Navbar.Collapse>
             </Navbar>

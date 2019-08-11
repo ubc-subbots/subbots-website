@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWrench, faLaptopCode, faCarBattery } from '@fortawesome/free-solid-svg-icons';
 import './styles.scss';
+import content from '../../content';
 
 export class TeamCard extends React.Component {
 
@@ -25,11 +26,11 @@ export class TeamCard extends React.Component {
                     <Card.Body>
                         <FontAwesomeIcon className="TeamIcon" icon={this.icons[this.props.team]} size="6x" />
                         <Card.Text className="TeamText">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            {content.teams[this.props.team.toLowerCase()].blurb}
                    </Card.Text>
                         <Button className="SecondaryButton" variant="primary" href={"#" + this.props.team}>
                             Learn More
-                    </Button>
+                        </Button>
                     </Card.Body>
                 </Card>
             </Col>
@@ -75,7 +76,7 @@ export class TeamBody extends React.Component {
                         </Col>
                     </Row>
                     <div className="TeamBodyText">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        {content.teams[this.props.team.toLowerCase()].body}
                     </div>
                 </Col>
             </div>

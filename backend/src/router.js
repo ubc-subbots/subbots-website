@@ -17,9 +17,9 @@ router.post('/rest/join', joinLimiter, JoinValidator, JoinController);
 
 //Otherwise serve frontend
 //Nessesary for react-app build (see https://facebook.github.io/create-react-app/docs/deployment)
-router.use(express.static(path.join(__dirname, '../../frontend/build')))
+router.use(express.static(path.join(__dirname, process.env.STATIC_FOLDER)))
 router.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../../frontend/build', 'index.html'));
+  res.sendFile(path.join(__dirname, process.env.STATIC_FOLDER, 'index.html'));
 });
 
 module.exports = router;

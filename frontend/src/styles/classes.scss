@@ -4,17 +4,16 @@
   border-color: $accent-color !important;
   background-color: $accent-color !important;
   &:hover{
-    border-color: $accent-hover-color !important;
-    background-color: $accent-hover-color !important;
+    opacity: 0.7;
   }
   &:active{
-    border-color: $accent-hover-color !important;
-    background-color: $accent-hover-color !important;
+    border-color: $accent-color !important;
+    background-color: $accent-color !important;
   }
   &:focus{
-    border-color: $accent-hover-color !important;
-    background-color: $accent-hover-color !important;
-    box-shadow: 0 0 0 0.2rem $accent-hover-color !important;
+    border-color: $accent-color !important;
+    background-color: $accent-color !important;
+    box-shadow: 0 0 0 0.2rem $accent-color !important;
   }
 }
 
@@ -38,9 +37,7 @@
     color: $primary-text-color !important;
     background-color: $primary-color !important;
     &:hover{
-      border-color: $secondary-color !important;
-      color: $secondary-text-color !important;
-      background-color: $secondary-color !important;
+      opacity: 0.7;
     }
     &:active{
       border-color: $secondary-color !important;
@@ -50,15 +47,22 @@
 }
 
 .SeperatorTop {
-  height: 20px;
-  background-color: $primary-color;
-  margin-top: 100px;
+  height: 8px;
+  margin-top: 40px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255,255,255, 1) 100%
+    )
 }
 
 .SeperatorBottom {
-  height: 20px;
-  background-color: $primary-color;
-  // margin-Bottom: 200px;
+  height: 8px;
+  margin-bottom: 100px;
+  background: linear-gradient(
+    to bottom,     
+    rgba(255,255,255, 1) 0%, 
+    rgba(255,255,255, 0) 100%
+    )
 }
 
 .HeaderBuffer {
