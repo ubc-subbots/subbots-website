@@ -11,7 +11,7 @@ export class SponsorCard extends React.Component {
                 <a href={this.props.link}>
                     <Card className="SponsorCard">
                         <Card.Body className="SponsorCardBody">
-                            <img className="SponsorImage" src={"/sponsors/" + this.props.image} alt={"Sponsor Image"}></img>
+                            <img className="SponsorImage" src={"/sponsors/" + this.props.image} alt={"Sponsor"}></img>
                         </Card.Body>
                     </Card>
                 </a>

@@ -7,7 +7,7 @@ services:
       - "3000:3000"
     volumes:
       - "./frontend:/usr/local/src"
-    command: bash -c "cd /usr/local/src && npm install && npm cache clean --force && npm start"  
+    command: bash -c "cd /usr/local/src && npm install  && npm start"  
   backend:
     container_name: backend
     image: node:10
