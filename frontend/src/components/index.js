@@ -1,5 +1,3 @@
-export {default as Footer} from './Footer';
-export {default as Header} from './Header';
-export {default as MemberSignIn} from './MemberSignIn';
-export { ContactButton } from './Contact';
+export {default as Footer} from './Footer/Footer.js';
+export {default as Header} from './Header/Header.js';
 export { ViewHeader, ViewContainer } from './View';
