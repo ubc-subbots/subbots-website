@@ -3,6 +3,7 @@
 const CONSTANTS = require(__dirname + '/../../constants.json');
 const db = require(__dirname + '/../../mongodb.js').getDB();
 const nodemailer = require("nodemailer");
+const pug = require('pug');
 
 JoinController = async (req, res) => {
     const params = {
@@ -66,13 +67,23 @@ JoinController = async (req, res) => {
 };
 
 async function emailConfirmationToSignee(params, transporter) {
+
+    const compliedPugFunction = pug.compileFile(__dirname + '/templates/signee_email.pug');
+    const htmlString = compliedPugFunction({
+        firstName: params.first_name,
+        lastName: params.last_name,
+        email: email,
+        year: params.year,
+        team: params.team,
+        reason: params.reason
+    });
+
     // Message object
     let message = {
         from: `${process.env.EMAIL_NAME} <${process.env.EMAIL_USER}>`,
         to: `${params.first_name} ${params.last_name} <${params.email}>`,
-        subject: 'Thanks for your interest!',
-        text: `Hi ${params.first_name} ${params.last_name}!\n\n(TODO: Create actual html email)`
-        // html: '<p><b>Hello</b> to myself!</p>'
+        subject: 'Subbots Signup Confirmation',
+        html: htmlString
     };
     
     try {
@@ -121,8 +132,14 @@ async function emailDetailsToTeamLeadAndSubbots(params, transporter) {
         to: ` ${teamLeadName} <${teamLeadEmail}>`,
         cc: `${process.env.EMAIL_NAME} <${process.env.EMAIL_USER}>`,
         subject: 'Someone has requested to join Subbots',
-        text: `(TODO: Create actual html email)`
-        // html: '<p><b>Hello</b> to myself!</p>'
+        text: getTeamLeadEmail(
+                params.first_name,
+                params.last_name,
+                params.email,
+                params.team,
+                params.year,
+                params.reason,
+            )
     };
 
     try {
@@ -150,6 +167,24 @@ function save(join_form){
         });
     });
 }
+
+function getTeamLeadEmail(firstName, lastName, email, team, year, reason) {
+    return (
+        `This is an automated message. 
+        
+        Someone has just requested to join UBC Subbots using the website. Their details are as follows:
+
+        First Name: ${firstName}
+        Last Name: ${lastName}
+        Email: ${email}
+        Team: ${team}
+        Year: ${year}
+        Reason: ${reason}`
+    );
+}
+
+
+//---------------------------------------------------------------------------------------------------------------------
 
 //Used for testing
 function sendEtheralEmail(req, res) {

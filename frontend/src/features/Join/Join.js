@@ -54,6 +54,18 @@ export default class Join extends React.Component{
             axios.post('/rest/join', form_body)
             .then( response => {
                 console.log(response);
+                const signee_res = response.data.signee_email.status;
+                const subbot_res = response.data.subbot_email.status;
+
+                if (!signee_res && !subbot_res) {
+                    alert("ERROR: An unexpected email error has occured. Please try again in a few minutes");
+                } else if (!signee_res && subbot_res) {
+                    alert("INFO: Subbots has recieved your infomation, but your personal confirmation failed to send");
+                } else if (signee_res && !subbot_res) {
+                    //Case will never occur due to backend logic
+                } else {
+                    alert("Success! Your application has been sent");
+                }
             })
             .catch( error => {
                 console.log(error);
