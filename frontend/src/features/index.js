@@ -1,5 +1,5 @@
-export { default as Home } from './Home';
-export { default as Join } from './Join';
-export { default as Projects } from './Projects';
-export { default as Sponsors } from './Sponsors';
-export { default as Teams } from './Teams';
+export { default as Home } from './Home/Home.js';
+export { default as Join } from './Join/Join.js';
+export { default as Projects } from './Projects/Projects.js';
+export { default as Sponsors } from './Sponsors/Sponsors.js';
+export { default as Teams } from './Teams/Teams.js';
