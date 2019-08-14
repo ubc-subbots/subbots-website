@@ -1,14 +1,4 @@
-#backend
-/backend/node_modules
-/backend/npm-debug.log
-/backend/.env
 
-#frontend
-/frontend/node_modules
-/frontend/npm-debug.log
-/frontend/build
-
-#secrets
-/backend/src/secrets/email_cred.json
-
+npm-debug.log
+build
 node_modules
