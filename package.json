@@ -2,7 +2,7 @@
   "name": "subbots-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/loganfillo/subbots-website",
+  "homepage": "https://loganfillo.github.io/subbots-website",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.19",
     "@fortawesome/free-brands-svg-icons": "^5.9.0",
