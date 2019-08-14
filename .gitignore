@@ -10,3 +10,5 @@
 
 #secrets
 /backend/src/secrets/email_cred.json
+
+node_modules
