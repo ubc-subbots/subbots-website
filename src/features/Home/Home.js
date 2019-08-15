@@ -14,7 +14,6 @@ export default class Home extends React.Component{
         return (
             <ViewContainer>
                 <ViewHeader title={content.home.title} blurb={content.home.blurb} image={content.home.image}/>
-                <div className="HomeSeperator"></div>
                 <Row>
                     <Col sm={1}></Col>
                     <Col sm={4}>

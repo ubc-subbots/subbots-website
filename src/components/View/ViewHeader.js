@@ -31,6 +31,7 @@ export default class ViewHeader extends React.Component{
                 </Col>
                 <Col sm={1}></Col>
             </Row>
+            <div className="HeaderSeperator"></div>
             </div>
         )
     }
