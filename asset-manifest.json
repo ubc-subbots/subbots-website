@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/subbots-website/static/css/main.a76988f6.chunk.css",
-    "main.js": "/subbots-website/static/js/main.dc4a0c84.chunk.js",
-    "main.js.map": "/subbots-website/static/js/main.dc4a0c84.chunk.js.map",
+    "main.css": "/subbots-website/static/css/main.7c2a1732.chunk.css",
+    "main.js": "/subbots-website/static/js/main.baf82274.chunk.js",
+    "main.js.map": "/subbots-website/static/js/main.baf82274.chunk.js.map",
     "runtime~main.js": "/subbots-website/static/js/runtime~main.d76c3714.js",
     "runtime~main.js.map": "/subbots-website/static/js/runtime~main.d76c3714.js.map",
-    "static/js/2.992219af.chunk.js": "/subbots-website/static/js/2.992219af.chunk.js",
-    "static/js/2.992219af.chunk.js.map": "/subbots-website/static/js/2.992219af.chunk.js.map",
+    "static/js/2.d2211244.chunk.js": "/subbots-website/static/js/2.d2211244.chunk.js",
+    "static/js/2.d2211244.chunk.js.map": "/subbots-website/static/js/2.d2211244.chunk.js.map",
     "index.html": "/subbots-website/index.html",
-    "precache-manifest.6e4b4adfac4400f52a1933d88acd2b50.js": "/subbots-website/precache-manifest.6e4b4adfac4400f52a1933d88acd2b50.js",
+    "precache-manifest.9008c4ab4ac48b88b070dcf8dd3b4cbe.js": "/subbots-website/precache-manifest.9008c4ab4ac48b88b070dcf8dd3b4cbe.js",
     "service-worker.js": "/subbots-website/service-worker.js",
-    "static/css/main.a76988f6.chunk.css.map": "/subbots-website/static/css/main.a76988f6.chunk.css.map"
+    "static/css/main.7c2a1732.chunk.css.map": "/subbots-website/static/css/main.7c2a1732.chunk.css.map"
   }
 }
