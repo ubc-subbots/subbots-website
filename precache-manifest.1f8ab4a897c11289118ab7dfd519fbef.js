@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "71d470bb70a8f58688d4f4ff30a7fa4c",
+    "revision": "c4672e0c17333ad70821735dc5185e57",
     "url": "/subbots-website/index.html"
   },
   {
-    "revision": "376efccb9da3c16c6966",
-    "url": "/subbots-website/static/css/main.7c2a1732.chunk.css"
+    "revision": "d2d8c3a098439c2c7cad",
+    "url": "/subbots-website/static/css/main.ffc2293c.chunk.css"
   },
   {
     "revision": "bbd67e3cb210806bdf66",
     "url": "/subbots-website/static/js/2.d2211244.chunk.js"
   },
   {
-    "revision": "376efccb9da3c16c6966",
+    "revision": "d2d8c3a098439c2c7cad",
     "url": "/subbots-website/static/js/main.baf82274.chunk.js"
   },
   {
