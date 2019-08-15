@@ -8,7 +8,7 @@ export default class Projects extends React.Component{
     render() {
         return (
             <ViewContainer>
-                <ViewHeader title={content.projects.title} blurb={content.projects.blurb}/>
+                <ViewHeader title={content.projects.title} blurb={content.projects.blurb} image={content.projects.image}/>
             </ViewContainer>
         )
     }

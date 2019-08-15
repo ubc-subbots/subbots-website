@@ -80,7 +80,7 @@ export default class Join extends React.Component{
     render() {
         return (
             <ViewContainer>
-                <ViewHeader title={content.join.title} blurb={content.join.blurb}/>
+                <ViewHeader title={content.join.title} blurb={content.join.blurb} image={content.join.image}/>
                 <Row>
                     <Col sm={3}></Col>
                     <Col sm={6}>

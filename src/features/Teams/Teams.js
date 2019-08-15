@@ -12,7 +12,7 @@ export default class Teams extends React.Component {
     render() {
         return (
             <ViewContainer>
-                <ViewHeader title={content.teams.title} blurb={content.teams.blurb} />
+                <ViewHeader title={content.teams.title} blurb={content.teams.blurb} image={content.teams.image}/>
                     <Row>
                         <Col sm={2}></Col>
                         <Col sm={8}>

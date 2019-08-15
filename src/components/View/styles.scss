@@ -1,7 +1,7 @@
 @import '../../styles/index.scss';
 
 .ViewContainer{
-    min-height: 2000px;
+    min-height: 1500px;
 }
 
 .ViewHeaderTitle{
@@ -24,12 +24,18 @@
     margin-right: auto;
 }
 
-.ViewHeaderImage{
+.ViewHeaderImageContainer{
     @include MarginTopBottom(25px);
     text-align: center;
     position: relative;
-    border: 2px solid $secondary-color;
+    border: 3px solid $secondary-color;
     border-radius: 5px;
-    height: 300px;
+    height: 60vh;
     filter: grayscale(0.6);
+}
+
+.ViewHeaderImage{
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
 }

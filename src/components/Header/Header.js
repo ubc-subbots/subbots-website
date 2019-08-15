@@ -22,7 +22,7 @@ export default class Header extends React.Component{
         }
 
         window.onscroll = () => {
-            let shrinkThresh = 65;
+            let shrinkThresh = 60;
             if (document.body.scrollTop > shrinkThresh || document.documentElement.scrollTop > shrinkThresh){
                 this.setState({navbarClass: "HeaderContainerShrunk"});
                 this.setState({navbrandClass: "NavBrandShrunk"});
@@ -67,7 +67,7 @@ export default class Header extends React.Component{
                 </Button>
                 <MemberSignIn show={this.state.isSignInOpened}/>
                 <a href="https://www.ubc.ca/">
-                    <Image className="UBCLogo" src="/images/ubc-logo.png" />
+                    <Image className="UBCLogo" src={process.env.PUBLIC_URL + "/images/ubc-logo.png"} />
                 </a>
               </Navbar.Collapse>
             </Navbar>

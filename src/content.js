@@ -1,7 +1,7 @@
 export default 
 {
     "home": {
-        "image": "",
+        "image": "software.jpg",
         "title": "Welcome To UBC Subbots",
         "blurb": " (Home Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
             sed do eiusmod tempor incididunt ut labore et dolore magna\
@@ -10,11 +10,42 @@ export default
             Duis aute irure dolor in reprehenderit in voluptate velit esse\
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\
             cupidatat non proident, sunt in culpa qui officia deserunt mollit\
-            anim id est laborum."
+            anim id est laborum.",
+        "pitch":{
+            "image": "mechanical.jpg",
+            "header": "Why Subbots?",
+            "body": " (Home Pitch) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
+                sed do eiusmod tempor incididunt ut labore et dolore magna\
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation\
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.\
+                Duis aute irure dolor in reprehenderit in voluptate velit esse\
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit\
+                anim id est laborum. Excepteur sint occaecat cupidatat non proident, \
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        "goal":{
+            "image": "electrical.jpg",
+            "header": "Our Goal",
+            "body": " (Home Goals) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
+                sed do eiusmod tempor incididunt ut labore et dolore magna\
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation\
+                ullamco laboris nisi ut aliquip ex ea commodo consequat.\
+                Duis aute irure dolor in reprehenderit in voluptate velit esse\
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit\
+                anim id est laborum. Excepteur sint occaecat cupidatat non proident, \
+                sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                Duis aute irure dolor in reprehenderit in voluptate velit esse\
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\
+                cupidatat non proident, sunt in culpa qui officia deserunt mollit\
+                anim id est laborum. Excepteur sint occaecat cupidatat non proident, \
+                sunt in culpa qui officia deserunt mollit anim id est laborum."
+        } 
     }, 
 
     "projects": {
-        "image": "",
+        "image": "mechanical.jpg",
         "title": "See What We Make",
         "blurb": " (Projects Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
             sed do eiusmod tempor incididunt ut labore et dolore magna\
@@ -27,7 +58,7 @@ export default
     },
 
     "teams": {
-        "image": "",
+        "image": "electrical.jpg",
         "title": "See What Our Members Do",
         "blurb": " (Teams Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
             sed do eiusmod tempor incididunt ut labore et dolore magna\
@@ -64,7 +95,7 @@ export default
     },
 
     "join": {
-        "image": "",
+        "image": "software.jpg",
         "title": "Become Part Of The Team",
         "blurb": " (Join Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
             sed do eiusmod tempor incididunt ut labore et dolore magna\
@@ -77,7 +108,7 @@ export default
     },
     
     "sponsors": {
-        "image": "",
+        "image": "electrical.jpg",
         "title": "See Who Makes Us Possible",
         "blurb": " (Sponsors Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
             sed do eiusmod tempor incididunt ut labore et dolore magna\
@@ -95,6 +126,10 @@ export default
             {
                 "image": "subc.png",
                 "link": "https://subc.ca/"
+            },
+            {
+                "image": "ubc-applied-sciences-footer-logo.png",
+                "link": "https://apsc.ubc.ca/"
             },
             {
                 "image": "ubc-applied-sciences-footer-logo.png",

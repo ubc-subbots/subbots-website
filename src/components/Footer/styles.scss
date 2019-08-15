@@ -16,3 +16,9 @@
     color: $primary-text-color;
     @include MarginLeftRight(20px);
 }
+
+.CopyrightText{
+    margin: auto;
+    font-size: 15px;
+    color: $primary-text-color;
+}

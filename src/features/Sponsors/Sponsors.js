@@ -17,7 +17,7 @@ export default class Sponsors extends React.Component{
 
         return (
             <ViewContainer>
-                <ViewHeader title={content.sponsors.title} blurb={content.sponsors.blurb}/>
+                <ViewHeader title={content.sponsors.title} blurb={content.sponsors.blurb} image={content.sponsors.image}/>
                     <Row>
                         <Col sm={2}></Col>
                         <Col sm={8}>

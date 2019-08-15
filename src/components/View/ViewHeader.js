@@ -1,15 +1,13 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Fade from 'react-reveal/Fade';
-import constants from '../../js/constants';
+import Image from 'react-bootstrap/Image';
 import './styles.scss';
 
 export default class ViewHeader extends React.Component{
     render() {
         return(
             <div>
-            <Fade bottom duration={constants.FADE_DURATION}>
             <Row>
                 <Col sm={1}></Col>
                 <Col sm={10}>
@@ -19,9 +17,9 @@ export default class ViewHeader extends React.Component{
             <Row>
             <Col sm={1}></Col>
             <Col sm={10}>
-                    <div className="ViewHeaderImage">
-                        <img style={{visibility: 'hidden',width:'100%', height:'100%', opacity:'0.4'}} src="/software-team.jpg" alt="Error!"/>
-                    </div>
+                <div className="ViewHeaderImageContainer">
+                    <Image className="ViewHeaderImage" src={process.env.PUBLIC_URL + "/images/" + this.props.image} alt="Error!"/>
+                </div>
             </Col>
             <Col sm={1}></Col>
             <div className="ViewHeaderTitle">{this.props.title}</div>
@@ -33,7 +31,6 @@ export default class ViewHeader extends React.Component{
                 </Col>
                 <Col sm={1}></Col>
             </Row>
-            </Fade>
             </div>
         )
     }
