@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e9e2c9291725d61133e437bb426578a3",
+    "revision": "19f2feac1f55efec50804a06015ca3ec",
     "url": "/subbots-website/index.html"
   },
   {
-    "revision": "922a1126259be7413652",
+    "revision": "702bd87e786afa67baf9",
     "url": "/subbots-website/static/css/main.88296ef6.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/subbots-website/static/js/2.33e3ec2d.chunk.js"
   },
   {
-    "revision": "922a1126259be7413652",
-    "url": "/subbots-website/static/js/main.ee32cf16.chunk.js"
+    "revision": "702bd87e786afa67baf9",
+    "url": "/subbots-website/static/js/main.092a9e34.chunk.js"
   },
   {
     "revision": "e425449b645ac95e366d",
