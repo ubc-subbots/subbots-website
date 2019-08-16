@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/subbots-website/static/css/main.0c975af7.chunk.css",
+    "main.css": "/subbots-website/static/css/main.57e4cede.chunk.css",
     "main.js": "/subbots-website/static/js/main.20cc43b4.chunk.js",
     "main.js.map": "/subbots-website/static/js/main.20cc43b4.chunk.js.map",
     "runtime~main.js": "/subbots-website/static/js/runtime~main.d76c3714.js",
@@ -8,8 +8,8 @@
     "static/js/2.d2211244.chunk.js": "/subbots-website/static/js/2.d2211244.chunk.js",
     "static/js/2.d2211244.chunk.js.map": "/subbots-website/static/js/2.d2211244.chunk.js.map",
     "index.html": "/subbots-website/index.html",
-    "precache-manifest.7f3a376096773e9bc863e279fd596465.js": "/subbots-website/precache-manifest.7f3a376096773e9bc863e279fd596465.js",
+    "precache-manifest.9bf739ab5369cd6dec82016a0d49b795.js": "/subbots-website/precache-manifest.9bf739ab5369cd6dec82016a0d49b795.js",
     "service-worker.js": "/subbots-website/service-worker.js",
-    "static/css/main.0c975af7.chunk.css.map": "/subbots-website/static/css/main.0c975af7.chunk.css.map"
+    "static/css/main.57e4cede.chunk.css.map": "/subbots-website/static/css/main.57e4cede.chunk.css.map"
   }
 }
