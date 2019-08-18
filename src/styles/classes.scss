@@ -1,6 +1,7 @@
 @import 'variables';
 
 .PrimaryButton{
+  font-size: 1.2vw;
   border-color: $accent-color !important;
   background-color: $accent-color !important;
   &:hover{
@@ -18,6 +19,7 @@
 }
 
 .PrimaryOutlineButton{
+    font-size: 1.2vw;
     color: $accent-color !important;
     border-color: $accent-color !important;
     &:hover{
@@ -31,15 +33,8 @@
     }
 }
 
-.HeaderSeperator{
-  width: 100%;
-  height: 10vh;
-  opacity: 0.3;
-  background-color: $primary-color;
-  @include MarginTopBottom(30px);
-}
-
 .SecondaryButton{
+    font-size: 1.2vw;
     border-color: $primary-color !important;
     color: $primary-text-color !important;
     background-color: $primary-color !important;
@@ -53,18 +48,33 @@
     }
 }
 
-.SeperatorTop {
-  height: 6px;
-  margin-top: 50px;
-  background-color: $secondary-color;
-}
-
-.SeperatorBottom {
-  height: 8px;
-  margin-bottom: 100px;
-  background-color: $secondary-color;
+.HeaderSeperator{
+  width: 100%;
+  height: 7vh;
+  opacity: 0.3;
+  background-color: $primary-color;
+  @include MarginTopBottom(30px);
 }
 
 .HeaderBuffer {
   height: 60px;
+}
+
+.ContentSeperatorTop {
+  height: 0.5vw;
+  margin-top: 5vh;
+  background-color: $secondary-color;
+}
+
+.ContentSeperatorBottom {
+  height: 0.5vw;
+  margin-bottom: 10vh;
+  background-color: $secondary-color;
+}
+
+.ContentContainer {
+  width: 100%;
+  background-color: whitesmoke;
+  padding-bottom: 8vh;
+  @include PaddingLeftRight(1.4vw);
 }

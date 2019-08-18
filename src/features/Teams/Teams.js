@@ -24,13 +24,13 @@ export default class Teams extends React.Component {
                         </Col>
                         <Col sm={2}></Col>
                     </Row>
-                <div className="SeperatorTop"></div>
-                <div className="TeamBodyContainer">
+                <div className="ContentSeperatorTop"></div>
+                <div className="ContentContainer">
                     <TeamBody team={'Software'} />
                     <TeamBody team={'Electrical'} />
                     <TeamBody team={'Mechanical'} />
                 </div>
-                <div className="SeperatorBottom"></div>
+                <div className="ContentSeperatorBottom"></div>
             </ViewContainer>
         )
     }

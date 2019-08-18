@@ -24,7 +24,7 @@ export class TeamCard extends React.Component {
                         {this.props.team}
                     </Card.Header>
                     <Card.Body>
-                        <FontAwesomeIcon className="TeamIcon" icon={this.icons[this.props.team]} size="6x" />
+                        <FontAwesomeIcon className="TeamIconLarge" icon={this.icons[this.props.team]} size="6x" />
                         <Card.Text className="TeamText">
                             {content.teams[this.props.team.toLowerCase()].blurb}
                    </Card.Text>
@@ -58,7 +58,7 @@ export class TeamBody extends React.Component {
                 <div id={this.props.team} className="HeaderBuffer"></div>
                 <Col>
                     <h3 className="TeamBodyHeader my-auto">
-                        <FontAwesomeIcon className="TeamIcon" icon={this.icons[this.props.team]} size="lg" />
+                        <FontAwesomeIcon className="TeamIconSmall" icon={this.icons[this.props.team]} size="lg" />
                         {this.names[this.props.team]}
                     </h3>
                     <hr />

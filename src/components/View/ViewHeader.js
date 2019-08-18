@@ -1,7 +1,7 @@
 import React from 'react';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
-import Image from 'react-bootstrap/Image';
+import Image from '../Image/Image.js';
 import './styles.scss';
 
 export default class ViewHeader extends React.Component{
@@ -17,9 +17,7 @@ export default class ViewHeader extends React.Component{
             <Row>
             <Col sm={1}></Col>
             <Col sm={10}>
-                <div className="ViewHeaderImageContainer">
-                    <Image className="ViewHeaderImage" src={process.env.PUBLIC_URL + "/images/" + this.props.image} alt="Error!"/>
-                </div>
+                <Image src={this.props.image}/>
             </Col>
             <Col sm={1}></Col>
             <div className="ViewHeaderTitle">{this.props.title}</div>

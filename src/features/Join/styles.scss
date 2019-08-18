@@ -5,32 +5,28 @@ $form-border-radius: 5px;
 $form-opacity: 0.6;
 
 .JoinForm{
-    margin: 25px;
+    margin: 2vw;
     background-color:rgba($form-color, 0) !important;
 }
 
 .JoinFormContainer{
-    border-radius: $form-border-radius !important;
-    background-color:rgba($form-color, $form-opacity) !important;
+    margin-top: 2vh;
+    margin-bottom: 25vh;
 }
 
-.JoinFormBorder{
-    // @include MarginTopBottom(20px);
-    // padding: 3px;
-    // border: 3px solid $form-color;
-    // border-radius: $form-border-radius;
-    // border-color:rgba($form-color, $form-opacity) !important;
+.JoinFormCard{
+    border-radius: $form-border-radius !important;
+    background-color:rgba($form-color, $form-opacity) !important;
 }
 
 .JoinFormHeader{
     border-top-left-radius: $form-border-radius !important;
     border-top-right-radius: $form-border-radius !important;
-    font-size: 25px;
     font-weight: 500;
     background-color: $accent-color !important;
-    @include SecondarySubTitle(20px);
+    @include SecondarySubTitle(1.5vw);
 }
 
 .ApplyButtonText{
-    @include SecondarySubTitle(15px);
+    @include SecondarySubTitle(1.1vw);
 }

@@ -1,16 +1,24 @@
 @import "../../styles/index.scss";
 
 .TeamText{
-  color: $secondary-text-color;
+    font-size: 1.2vw;
+    color: $secondary-text-color;
 }
 
-.TeamIcon{
-    @include PaddingTopBottom(10px);
+.TeamIconLarge{
+    font-size: 8vw;
+    @include PaddingTopBottom(1vw);
+    color: $primary-color;
+}
+
+.TeamIconSmall{
+    font-size: 3.5vw;
+    @include PaddingTopBottom(0.5vw);
     color: $primary-color;
 }
 
 .TeamCardHeader{
-    font-size: 30px;
+    font-size: 2vw;
     font-family: $primary-text-font;
     background-color: $accent-color !important;
     color: $secondary-text-color;
@@ -21,7 +29,7 @@
     height: 25vw;
     text-align: center;
     background-color: $accent-color !important;
-    margin: 20px;
+    margin: 1vw;
     transition: transform $transition-time;
 }
 
@@ -35,24 +43,20 @@
     padding-bottom: 80px;
 }
 
-
 .TeamBodyHeader {
-    font-size: 35px;
-    // padding-top: 25px;
-    padding-bottom: 15px;
-    @include PaddingLeftRight(10px);
+    font-size: 2.3vw;
+    padding-bottom: 1vw;
     font-family: $primary-text-font;
 }
 
 .TeamBodyText {
-    @include MarginLeftRight(15px);
+    font-size: $content-font-size;
     font-family: $secondary-text-font;
 }
 
 .TeamBodyFrame {
-    height: 50px;
+    height: 45vh;
     border: 2px solid $primary-color;
     border-radius: 5px;
-    padding: 130px;
-    margin: 20px;
+    @include MarginTopBottom(2vh);
 }

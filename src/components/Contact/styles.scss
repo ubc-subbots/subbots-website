@@ -2,21 +2,19 @@
 
 .ContactButton{
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 1vw;
+    right: 1vw;
     z-index: 1000;
-    min-width: 100px;
-    min-height: 40px;
     text-align: left !important;
     @extend .PrimaryButton;
 }
 
 .ContactText{
     font-weight: 600;
-    @include SecondarySubTitle(15px);
+    @include SecondarySubTitle(1.1vw);
 }
 
 .MailIcon{
-    margin-right: 10px;
+    margin-right: 0.6vw;
     color: $secondary-text-color;
 }

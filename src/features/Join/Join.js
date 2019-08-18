@@ -84,8 +84,8 @@ export default class Join extends React.Component{
                 <Row>
                     <Col sm={3}></Col>
                     <Col sm={6}>
-                        <div className="JoinFormBorder">
-                        <Card className="JoinFormContainer">
+                        <div className="JoinFormContainer">
+                        <Card className="JoinFormCard">
                         <Card.Header className="JoinFormHeader">
                             UBC Subbots 2019-2020 Application
                         </Card.Header>

@@ -2,23 +2,18 @@
 
 .FooterContainer{
     text-align: center;
-    @include PaddingTopBottom(20px);
+    @include PaddingTopBottom(3.6vh);
     background-color: $primary-color;
     border-top: 2px solid $primary-text-color;
 }
 
-.FooterHeader{
-    @include PrimarySubTitle(15px);
-    margin: 15px;
-}
-
 .Icon{
     color: $primary-text-color;
-    @include MarginLeftRight(20px);
+    @include MarginLeftRight(1.5vw);
 }
 
 .CopyrightText{
     margin: auto;
-    font-size: 15px;
+    font-size: 1vw;
     color: $primary-text-color;
 }
