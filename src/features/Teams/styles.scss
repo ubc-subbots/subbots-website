@@ -45,18 +45,69 @@
 
 .TeamBodyHeader {
     font-size: 2.3vw;
-    padding-bottom: 1vw;
     font-family: $primary-text-font;
 }
 
 .TeamBodyText {
+    margin-top: 2vh;
     font-size: $content-font-size;
     font-family: $secondary-text-font;
 }
 
-.TeamBodyFrame {
+.TeamBodyItemFrame {
     height: 45vh;
     border: 2px solid $primary-color;
     border-radius: 5px;
     @include MarginTopBottom(2vh);
+}
+
+.TeamBodyItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.TeamBodyItemContainer {
+    height: 100%;
+    width: 100%;
+}
+
+.TeamBodyItem {
+    background-color: $secondary-color;
+    border-radius:5px;
+    border: 1px solid rgb(173, 173, 173);
+    width: 96%;
+    padding: 1.5vh;
+    display: flex;
+}
+
+.TeamBodyItemIconContainer {
+    height: 8.5vh;
+    width: 8.5vh;
+}
+
+.TeamBodyItemIcon {
+    border: 2px solid $primary-color;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.TeamBodyItemTextPrimary {
+    font-size: 1.5vw;
+    font-family: $primary-text-font;
+    margin-left: 1vw;
+    color: $secondary-text-color;
+    line-height: 8.5vh
+}
+
+.TeamBodyItemTextSecondary {
+    font-size: 1.1vw;
+    font-family: $primary-text-font;
+    margin-left: 1vw;
+    color: rgb(73, 73, 73);
+    line-height: 8.5vh
 }
