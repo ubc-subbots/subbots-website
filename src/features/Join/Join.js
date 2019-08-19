@@ -148,7 +148,7 @@ export default class Join extends React.Component{
 
                                 <div className="reason-wrapper">
                                     <label for="reason">Reason For Application*</label>
-                                    <textarea rows="3" name="Reason For Application" id="reason" placeholder="Why do you want to join?" required=""></textarea>
+                                    <textarea rows="3" name="Reason For Application" id="reason" placeholder="Tell us why you want to join" required=""></textarea>
     
                                 </div>
                                 <br style={{clear: "both"}} />                            
