@@ -1,3 +1,4 @@
+
 export default 
 {
     "home": {
@@ -136,5 +137,13 @@ export default
                 "link": "https://apsc.ubc.ca/"
             },
         ]
+    },
+
+    //TODO: Add real information
+    "emails": {
+        "SUBBOTS": "info.subbots@gmail.com",
+        "ELECTRICAL": "",
+        "MECHANICAL": "",
+        "SOFTWARE": ""
     }
 }

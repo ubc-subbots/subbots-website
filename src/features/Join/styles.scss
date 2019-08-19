@@ -5,8 +5,65 @@ $form-border-radius: 5px;
 $form-opacity: 0.6;
 
 .JoinForm{
-    margin: 2vw;
+    padding: 22px;
     background-color:rgba($form-color, 0) !important;
+    label {
+        font-size: 15px;
+    }
+    input, label {
+        display: block;
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .first-name-wrapper {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+    }
+    .last-name-wrapper {
+        float: left;
+        width: 49%;
+    }
+
+    .year-wrapper {
+        float: left;
+        width: 49%;
+        margin-right: 2%;
+
+    }
+
+    .team-wrapper {
+        float: left;
+        width: 49%;
+    }
+
+    .reason-wrapper {
+        float: left;
+        width: 100%;
+        textarea {
+            width: 100%;
+        }
+    }
+    .email-wrapper {
+        float: left;
+        width: 100%;
+    }
+    .submit {
+        display: inline-block;
+        margin-top: 10px;
+        width: initial;
+        // width: 70px;
+        height: 30px;
+        background-color: $accent-color;
+        -webkit-appearance: none;
+        border: 0;
+        border-radius: 3px;
+        font-size: 15   px; 
+    }
 }
 
 .JoinFormContainer{
