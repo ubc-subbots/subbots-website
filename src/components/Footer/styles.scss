@@ -2,18 +2,21 @@
 
 .FooterContainer{
     text-align: center;
-    @include PaddingTopBottom(3.6vh);
+    @include PaddingTopBottom(3vh);
     background-color: $primary-color;
     border-top: 2px solid $primary-text-color;
 }
 
-.Icon{
+.SocialIcon{
     color: $primary-text-color;
     @include MarginLeftRight(1.5vw);
+    &:hover{
+        color: $primary-text-hover-color;
+    }
 }
 
 .CopyrightText{
     margin: auto;
-    font-size: 1vw;
+    font-size: 0.8vw;
     color: $primary-text-color;
 }

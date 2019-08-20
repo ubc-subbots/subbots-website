@@ -15,12 +15,14 @@ export default class ViewHeader extends React.Component{
                 <Col sm={1}></Col>
             </Row>
             <Row>
-            <Col sm={1}></Col>
-            <Col sm={10}>
-                <Image src={this.props.image}/>
-            </Col>
-            <Col sm={1}></Col>
-            <div className="ViewHeaderTitle">{this.props.title}</div>
+                <Col sm={1}></Col>
+                <Col sm={10}>
+                    <div className="ViewImageContainer">
+                        <Image src={this.props.image}/>
+                    </div>
+                </Col>
+                <Col sm={1}></Col>
+                <div className="ViewHeaderTitle">{this.props.title}</div>
             </Row>
             <Row>
                 <Col sm={1}></Col>

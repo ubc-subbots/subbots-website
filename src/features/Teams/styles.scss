@@ -1,32 +1,32 @@
 @import "../../styles/index.scss";
 
 .TeamText{
-    font-size: 1.2vw;
+    font-size: 1.1vw;
     color: $secondary-text-color;
 }
 
 .TeamIconLarge{
-    font-size: 8vw;
+    font-size: 6vw;
     @include PaddingTopBottom(1vw);
     color: $primary-color;
 }
 
 .TeamIconSmall{
-    font-size: 3.5vw;
+    font-size: 3vw;
     @include PaddingTopBottom(0.5vw);
     color: $primary-color;
 }
 
 .TeamCardHeader{
-    font-size: 2vw;
+    font-size: 1.8vw;
     font-family: $primary-text-font;
     background-color: $accent-color !important;
     color: $secondary-text-color;
 }
 
 .TeamCard{
-    width: 17vw;
-    height: 25vw;
+    width: 16vw;
+    height: 21vw;
     text-align: center;
     background-color: $accent-color !important;
     margin: 1vw;
@@ -37,14 +37,8 @@
     transform: scale(1.15);
 }
 
-.TeamBodyContainer {
-    width: 100%;
-    background-color: whitesmoke;
-    padding-bottom: 80px;
-}
-
 .TeamBodyHeader {
-    font-size: 2.3vw;
+    font-size: 2vw;
     font-family: $primary-text-font;
 }
 
@@ -55,7 +49,7 @@
 }
 
 .TeamBodyItemFrame {
-    height: 45vh;
+    height: 35vh;
     border: 2px solid $primary-color;
     border-radius: 5px;
     @include MarginTopBottom(2vh);
@@ -77,16 +71,18 @@
 
 .TeamBodyItem {
     background-color: $secondary-color;
-    border-radius:5px;
+    border-radius: 5px;
     border: 1px solid rgb(173, 173, 173);
     width: 96%;
     padding: 1.5vh;
     display: flex;
 }
 
+$team-body-item-icon-height: 6vh;
+
 .TeamBodyItemIconContainer {
-    height: 8.5vh;
-    width: 8.5vh;
+    height: $team-body-item-icon-height;
+    width: $team-body-item-icon-height;
 }
 
 .TeamBodyItemIcon {
@@ -97,17 +93,17 @@
 }
 
 .TeamBodyItemTextPrimary {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: $secondary-text-color;
-    line-height: 8.5vh
+    line-height: $team-body-item-icon-height;
 }
 
 .TeamBodyItemTextSecondary {
-    font-size: 1.1vw;
+    font-size: 1vw;
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: rgb(73, 73, 73);
-    line-height: 8.5vh
+    line-height: $team-body-item-icon-height;
 }

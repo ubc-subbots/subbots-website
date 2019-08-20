@@ -1,10 +1,14 @@
 @import "../../styles/index.scss";
 
+.PitchImageContainer{
+    height: 45vh;
+}
+
 .PitchHeader{
     text-align: left;
     color: $accent-color;
     font-size: 2.5vw;
-    margin-top: 4vh;
+    margin-top: 3vh;
     margin-left: 1vw;
     font-weight: 300;
     width: 100%;
@@ -18,15 +22,18 @@
     margin-left: 1vw;
 }
 
+.GoalImageContainer{
+    height: 48vh;
+}
+
 .GoalHeader{
     font-size: 3vw;
-    padding-top:  5vh;
-    padding-bottom: 2vh;
+    padding-top:  4vh;
     font-family: $primary-text-font;
 }
 
 .GoalBody{
-    @include MarginTopBottom(4vh);
+    @include MarginTopBottom(2vh);
     color: $secondary-text-color;
     font-size: $content-font-size;
     font-weight: 400;

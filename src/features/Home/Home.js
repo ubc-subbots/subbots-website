@@ -16,7 +16,9 @@ export default class Home extends React.Component{
                 <Row>
                     <Col sm={1}></Col>
                     <Col sm={4}>
-                        <Image src={content.home.pitch.image}/>
+                        <div className="PitchImageContainer">
+                            <Image src={content.home.pitch.image}/>
+                        </div>
                     </Col>
                     <Col>
                         <div className="PitchHeader">{content.home.pitch.header}</div>
@@ -35,7 +37,9 @@ export default class Home extends React.Component{
                                 <div className="GoalBody">{content.home.goal.body}</div>
                             </Col>
                             <Col sm={6}>
-                                <Image src={content.home.goal.image}/>
+                                <div className="GoalImageContainer">
+                                    <Image src={content.home.goal.image}/>
+                                </div>
                             </Col>
                         </Row>
                     </div>

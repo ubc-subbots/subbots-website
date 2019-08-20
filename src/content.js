@@ -69,7 +69,7 @@ export default
             cupidatat non proident, sunt in culpa qui officia deserunt mollit\
             anim id est laborum.",
         "software": {
-            "blurb":" (Software Blurb) Lorem ipsum dolor sit amet, consectetur.",
+            "blurb":" (Software Blurb) Lorem ipsum dolor sit amet, consectetur Lorem Ipsum.",
             "body": " (Software Body) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit \
@@ -77,7 +77,7 @@ export default
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         },
         "electrical": {
-            "blurb": "(Electrical Blurb) Lorem ipsum dolor sit amet, consectetur.",
+            "blurb": "(Electrical Blurb) Lorem ipsum dolor sit amet, consectetur. Lorem Impsum",
             "body": " (Electrical Body) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor \
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit \

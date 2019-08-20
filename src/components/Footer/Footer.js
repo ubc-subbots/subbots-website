@@ -24,13 +24,13 @@ export default class Footer extends React.Component{
                             </Col>
                             <Col>
                                 <a href="https://www.facebook.com/ubc.subbots/">
-                                    <FontAwesomeIcon className="Icon" icon={faFacebookF} size="2x"/>
+                                    <FontAwesomeIcon className="SocialIcon" icon={faFacebookF} size="2x"/>
                                 </a>
                                 <a href="https://github.com/ubc-subbots">
-                                    <FontAwesomeIcon className="Icon" icon={faGithub} size="2x"/>
+                                    <FontAwesomeIcon className="SocialIcon" icon={faGithub} size="2x"/>
                                 </a>
                                 <a href="https://ca.linkedin.com/company/ubc-subbots">
-                                    <FontAwesomeIcon className="Icon" icon={faLinkedin} size="2x"/>
+                                    <FontAwesomeIcon className="SocialIcon" icon={faLinkedin} size="2x"/>
                                 </a>
                             </Col>
                             <Col sm={3}></Col>
