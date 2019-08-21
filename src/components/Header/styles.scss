@@ -42,8 +42,7 @@ $subtitle-size: 0.9vw;
 }
 
 .NavLink{
-    margin-left: 0.8vw;
-    margin-right: 0.2vw;
+    @include PaddingLeftRight(1vw);
     text-decoration: none !important;
     @include PrimarySubTitle($subtitle-size);
     &:hover{

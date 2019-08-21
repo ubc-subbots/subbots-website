@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import {
     Header,
     Footer
@@ -13,12 +13,12 @@ export default function App() {
   
   return (
     <div className="App">
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter basename="/">
             <Header/>
             <Router/>
             <ContactButton/>
             <Footer/>
-        </BrowserRouter>
+        </HashRouter>
     </div>
   );
 }

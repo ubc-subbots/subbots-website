@@ -45,21 +45,11 @@ export default class Header extends React.Component{
               </Navbar.Brand>
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                  <Nav.Link className="NavContainer">
-                    <Link to='/' className="NavLink">Home</Link>
-                  </Nav.Link>
-                  <Nav.Link className="NavContainer">
-                    <Link to='/projects'className="NavLink">Projects</Link>
-                  </Nav.Link>
-                  <Nav.Link className="NavContainer">
-                    <Link to='/teams'className="NavLink">The Teams</Link>
-                  </Nav.Link>
-                  <Nav.Link className="NavContainer">
-                    <Link to='/join'className="NavLink">Join Us</Link>
-                  </Nav.Link>
-                  <Nav.Link className="NavContainer">
-                    <Link to='/sponsors'className="NavLink">Sponsorship</Link>
-                  </Nav.Link>
+                  <Link to='/' className="NavLink">Home</Link>
+                  <Link to='/projects'className="NavLink">Projects</Link>
+                  <Link to='/teams'className="NavLink">The Teams</Link>
+                  <Link to='/join'className="NavLink">Join Us</Link>
+                  <Link to='/sponsors'className="NavLink">Sponsorship</Link>
                 </Nav>
                 <Button className="SignInButton" variant="outline-warning"
                         onClick={() => this.setState({isSignInOpened: true})}>
