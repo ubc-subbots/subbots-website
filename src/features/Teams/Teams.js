@@ -17,18 +17,18 @@ export default class Teams extends React.Component {
                         <Col sm={2}></Col>
                         <Col sm={8}>
                             <Row>
-                                <TeamCard team={'Software'} />
-                                <TeamCard team={'Electrical'} />
-                                <TeamCard team={'Mechanical'} />
+                                <TeamCard team={'software'} />
+                                <TeamCard team={'electrical'} />
+                                <TeamCard team={'mechanical'} />
                             </Row>
                         </Col>
                         <Col sm={2}></Col>
                     </Row>
                 <div className="ContentSeperatorTop"></div>
                 <div className="ContentContainer">
-                    <TeamBody team={'Software'} />
-                    <TeamBody team={'Electrical'} />
-                    <TeamBody team={'Mechanical'} />
+                    <TeamBody team={'software'} />
+                    <TeamBody team={'electrical'} />
+                    <TeamBody team={'mechanical'} />
                 </div>
                 <div className="ContentSeperatorBottom"></div>
             </ViewContainer>

@@ -8,6 +8,7 @@
 }
 
 .SocialIcon{
+    font-size: 2.1vw;
     color: $primary-text-color;
     @include MarginLeftRight(1.5vw);
     &:hover{

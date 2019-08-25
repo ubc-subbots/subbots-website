@@ -18,8 +18,24 @@ code {
     monospace;
 }
 
-a:focus {
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    text-decoration: none;
     outline: none;
+    color: inherit;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+  &:active {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
 }
 
 button::-moz-focus-inner {
@@ -39,4 +55,8 @@ hr {
 
 .form-control:invalid {
   background-image: none !important;
+}
+
+.row {
+  margin-right: 0px !important;
 }

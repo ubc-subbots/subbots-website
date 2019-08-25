@@ -46,7 +46,7 @@ export default class Header extends React.Component{
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                   <Link to='/' className="NavLink">Home</Link>
-                  <Link to='/projects'className="NavLink">Projects</Link>
+                  {/* <Link to='/projects'className="NavLink">Projects</Link> */}
                   <Link to='/teams'className="NavLink">The Teams</Link>
                   <Link to='/join'className="NavLink">Join Us</Link>
                   <Link to='/sponsors'className="NavLink">Sponsorship</Link>

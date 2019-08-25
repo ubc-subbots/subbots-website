@@ -75,6 +75,24 @@ export default
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit \
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat \
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "items": {
+                "images": {
+                    "do": ["tensorflow.png", "ros.png", "opencv.png"],
+                    "learn": ["tensorflow.png", "ros.png", "opencv.png"],
+                },
+                "links": {
+                    "do": ["solidworks.png", "ros.png", "opencv.png"],
+                    "learn": ["https://tensorflow.org", "https://ros.org", "https://opencv.org"],
+                },
+                "names": {
+                    "do": ["TensorFlow", "ROS", "OpenCV"],
+                    "learn": ["TensorFlow", "ROS", "OpenCV"]
+                },
+                "descriptions": {
+                    "do": ["Data processing and machine learning library", "Robotics operating framework", "Computer vision and image processing library"],
+                    "learn": ["Data processing and machine learning library", "Robotics operating system framework", "Computer vision and image processing library"]
+                }
+            }
         },
         "electrical": {
             "blurb": "(Electrical Blurb) Lorem ipsum dolor sit amet, consectetur. Lorem Impsum",
@@ -82,7 +100,25 @@ export default
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation \
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit \
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat \
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",   
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "items": {
+                "images": {
+                    "do": ["matlab.png", "ros.png", "opencv.png"],
+                    "learn": ["matlab.png", "ros.png", "opencv.png"],
+                },
+                "links": {
+                    "do": ["solidworks.png", "ros.png", "opencv.png"],
+                    "learn": ["https://matlab.com", "https://ros.com", "https://opencv.org"],
+                },
+                "names": {
+                    "do": ["Matlab", "ROS", "OpenCV"],
+                    "learn": ["Matlab", "ROS", "OpenCV"]
+                },
+                "descriptions": {
+                    "do": ["Computing and modelling environment", "Robotics operating framework", "Computer vision and image processing library"],
+                    "learn": ["Computing and modelling environment", "Robotics operating system framework", "Computer vision and image processing library"]
+                }
+            }   
         },
         "mechanical": {
             "blurb":"(Mechanical Blurb) Lorem ipsum dolor sit amet, consectetur.",
@@ -91,6 +127,24 @@ export default
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit \
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat \
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "items": {
+                "images": {
+                    "do": ["solidworks.png", "ros.png", "opencv.png"],
+                    "learn": ["solidworks.png", "ros.png", "opencv.png"],
+                },
+                "links": {
+                    "do": ["solidworks.png", "ros.png", "opencv.png"],
+                    "learn": ["https://solidworks.com", "https://ros.com", "https://opencv.com"],
+                },
+                "names": {
+                    "do": ["SOLIDWORKS", "ROS", "OpenCV"],
+                    "learn": ["SOLIDWORKS", "ROS", "OpenCV"]
+                },
+                "descriptions": {
+                    "do": ["CAD Design software", "Robotics operating framework", "Computer vision and image processing library"],
+                    "learn": ["CAD Design software", "Robotics operating system framework", "Computer vision and image processing library"]
+                }
+            }
         },
     },
 

@@ -98,6 +98,9 @@ $team-body-item-icon-height: 6vh;
     margin-left: 1vw;
     color: $secondary-text-color;
     line-height: $team-body-item-icon-height;
+    &:hover {
+        color: $secondary-text-hover-color;
+    }
 }
 
 .TeamBodyItemTextSecondary {

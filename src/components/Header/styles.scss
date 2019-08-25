@@ -1,6 +1,6 @@
 @import "../../styles/index.scss";
 
-$subtitle-size: 0.9vw;
+$subtitle-size: 1vw;
 
 .HeaderContainer{
     background-color: transparent;
@@ -47,6 +47,12 @@ $subtitle-size: 0.9vw;
     @include PrimarySubTitle($subtitle-size);
     &:hover{
         color: $primary-text-hover-color;
+    }
+    &:active{
+        color: $primary-text-color;
+    }
+    &:focus{
+        color: $primary-text-color;
     }
 }
 

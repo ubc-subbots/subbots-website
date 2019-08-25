@@ -8,9 +8,7 @@ import { ContactButton } from '../components/Contact';
 import Router from './Router';
 import '../styles/app.scss';
 
-export default function App() {
-  console.log(process.env.PUBLIC_URL);
-  
+export default function App() {  
   return (
     <div className="App">
         <HashRouter basename="/">
