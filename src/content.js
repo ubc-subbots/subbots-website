@@ -1,3 +1,5 @@
+const constants = require('./js/constants');
+
 export default 
 {
     "home": {
@@ -190,5 +192,12 @@ export default
                 "link": "https://apsc.ubc.ca/"
             },
         ]
+    },
+    //TODO: Add real information
+    "emails": {
+        "Subbots": "info.subbots@gmail.com",
+        "Electrical": "info.subbots@gmail.com",
+        "Mechanical": "",
+        "Software": ""
     }
 }

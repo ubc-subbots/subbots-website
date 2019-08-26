@@ -6,7 +6,7 @@ import './styles.scss';
 
 export default function ViewContainer(props){
     return(
-        <Button className="ContactButton" variant="warning">
+        <Button className="ContactButton" variant="warning" onClick={props.onClick}>
             <div className="ContactText">
                 <FontAwesomeIcon className="MailIcon" icon={faEnvelope} size='lg'/>
                 Contact Us

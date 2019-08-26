@@ -4,7 +4,7 @@ import {
     Header,
     Footer
 } from '../components'
-import { ContactButton } from '../components/Contact';
+import ContactButtonView from '../components/Contact/index';
 import Router from './Router';
 import '../styles/app.scss';
 
@@ -14,7 +14,7 @@ export default function App() {
         <HashRouter basename="/">
             <Header/>
             <Router/>
-            <ContactButton/>
+            <ContactButtonView/>
             <Footer/>
         </HashRouter>
     </div>
