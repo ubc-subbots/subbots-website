@@ -50,7 +50,7 @@ export default class ContactForm extends React.Component {
                     <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                            
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Reason for Application</Form.Label>
+                    <Form.Label>Message</Form.Label>
                     <Form.Control onChange={this.onMessageChange.bind(this)} style={{resize:'none'}} as="textarea" rows="6" placeholder="Message" name="Contact Message"/>
                 </Form.Group>
                 <Button className="PrimaryButton" variant="warning" type="submit">
