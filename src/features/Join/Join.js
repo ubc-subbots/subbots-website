@@ -9,7 +9,6 @@ import content from '../../content';
 import constants from '../../js/constants';
 import { ViewHeader, ViewContainer } from '../../components';
 import './styles.scss';
-import { continueStatement } from '@babel/types';
 
 export default class Join extends React.Component{
 
