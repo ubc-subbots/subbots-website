@@ -98,6 +98,9 @@ export default class Join extends React.Component{
                         </Card.Header>
                         <Form noValidate validated={this.state.validated} className="JoinForm" action={`https://formspree.io/${teamLeadEmail}`} method="POST">
                             <input type="hidden" name="_subject" value="Someone has requested to join Subbots"/>
+                            <input type="hidden" name="NOTE" 
+                                value={`THIS IS AN AUTO GENERATED MESSAGE:\n\n You are recieving this email because someone has filled an application to join Subbots from the website. Their details are as followed below:`}
+                            />
                             {
                                 teamLeadEmail !== content.emails.Subbots &&
                                 <input type="hidden" name="_cc" value={content.emails.Subbots} />
