@@ -4,7 +4,7 @@ import {
     Header,
     Footer
 } from '../components'
-import ContactButtonView from '../components/Contact/index';
+import { ContactButtonView } from '../components';
 import Router from './Router';
 import '../styles/app.scss';
 

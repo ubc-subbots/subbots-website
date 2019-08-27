@@ -32,13 +32,17 @@ $subtitle-size: 1vw;
     transition: font-size $transition-time;
 }
 
-.NavBrandContainer:hover a{
-    color: $accent-hover-color !important;
-}
-
-.NavBrandContainer:hover svg{
-    transform: rotate(360deg);
-    color: $accent-hover-color !important;
+.NavBrandContainer{
+    &:hover a{
+        color: $accent-hover-color !important;
+    }
+    &:active a {
+        color: $accent-color !important;
+    }
+    &:hover svg{
+        transform: rotate(360deg);
+        color: $accent-hover-color !important;
+    }
 }
 
 .NavLink{

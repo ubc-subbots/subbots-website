@@ -4,7 +4,6 @@ import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import axios from 'axios';
 import content from '../../content';
 import constants from '../../js/constants';
 import { ViewHeader, ViewContainer } from '../../components';
@@ -38,44 +37,14 @@ export default class Join extends React.Component{
 
     onReasonChange(event){this.setState({reason: event.target.value})}
 
-    // onFormSubmit(event){
-    //     event.preventDefault();
-    //     let form = event.currentTarget;
-    //     if (form.checkValidity() === true){
-    //         let form_body = {
-    //             first_name: this.state.first_name,
-    //             last_name: this.state.last_name,
-    //             email: this.state.email,
-    //             year: this.state.year,
-    //             team: this.state.team,
-    //             reason: this.state.reason
-    //         }
-    //         axios.post('/rest/join', form_body)
-    //         .then( response => {
-    //             console.log(response);
-    //             const signee_res = response.data.signee_email.status;
-    //             const subbot_res = response.data.subbot_email.status;
-
-    //             if (!signee_res && !subbot_res) {
-    //                 alert("ERROR: An unexpected email error has occured. Please try again in a few minutes");
-    //             } else if (!signee_res && subbot_res) {
-    //                 alert("INFO: Subbots has recieved your infomation, but your personal confirmation failed to send");
-    //             } else if (signee_res && !subbot_res) {
-    //                 //Case will never occur due to backend logic
-    //             } else {
-    //                 alert("Success! Your application has been sent");
-    //             }
-    //         })
-    //         .catch( error => {
-    //             console.log(error);
-    //         });
-    //     } else {
-    //         console.log("invalid form");
-            
-    //     }
-    //     this.setState({validated: true});
-            
-    // }
+    onFormSubmit(event){
+        const form = event.currentTarget;
+        if (form.checkValidity() === false){
+            event.preventDefault();
+            event.stopPropagation();
+        } 
+        this.setState({validated: true});     
+    }
 
     render() {
         let teamLeadEmail = content.emails[this.state.team];
@@ -95,7 +64,7 @@ export default class Join extends React.Component{
                         <Card.Header className="JoinFormHeader">
                             UBC Subbots 2019-2020 Application
                         </Card.Header>
-                        <Form noValidate validated={this.state.validated} className="JoinForm" action={`https://formspree.io/${teamLeadEmail}`} method="POST">
+                        <Form noValidate validated={this.state.validated} onSubmit={this.onFormSubmit.bind(this)} className="JoinForm" action={`https://formspree.io/${teamLeadEmail}`} method="POST">
                             <input type="hidden" name="_subject" value="Someone has requested to join Subbots"/>
                             <input type="hidden" name="NOTE" 
                                 value={`THIS IS AN AUTO GENERATED MESSAGE:\n\n You are recieving this email because someone has filled an application to join Subbots from the website. Their details are as followed below:`}

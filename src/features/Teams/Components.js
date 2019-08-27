@@ -70,16 +70,15 @@ export class TeamBody extends React.Component {
                     </h3>
                     <hr />
                     <Row>
-                        {/* <TeamBodyItemList 
+                        <TeamBodyItemList 
                             title={"What We Do"} 
                             images={content.teams[this.props.team].items.images.do} 
                             names={content.teams[this.props.team].items.names.do} 
                             descriptions={content.teams[this.props.team].items.descriptions.do} 
-                        /> */}
+                        />
                         <TeamBodyItemList 
                             title={"What You'll Learn"} 
                             images={content.teams[this.props.team].items.images.learn} 
-                            links={content.teams[this.props.team].items.links.learn}
                             names={content.teams[this.props.team].items.names.learn} 
                             descriptions={content.teams[this.props.team].items.descriptions.learn} 
                         />
@@ -101,19 +100,16 @@ function TeamBodyItemList(props) {
                 <div className="TeamBodyItemContainer">
                     <TeamBodyItem 
                         image={props.images[0]} 
-                        link={props.links[0]} 
                         name={props.names[0]} 
                         description={props.descriptions[0]}
                     />
                     <TeamBodyItem 
                         image={props.images[1]}
-                        link={props.links[1]}  
                         name={props.names[1]} 
                         description={props.descriptions[1]} 
                     />
                     <TeamBodyItem 
                         image={props.images[2]} 
-                        link={props.links[2]} 
                         name={props.names[2]} 
                         description={props.descriptions[2]} 
                     />
@@ -128,12 +124,10 @@ function TeamBodyItem(props) {
         <div className="TeamBodyItemContainer">
             <div className="TeamBodyItem">
                 <div className="TeamBodyItemIconContainer">
-                    <img className="TeamBodyItemIcon" src={process.env.PUBLIC_URL + "/icons/" + props.image} alt="Error!" />
+                    <img className="TeamBodyItemIcon" src={process.env.PUBLIC_URL + "/images/" + props.image} alt="Error!" />
                 </div>
                 <div className="TeamBodyItemTextPrimary">
-                    <a href={props.link}>
-                        {props.name}
-                    </a>
+                    {props.name}
                 </div>
                 <div className="TeamBodyItemTextSecondary">
                     {props.description}
