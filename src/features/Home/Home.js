@@ -2,6 +2,7 @@ import React from 'react';
 import content from '../../content';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
+import Carousel from 'react-bootstrap/Carousel';
 import { ViewHeader, ViewContainer, Image } from '../../components';
 import './styles.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -44,6 +45,44 @@ export default class Home extends React.Component{
                         </Row>
                     </div>
                 <div className="ContentSeperatorBottom"/>
+                <div className="ProjectsContainer">
+                    <h3 className="ProjectsHeader">
+                        {content.home.projects.header}
+                    </h3>
+                    <div className="ProjectsBody">
+                        {content.home.projects.body}
+                    </div>
+                    <Row>
+                        <Col sm={6}>
+                            <Carousel className="ProjectsCarousel">
+                                {content.home.projects.carousels.first.images.map((item, index) => (                                    
+                                    <Carousel.Item key={index}>
+                                        <div className="ProjectsImageContainer">
+                                            <Image src={item} folder="robots" />
+                                        </div>
+                                    </Carousel.Item>
+                                ))}
+                            </Carousel>
+                            <h4 className="ProjectsImageCaption">
+                                {content.home.projects.carousels.first.caption}
+                            </h4>
+                        </Col>
+                        <Col sm={6}>
+                            <Carousel className="ProjectsCarousel">
+                                {content.home.projects.carousels.second.images.map((item, index) => (                                    
+                                    <Carousel.Item key={index}>
+                                        <div className="ProjectsImageContainer">
+                                            <Image src={item} folder="robots" />
+                                        </div>
+                                    </Carousel.Item>
+                                ))}
+                            </Carousel>
+                            <h4 className="ProjectsImageCaption">
+                                {content.home.projects.carousels.second.caption}
+                            </h4>
+                        </Col>
+                    </Row>
+                </div>
             </ViewContainer>
         )
     }

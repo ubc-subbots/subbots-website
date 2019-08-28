@@ -39,3 +39,38 @@
     font-weight: 400;
     display: block;
 }
+
+.ProjectsContainer{
+    margin-bottom: 10vh
+}
+
+.ProjectsCarousel{
+    margin: auto;
+    height: 68vh;
+    width: 100vh;
+}
+
+.ProjectsImageContainer{
+    height: 64vh;
+    width: 100vh;
+}
+
+.ProjectsImageCaption{
+    color: $accent-color;
+    text-align: center;
+}
+
+.ProjectsHeader{
+    margin-top: -3vh;
+    text-align: center;
+    font-size: 5vw;
+    color: $accent-color;
+    font-weight: 600px;
+    font-family: $primary-text-font;
+}
+
+.ProjectsBody{
+    margin: 5vh;
+    color: $primary-text-color;
+}
+

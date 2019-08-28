@@ -50,6 +50,7 @@
 
 .TeamBodyItemFrame {
     height: 35vh;
+    width: 45vw;
     border: 2px solid $primary-color;
     border-radius: 5px;
     @include MarginTopBottom(2vh);
@@ -60,11 +61,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.TeamBodyItemContainer {
     height: 100%;
     width: 100%;
 }
