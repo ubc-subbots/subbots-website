@@ -42,22 +42,27 @@ export default
                 environment to tackle unique design challenges. The teams goal is to facilitate \
                 learning in all aspects of AUV design and encourage good engineering practices that \
                 can be passed onto future generations of team members. "
-        } 
+        } ,
+        "projects":{
+            "header": "The Robots",
+            "body": "Since becoming a team in 2017, Subbots has had the chance to work on two robots.\
+             Our first robot for the 2017-2018 year was a huge learning curve for the team, but it \
+             successfully competed at RoboSub which taught the team a lot about what goes into making \
+             an AUV. We are currently on a two year design cycle for our second robot but we are \
+             building off of our original design and on track to compete in the 2020 RoboSub competition. \
+             More information about the robots can be found below!",
+             "carousels": {
+                 "first": {
+                    "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
+                    "caption": "2017-2018"
+                 },
+                 "second": {
+                     "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
+                     "caption": "2018-2019"
+                 }
+             }
+        }
     }, 
-
-    "projects": {
-        "image": "mechanical.jpg",
-        "title": "See What We Make",
-        "blurb": " (Projects Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
-            sed do eiusmod tempor incididunt ut labore et dolore magna\
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation\
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-            Duis aute irure dolor in reprehenderit in voluptate velit esse\
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit\
-            anim id est laborum."
-    },
-
     "teams": {
         "image": "electrical.jpg",
         "title": "See What Our Members Do",
@@ -147,20 +152,20 @@ export default
           Our recruitment process consists of an application form that is reviewed by our \
           senior members and a potential interview if we feel you’d be a good fit for the \
           team. If you have a passion for subsea and robotic design feel free to fill out \
-          the application below!         ",
+          the application below! ",
     },
     
     "sponsors": {
         "image": "electrical.jpg",
         "title": "See Who Makes Us Possible",
-        "blurb": " (Sponsors Blurb) Lorem ipsum dolor sit amet, consectetur adipiscing elit,\
-            sed do eiusmod tempor incididunt ut labore et dolore magna\
-            aliqua. Ut enim ad minim veniam, quis nostrud exercitation\
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.\
-            Duis aute irure dolor in reprehenderit in voluptate velit esse\
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat\
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit\
-            anim id est laborum.",
+        "blurb": " To make our designs a reality Subbots relies on the support\
+            of our many sponsors. Through in-kind and monetary contributions\
+            our members are able to develop the skills necessary to become\
+            engineering professionals. They also gain experience working\
+            with our sponsor’s wonderful products, allowing them to more\
+            effectively design with similar components in the future. We are\
+             always open to new partners, and if you would like to sponsor our\
+            team please reach out to us for our sponsorship package.", 
         "sponsor_list": [
             {
                 "image": "ubc_walter_gage.png",
@@ -183,7 +188,7 @@ export default
     "emails": {
         "Subbots": "info.subbots@gmail.com",
         "Electrical": "info.subbots@gmail.com",
-        "Mechanical": "",
+        "Mechanical": "logan.fillo@gmail.com",
         "Software": ""
     }
 }

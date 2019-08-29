@@ -54,7 +54,7 @@ export default class ContactForm extends React.Component {
                     <Form.Control onChange={this.onMessageChange.bind(this)} style={{resize:'none'}} as="textarea" rows="6" placeholder="Message" name="Contact Message"/>
                 </Form.Group>
                 <Button className="PrimaryButton" variant="warning" type="submit">
-                    <div className="ApplyButtonText" >Apply</div>
+                    <div className="ApplyButtonText" >Submit</div>
                 </Button>
             </Form>
         );
