@@ -13,7 +13,7 @@ export default class Home extends React.Component{
     render() {
         return (
             <ViewContainer>
-                <img className="logo" src={process.env.PUBLIC_URL + "/logo/vector_images/RGB(for_screen)/SVG/subbots-logo-rgb-svg-black-large.svg"}/>
+                <img className="logo" src={process.env.PUBLIC_URL + "/logo/vector_images/RGB(for_screen)/SVG/subbots-logo-rgb-yellow-large.svg"}/>
                 <ViewHeader title={content.home.title} blurb={content.home.blurb} disableImage={true}/>
                 <Row>
                     <Col sm={1}></Col>
