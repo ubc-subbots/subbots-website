@@ -10,11 +10,14 @@ export default class ViewHeader extends React.Component{
             <div>
             <Row>
                 <Col sm={1}></Col>
-                <Col sm={10}>
-                    <div className="ViewImageContainer">
-                        <Image src={this.props.image}/>
-                    </div>
-                </Col>
+                {
+                    !this.props.disableImage &&
+                    <Col sm={10}>
+                    <   div className="ViewImageContainer">
+                            <Image src={this.props.image}/>
+                        </div>
+                    </Col>
+                }
                 <Col sm={1}></Col>
                 <div className="ViewHeaderTitle">{this.props.title}</div>
             </Row>
