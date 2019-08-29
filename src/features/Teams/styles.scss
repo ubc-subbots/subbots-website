@@ -1,7 +1,8 @@
 @import "../../styles/index.scss";
 
-.TeamText{
-    font-size: 1.1vw;
+.TeamCardText{
+    font-size: 1.2vw;
+    font-weight: 400 !important;
     color: $secondary-text-color;
 }
 
@@ -25,7 +26,7 @@
 }
 
 .TeamCard{
-    width: 85%;
+    width: 95%;
     height: 90%;
     text-align: center;
     background-color: $accent-color !important;
@@ -89,7 +90,7 @@ $team-body-item-icon-height: 6vh;
 }
 
 .TeamBodyItemTextPrimary {
-    font-size: 1.2vw;
+    font-size: 1.3vw;
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: $secondary-text-color;

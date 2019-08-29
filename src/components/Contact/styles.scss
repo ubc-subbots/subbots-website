@@ -10,7 +10,7 @@
 }
 
 .ContactText{
-    font-weight: 600;
+    font-weight: 600 !important;
     @include SecondarySubTitle(1vw);
 }
 

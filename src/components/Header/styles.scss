@@ -4,7 +4,7 @@ $subtitle-size: 1vw;
 
 .HeaderContainer{
     background-color: transparent;
-    @include PaddingTopBottom(3.8vh !important);
+    @include PaddingTopBottom(5vh !important);
     transition: all $transition-time ease-out;
 }
 
@@ -34,14 +34,14 @@ $subtitle-size: 1vw;
 
 .NavBrandContainer{
     &:hover a{
-        color: $accent-hover-color !important;
+        color: $accent-color !important;
     }
     &:active a {
         color: $accent-color !important;
     }
     &:hover svg{
         transform: rotate(360deg);
-        color: $accent-hover-color !important;
+        // color: $accent-hover-color !important;
     }
 }
 
@@ -80,7 +80,9 @@ $subtitle-size: 1vw;
     filter: brightness(0) invert(1);
 }
 
-.SubbotsLogo{
+.HeaderLogo{
+    max-height: 10vh;
+    min-width: 10vh;
     color: $accent-color;
     transition: transform 1s ease;
 }

@@ -13,7 +13,7 @@ export default class Home extends React.Component{
     render() {
         return (
             <ViewContainer>
-                <img className="logo" src={process.env.PUBLIC_URL + "/logo/vector_images/RGB(for_screen)/SVG/subbots-logo-rgb-yellow-large.svg"}/>
+                <img className="Logo" src={process.env.PUBLIC_URL + "/logo/vector_images/RGB(for_screen)/SVG/subbots-logo-rgb-yellow-large.svg"}/>
                 <ViewHeader title={content.home.title} blurb={content.home.blurb} disableImage={true}/>
                 <Row>
                     <Col sm={1}></Col>
@@ -55,7 +55,7 @@ export default class Home extends React.Component{
                     </div>
                     <Row>
                         <Col sm={6}>
-                            <Carousel className="ProjectsCarousel">
+                            <Carousel className="ProjectsCarousel" fade="true">
                                 {content.home.projects.carousels.first.images.map((item, index) => (                                    
                                     <Carousel.Item key={index}>
                                         <div className="ProjectsImageContainer">
@@ -69,7 +69,7 @@ export default class Home extends React.Component{
                             </h4>
                         </Col>
                         <Col sm={6}>
-                            <Carousel className="ProjectsCarousel">
+                            <Carousel className="ProjectsCarousel" fade="true">
                                 {content.home.projects.carousels.second.images.map((item, index) => (                                    
                                     <Carousel.Item key={index}>
                                         <div className="ProjectsImageContainer">

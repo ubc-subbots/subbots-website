@@ -32,7 +32,7 @@ export class TeamCard extends React.Component {
                     </Card.Header>
                     <Card.Body>
                         <FontAwesomeIcon className="TeamIconLarge" icon={this.icons[this.props.team]} size="6x" />
-                        <Card.Text className="TeamText">
+                        <Card.Text className="TeamCardText">
                             {content.teams[this.props.team.toLowerCase()].blurb}
                         </Card.Text>
                         <Button className="SecondaryButton" variant="primary" onClick={() => this.scrollToTeam(this.props.team)}>
