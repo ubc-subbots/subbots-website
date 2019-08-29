@@ -202,7 +202,7 @@ export default
                 "link": "https://www.phidgets.com/?"
             },
             {
-                "image": "Shell-logo.png",
+                "image": "Shell-Logo.png",
                 "link": "https://www.shell.ca/"
             },
             {
