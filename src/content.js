@@ -52,8 +52,8 @@ export default
                 building off of our original design and on track to compete in the 2020 RoboSub competition. \
                 More information about the robots can be found below!",
             "carousels": {
-                "first": {
-                    "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
+                 "first": {
+                    "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg"],
                     "caption": "2017-2018"
                 },
                 "second": {
