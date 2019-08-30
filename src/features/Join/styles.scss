@@ -5,7 +5,10 @@ $form-border-radius: 5px;
 $form-opacity: 0.6;
 
 .JoinForm{
-    margin: 2vw;
+    display: block;
+    margin: auto;
+    height: 225vh;
+    width: 50vw;
     background-color:rgba($form-color, 0) !important;
 }
 

@@ -59,7 +59,10 @@ export default class Join extends React.Component{
                 <Row>
                     <Col sm={3}></Col>
                     <Col sm={6}>
-                        <div className="JoinFormContainer">
+                        <div>
+                            <iframe className="JoinForm" src="https://docs.google.com/forms/d/e/1FAIpQLSdoT3Rayu-wDBDVukUggCGZViKJKrAlIn2SxEQNtb0w7GKXcg/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                        
+                        </div>
+                        {/* <div className="JoinFormContainer">
                         <Card className="JoinFormCard">
                         <Card.Header className="JoinFormHeader">
                             UBC Subbots 2019-2020 Application
@@ -124,7 +127,7 @@ export default class Join extends React.Component{
                             </Button>
                         </Form>
                         </Card>
-                        </div>
+                        </div> */}
                     </Col>
                     <Col sm={3}></Col>
                 </Row>
