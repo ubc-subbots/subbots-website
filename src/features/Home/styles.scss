@@ -1,12 +1,33 @@
 @import "../../styles/index.scss";
 
 .Logo {
-    fill: $accent-color;
+    fill: url(#gradient);
     width: 80vh;
     height: 80vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    animation: pulse 8s infinite ease-in-out;
+}
+
+.LogoSpin {
+    animation: spin 12s infinite linear;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.8; }
+    50% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(0.95); opacity: 0.8; }
+}
+
+@keyframes spin {
+    from { 
+        transform:  rotate(0deg);
+        transform-origin: 50% 50%; 
+    } to { 
+        transform: rotate(359deg); 
+        transform-origin: 50% 50%;
+    }
 }
 
 .PitchImageContainer{
@@ -14,10 +35,11 @@
 }
 
 .PitchHeader{
+    font-family: $primary-text-font;
     text-align: left;
     color: $accent-color;
-    font-size: 2.5vw;
-    margin-top: 3vh;
+    font-size: 2.6vw;
+    margin-top: 1vh;
     margin-left: 1vw;
     font-weight: 300;
     width: 100%;
@@ -38,7 +60,7 @@
 .GoalHeader{
     font-size: 3vw;
     padding-top:  4vh;
-    font-family: $primary-text-font;
+    font-family: $secondary-text-font;
 }
 
 .GoalBody{
@@ -75,7 +97,7 @@
     font-size: 5vw;
     color: $accent-color;
     font-weight: 600px;
-    font-family: $primary-text-font;
+    font-family: $secondary-text-font;
 }
 
 .ProjectsBody{

@@ -13,13 +13,13 @@
 }
 
 .TeamIconSmall{
-    font-size: 3vw;
+    font-size: 3.5vw;
     @include PaddingTopBottom(0.5vw);
     color: $primary-color;
 }
 
 .TeamCardHeader{
-    font-size: 1.8vw;
+    font-size: 2vw;
     font-family: $primary-text-font;
     background-color: $accent-color !important;
     color: $secondary-text-color;
@@ -39,14 +39,20 @@
 }
 
 .TeamBodyHeader {
-    font-size: 2vw;
-    font-family: $primary-text-font;
+    font-size: 2.7vw;
+    font-family: $secondary-text-font;
 }
 
 .TeamBodyText {
     margin-top: 2vh;
     font-size: $content-font-size;
-    font-family: $secondary-text-font;
+    font-family: $primary-text-font;
+}
+
+.TeamBodyItemHeader {
+    font-size: 1.4vw;
+    font-family: $primary-text-font;
+    font-weight: 500;
 }
 
 .TeamBodyItemFrame {

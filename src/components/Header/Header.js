@@ -41,7 +41,7 @@ export default class Header extends React.Component{
                 <Link to='/' className={this.state.navbrandClass}>
                     <FontAwesomeIcon className="HeaderLogo" icon={faCog} size="lg"/>
                     {/* <img className="HeaderLogo" src={process.env.PUBLIC_URL + "/logo/vector_images/RGB(for_screen)/SVG/subbots-logo-rgb-yellow-large.svg"}/> */}
-                    {" UBC Subbots"}
+                    {"UBC Subbots"}
                 </Link>
               </Navbar.Brand>
               <Navbar.Collapse id="basic-navbar-nav">

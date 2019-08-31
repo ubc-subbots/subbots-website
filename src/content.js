@@ -71,7 +71,7 @@ export default
             to come up with creative solutions for building autonomous underwater robots",
         "software": {
             "blurb":" Create and refine subaquatic artificial intelligence",
-            "body": " (Software Body) The Software will run on the embedded computer that \
+            "body": " The Software will run on the embedded computer that \
                 the robot carries in its chassis. It defines every movement and decision that\
                 the robot makes. Without the software, the robot is a potato.",
             "items": {

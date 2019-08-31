@@ -95,7 +95,7 @@ export class TeamBody extends React.Component {
 function TeamBodyItemList(props) {
     return (
         <Col sm={6} >
-            <h4 className="text-center">{props.title}</h4>
+            <h4 className="TeamBodyItemHeader text-center">{props.title}</h4>
             <div className="TeamBodyItemFrame">
                 <div className="TeamBodyItemContainer">
                     <TeamBodyItem 
