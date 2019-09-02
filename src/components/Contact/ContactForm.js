@@ -24,10 +24,19 @@ export default class ContactForm extends React.Component {
     onEmailChange(event){this.setState({email: event.target.value})}
 
     onMessageChange(event){this.setState({message: event.target.value})}
+
+    onFormSubmit(event){
+        const form = event.currentTarget;
+        if (form.checkValidity() === false){
+            event.preventDefault();
+            event.stopPropagation();
+        } 
+        this.setState({validated: true});     
+    }   
     
     render() {
         return (
-            <Form noValidate validated={this.state.validated} className="JoinForm" action={`https://formspree.io/${content.emails.Subbots}`} method="POST">
+            <Form noValidate validated={this.state.validated} onSubmit={this.onFormSubmit.bind(this)} className="JoinForm" action={`https://formspree.io/${content.emails.Subbots}`} method="POST">
                 <input type="hidden" name="_subject" value="Someone is requesting additional information"/>
                 <input type="hidden" name="NOTE" 
                     value={`THIS IS AN AUTO GENERATED MESSAGE:\n\n You are recieving this email because someone has requested to contact Subbots for additional information. Their details are as followed below:`}
@@ -50,8 +59,10 @@ export default class ContactForm extends React.Component {
                     <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                            
                 </Form.Group>
                 <Form.Group controlId="exampleForm.ControlTextarea1">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control onChange={this.onMessageChange.bind(this)} style={{resize:'none'}} as="textarea" rows="6" placeholder="Message" name="Contact Message"/>
+                    <Form.Label>Message *</Form.Label>
+                    <Form.Control onChange={this.onMessageChange.bind(this)} style={{resize:'none'}} as="textarea" rows="6" placeholder="Message" required name="Contact Message"/>
+                    <Form.Control.Feedback type="invalid">Required Field</Form.Control.Feedback>                            
+
                 </Form.Group>
                 <Button className="PrimaryButton" variant="warning" type="submit">
                     <div className="ApplyButtonText" >Submit</div>

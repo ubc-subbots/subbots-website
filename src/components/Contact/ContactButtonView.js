@@ -1,6 +1,5 @@
 import ContactForm from './ContactForm'
 import Modal from 'react-bootstrap/Modal'
-import Button from 'react-bootstrap/Button'
 import ContactButton from './ContactButton';
 import React from 'react';
 
@@ -26,6 +25,7 @@ export default class ContactButtonView extends React.Component {
             <div>
                 <ContactButton onClick={this.showModal}/>
                 <Modal
+                    className="ContactModal"
                     show={this.state.showModal}
                     onHide={this.hideModal}
                     onEscapeKeyDown={this.hideModal}
@@ -39,7 +39,7 @@ export default class ContactButtonView extends React.Component {
                         Contact Us
                     </Modal.Title>
                     </Modal.Header>
-                    <Modal.Body>
+                    <Modal.Body className="ContactModalBody">
                         <ContactForm/>
                     </Modal.Body>
                 </Modal>

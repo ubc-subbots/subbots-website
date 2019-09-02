@@ -60,7 +60,7 @@ export default class Join extends React.Component{
                     <Col sm={3}></Col>
                     <Col sm={6}>
                         <div>
-                            <iframe className="JoinForm" src="https://docs.google.com/forms/d/e/1FAIpQLSdoT3Rayu-wDBDVukUggCGZViKJKrAlIn2SxEQNtb0w7GKXcg/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                        
+                            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd_5SyFlRlOgkAdsBL4DZvq-q7WtePwKH0_ODg_4Pa4p7EVQg/viewform?embedded=true" width="690" height="2486" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>                        
                         </div>
                         {/* <div className="JoinFormContainer">
                         <Card className="JoinFormCard">
