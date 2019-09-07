@@ -237,8 +237,8 @@ export default
     },
     "emails": {
         "Subbots": "ubc.subbots@gmail.com",
-        "Electrical": "info.subbots@gmail.com",
-        "Mechanical": "info.subbots@gmail.com",
-        "Software": "info.subbots@gmail.com"
+        "Electrical": "ubc.subbots@gmail.com",
+        "Mechanical": "ubc.subbots@gmail.com",
+        "Software": "ubc.subbots@gmail.com"
     }
 }
