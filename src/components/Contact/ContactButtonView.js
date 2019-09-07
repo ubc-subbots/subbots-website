@@ -36,7 +36,7 @@ export default class ContactButtonView extends React.Component {
                 >
                     <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Contact Us
+                        Contact Us ( ubc.subbots@gmail.com )
                     </Modal.Title>
                     </Modal.Header>
                     <Modal.Body className="ContactModalBody">

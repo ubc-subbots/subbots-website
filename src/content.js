@@ -236,9 +236,9 @@ export default
         ]
     },
     "emails": {
-        "Subbots": "info.subbots@gmail.com",
+        "Subbots": "ubc.subbots@gmail.com",
         "Electrical": "info.subbots@gmail.com",
-        "Mechanical": "logan.fillo@gmail.com",
-        "Software": ""
+        "Mechanical": "info.subbots@gmail.com",
+        "Software": "info.subbots@gmail.com"
     }
 }
