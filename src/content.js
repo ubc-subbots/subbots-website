@@ -25,7 +25,9 @@ export default
                 as autonomous underwater navigation, hydrodynamics and buoyancy, electronics \
                 waterproofing, actuation of mechanical systems and many more. Since Subbots is a \
                 relatively new design team, there is plenty of opportunity to improve upon existing\
-                designs and be a part of building the team. "
+                designs and be a part of building the team. This means that even as new members, \
+                your work is significant and directly related to the success of our robot!"
+                
         },
         "goal":{
             "image": "electrical.jpg",
@@ -35,6 +37,9 @@ export default
                 way for students to take what they have learned in the classroom and apply it to\
                 real world problems. We do our best to inspire interest in subsea and robotic\
                 design while maintaining a fun atmosphere that promotes learning and team bonding. \
+                Even when components can be purchased off the shelf, we build most of our components from\
+                the ground up for maximum learning experience. This enables each member of the team to \
+                understand all aspects of the design, and further improve their technical skills.\
                 Each year we hope to grow as a team by recruiting motivated and hard working students \
                 who share a passion for our project. \n\n On the technical side, our teams goal is to\
                 build a robot that is capable of competing in the RoboSub competition each year. To \
@@ -48,9 +53,8 @@ export default
             "body": "Since becoming a team in 2017, Subbots has had the chance to work on two robots.\
                 Our first robot for the 2017-2018 year was a huge learning curve for the team, but it \
                 successfully competed at RoboSub which taught the team a lot about what goes into making \
-                an AUV. We are currently on a two year design cycle for our second robot but we are \
-                building off of our original design and on track to compete in the 2020 RoboSub competition. \
-                More information about the robots can be found below!",
+                an AUV. We are currently working on our second robot which is built off of the original design. \
+                Unfortunately, the 2020 RoboSub competition was cancelled, but we are hoping to participate in 2021.",
             "carousels": {
                  "first": {
                     "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg"],
