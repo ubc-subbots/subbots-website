@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.9af9cea3.chunk.css",
-    "main.js": "/static/js/main.944a511c.chunk.js",
-    "main.js.map": "/static/js/main.944a511c.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.cc77c4f0.chunk.js": "/static/js/2.cc77c4f0.chunk.js",
-    "static/js/2.cc77c4f0.chunk.js.map": "/static/js/2.cc77c4f0.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.977ea9eb7e3bdeb2751f4852159ddf92.js": "/precache-manifest.977ea9eb7e3bdeb2751f4852159ddf92.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.9af9cea3.chunk.css.map": "/static/css/main.9af9cea3.chunk.css.map"
+    "main.css": "/subbots-website/static/css/main.1267be5b.chunk.css",
+    "main.js": "/subbots-website/static/js/main.db47cd95.chunk.js",
+    "main.js.map": "/subbots-website/static/js/main.db47cd95.chunk.js.map",
+    "runtime~main.js": "/subbots-website/static/js/runtime~main.d76c3714.js",
+    "runtime~main.js.map": "/subbots-website/static/js/runtime~main.d76c3714.js.map",
+    "static/js/2.cc77c4f0.chunk.js": "/subbots-website/static/js/2.cc77c4f0.chunk.js",
+    "static/js/2.cc77c4f0.chunk.js.map": "/subbots-website/static/js/2.cc77c4f0.chunk.js.map",
+    "index.html": "/subbots-website/index.html",
+    "precache-manifest.3dc626f172c6b9ba67b476a3286e7156.js": "/subbots-website/precache-manifest.3dc626f172c6b9ba67b476a3286e7156.js",
+    "service-worker.js": "/subbots-website/service-worker.js",
+    "static/css/main.1267be5b.chunk.css.map": "/subbots-website/static/css/main.1267be5b.chunk.css.map"
   }
 }
