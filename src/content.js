@@ -57,7 +57,7 @@ export default
                 Unfortunately, the 2020 RoboSub competition was cancelled, but we are hoping to participate in 2021.",
             "carousels": {
                  "first": {
-                    "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg"],
+                    "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
                     "caption": "2017-2018"
                 },
                 "second": {
