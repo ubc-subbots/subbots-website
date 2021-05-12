@@ -18,7 +18,7 @@
     "express": "^4.17.1",
     "express-rate-limit": "^5.0.0",
     "mongodb": "^3.3.0-beta2",
-    "nodemailer": "^6.3.0",
+    "nodemailer": "^6.4.16",
     "pug": "^2.0.4"
   },
   "devDependencies": {
