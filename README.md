@@ -2,8 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Setup
 
-1. Install latest version NodeJs https://nodejs.org/en/ (which installs `npm`)
-2. Clone this repo, and in repo root, run `npm install`
+1. Install LTS version of NodeJS (v14.17.0) https://nodejs.org/en/download/ (which installs `npm`)
+2. Clone this repo, and in repo root, run `npm install` (may take a while)
 3. If the last step worked with no error, run `npm start` (local server will open on http://localhost:3000/)
 
 ## Workflow
