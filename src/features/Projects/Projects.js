@@ -4,11 +4,62 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
 import { ViewHeader, ViewContainer, Image } from '../../components';
+import Modal from 'react-bootstrap/Modal'
 import './styles.scss';
 
 export default class Projects extends React.Component{
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            showPopup: false,
+            popupContent: 
+            {
+                "image": "electrical.jpg",
+                "header": "You shouldn't be able to see me.",
+                "body": "",
+                "bodyFull": "",
+                "carousel": 
+                {
+                   "images": [],
+                   "caption": ""
+                },
+            },
+        }
+    }
+
+    editAndShowPopup = (props) => {
+        this.setState({
+            showPopup: true,
+            popupContent: props
+        });
+    }
+
+    hidePopup = () => {
+        this.setState({
+            showPopup: false
+        });
+    }
     render() {
+
+        // For Popup content
+        const RenderHTML=(content)=>{
+            return(
+            <div dangerouslySetInnerHTML={ {__html: content} } />
+            )
+        }
+
+        const ProjectDetailButtonList = (list) => {
+            const proj_list = list.map((proj, index) => {
+                return <button className="ProjectDetailButton" onClick={()=>this.editAndShowPopup(proj)}>{proj.header}</button>
+            })
+            return(
+                <div className="ProjectDetailButtonList">
+                    {proj_list}
+                </div>
+            )
+        }
+
         return (
             <ViewContainer>
                 <ViewHeader title={content.projects.title} blurb={content.projects.blurb} disableImage={true}/>
@@ -69,6 +120,7 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.software.body}</div>
+                                        {ProjectDetailButtonList(content.projects.project.software.detail)}
                                     </Col>
                                 </Row>
                                 <h4 className="ProjectSubheader">
@@ -98,6 +150,7 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.electrical.body}</div>
+                                        {ProjectDetailButtonList(content.projects.project.electrical.detail)}
                                     </Col>
                                 </Row>
                                 <h4 className="ProjectSubheader">
@@ -127,6 +180,7 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.mechanical.body}</div>
+                                        {ProjectDetailButtonList(content.projects.project.mechanical.detail)}
                                     </Col>
                                 </Row>
                             </Col>
@@ -209,7 +263,47 @@ export default class Projects extends React.Component{
                         </Row>
                     </div>
                 <div className="ContentSeperatorBottom"/>
+                <Modal
+                    className="ProjectDetailModal"
+                    show={this.state.showPopup}
+                    onHide={this.hidePopup}
+                    onEscapeKeyDown={this.hidePopup}
+                    shouldcloseonoverlayclick="true"
+                    size="lg"
+                    aria-labelledby="contained-modal-title-vcenter"
+                    centered
+                >
+                    <Modal.Header closeButton>
+                    <Modal.Title id="contained-modal-title-vcenter">
+                        {this.state.popupContent.header}
+                    </Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body className="ProjectDetailModalBody">
+                        <Row>
+                            <Col sm={12}>
+                                <div className="ProjectDetailCarouselContainer">
+                                    <Carousel className="ProjectDetailCarousel" fade="true">
+                                        {this.state.popupContent.carousel.images.map((item, index) => (                                    
+                                            <Carousel.Item key={index}>
+                                                <div className="ProjectDetailCarouselImageContainer">
+                                                    <Image src={item} folder="robots" />
+                                                </div>
+                                            </Carousel.Item>
+                                        ))}
+                                    </Carousel>
+                                    <h4 className="ProjectDetailCarouselImageCaption">
+                                        {this.state.popupContent.carousel.caption}
+                                    </h4>
+                                </div>
+                            </Col>
+                        </Row>
+                        <div>
+                            {RenderHTML(this.state.popupContent.bodyFull)}
+                        </div>
+                    </Modal.Body>
+                </Modal>
             </ViewContainer>
+
         )
     }
 }

@@ -257,6 +257,51 @@ export default
                 "body": "The Software will run on the embedded computer that \
                     the robot carries in its chassis. It defines every movement and decision that\
                     the robot makes. Without the software, the robot is a potato.",
+                // For Popup card only
+                "detail": [
+                    {
+                        "header": "Demo here",
+                        "bodyFull": '\
+                        <h1>Heading</h1>\
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
+                        <br/>\
+                        <a href=\'https://subbots.ca\'>Back to home</a>\
+                        <h3>We can format text here using HTML</h3>\
+                        ',
+                        "carousel": 
+                        {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                        },
+                    },
+                    {
+                        "header": "Project 2",
+                        "bodyFull": "The Software will run on the embedded computer that \
+                            the robot carries in its chassis. It defines every movement and decision that\
+                            the robot makes. Without the software, the robot is a potato.",
+                        "carousel": 
+                        {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                        },
+                    },
+                    {
+                        "header": "Project 3",
+                        "bodyFull": "The Software will run on the embedded computer that \
+                            the robot carries in its chassis. It defines every movement and decision that\
+                            the robot makes. Without the software, the robot is a potato.",
+                        "carousel": 
+                        {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                        },
+                    },
+                ],
             },
             "electrical": {
                 "header": "Electrical Projects",
@@ -266,6 +311,53 @@ export default
                     information, and protect valuable electrical components from unexpected\
                     power surges. Robust and reliable electrical systems are critical for \
                     allowing a robot to react well to a dynamic environment.",
+                "detail": [
+                    {
+                        "header": "We can",
+                        "bodyFull": "changeme",
+                        "carousel": 
+                        {
+                        "images": [],
+                        "caption": ""
+                        },
+                    },
+                    { 
+                        "header": "put a",
+                        "bodyFull": "changeme",
+                        "carousel": 
+                        {
+                        "images": [],
+                        "caption": ""
+                        },
+                    },
+                    { 
+                        "header": "lot of",
+                        "bodyFull": "changeme",
+                        "carousel": 
+                        {
+                        "images": [],
+                        "caption": ""
+                        },
+                    },
+                    { 
+                        "header": "projects",
+                        "bodyFull": "changeme",
+                        "carousel": 
+                        {
+                        "images": [],
+                        "caption": ""
+                        },
+                    },
+                    { 
+                        "header": "here",
+                        "bodyFull": "changeme",
+                        "carousel": 
+                        {
+                        "images": [],
+                        "caption": ""
+                        },
+                    },
+                ],
             },
             "mechanical": {
                 "header": "Mechanical Projects",
@@ -275,6 +367,26 @@ export default
                     integration, waterproofing and the overall esthetic of the robot. Designing mechanical \
                     systems for underwater applications brings many design challenges and is critical in \
                     allowing robots to exist underwater. ",
+                "detail": [
+                    {
+                        "header": "Project 1",
+                        "bodyFull": "Changeme",
+                        "carousel": 
+                        {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                        },
+                    },
+                    {
+                        "header": "Project 2 with a long name",
+                        "bodyFull": "Changeme",
+                        "carousel": 
+                        {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                        },
+                    },
+                ],
             },
             "carousels": {
                 "software": {
