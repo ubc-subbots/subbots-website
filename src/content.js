@@ -250,7 +250,7 @@ export default
         "blurb": "Projects we are working on now and in the past.",
         "project": {
             "image": "software.jpg", // Add a canonical image for subbot
-            "header": "Subbot name",
+            "header": "Triton",
             "body": "This is a description of our current subbot.",
             "software": {
                 "header": "Software Projects",
