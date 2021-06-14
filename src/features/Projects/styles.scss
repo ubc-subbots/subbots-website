@@ -1,1 +1,76 @@
 @import "../../styles/index.scss";
+
+.CarouselContainer {
+  width: 100%;
+  /* background-color: whitesmoke; */
+  padding-bottom: 5vh;
+  @include PaddingLeftRight(1.4vw);
+}
+
+.CarouselContainerDark {
+  width: 100%;
+  background-color: $background-color-top;
+  padding-bottom: 5vh;
+  border-radius: 5vh;
+  @include PaddingLeftRight(1.4vw);
+}
+
+.ProjectHeader {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 3vw);
+    color: $primary-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.ProjectSubheader {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 2vw);
+    color: $primary-color;
+    font-weight: 600px;
+    font-family: $brand-font;
+}
+
+.ProjectBody{
+    @include MarginTopBottom(2vh);
+    color: $secondary-text-color;
+    font-size: 20px;
+    /* font-size: $content-font-size; */
+    font-weight: 400;
+    display: block;
+}
+
+.ProjectOldHeader {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 3vw);
+    color: $accent-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.ProjectOldBody{
+    margin: 5vh;
+    color: $primary-text-color;
+    font-size: 20px;
+}
+
+.ProjectFutureHeader{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 3vw);
+    color: $primary-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.ProjectFutureBody{
+    @include MarginTopBottom(2vh);
+    color: $secondary-text-color;
+    font-size: 20px;
+    /* font-size: $content-font-size; */
+    font-weight: 400;
+    display: block;
+}

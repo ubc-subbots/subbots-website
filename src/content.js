@@ -14,7 +14,7 @@ export default
             control over the design, manufacturing and testing of the robot. Since becoming\
             a team, we have learned a lot about designing for the underwater environment and \
             are continuously improving upon our existing designs. ",
-        "pitch":{
+        "pitch": {
             "image": "mechanical.jpg",
             "header": "Why Subbots?",
             "body": " Subbots provides the chance for students to work on unique design\
@@ -29,7 +29,7 @@ export default
                 your work is significant and directly related to the success of our robot!"
                 
         },
-        "goal":{
+        "goal": {
             "image": "electrical.jpg",
             "header": "Our Goal",
             "body": "As a UBC engineering design team we look to create an interesting and \
@@ -48,7 +48,7 @@ export default
                 learning in all aspects of AUV design and encourage good engineering practices that \
                 can be passed onto future generations of team members. "
         } ,
-        "projects":{
+        "projects": {
             "header": "The Robots",
             "body": "Since becoming a team in 2017, Subbots has had the chance to work on two robots.\
                 Our first robot for the 2017-2018 year was a huge learning curve for the team, but it \
@@ -70,12 +70,12 @@ export default
     "teams": {
         "image": "electrical.jpg",
         "title": "See What Our Members Do",
-        "blurb": "  Whether you’re interested in software, electrical, or mechanical\
+        "blurb": "Whether you’re interested in software, electrical, or mechanical\
             design, Subbots offers many unique design challenges that forces our members \
             to come up with creative solutions for building autonomous underwater robots",
         "software": {
-            "blurb":" Create and refine subaquatic artificial intelligence",
-            "body": " The Software will run on the embedded computer that \
+            "blurb": "Create and refine subaquatic artificial intelligence",
+            "body": "The Software will run on the embedded computer that \
                 the robot carries in its chassis. It defines every movement and decision that\
                 the robot makes. Without the software, the robot is a potato.",
             "items": {
@@ -117,13 +117,13 @@ export default
             }   
         },
         "mechanical": {
-            "blurb":"Push the physical limits of underwater mechanics",
+            "blurb": "Push the physical limits of underwater mechanics",
             "body": "The mechanical team is responsible for making the body of the robot\
                 that the electrical and software systems control. We handle buoyancy and static \
                 stability, hydrodynamics, frame and enclosure design, actuation, electronics \
                 integration, waterproofing and the overall esthetic of the robot. Designing mechanical \
                 systems for underwater applications brings many design challenges and is critical in \
-                allowing robots to exist underwater. ",
+                allowing robots to exist underwater.",
             "items": {
                 "images": {
                     "do": ["crosshair.jpg", "crosshair.jpg", "crosshair.jpg"],
@@ -244,5 +244,72 @@ export default
         "Electrical": "ubc.subbots@gmail.com",
         "Mechanical": "ubc.subbots@gmail.com",
         "Software": "ubc.subbots@gmail.com"
+    },
+    "projects": {
+        "title": "Projects",
+        "blurb": "Projects we are working on now and in the past.",
+        "project": {
+            "image": "software.jpg", // Add a canonical image for subbot
+            "header": "Subbot name",
+            "body": "This is a description of our current subbot.",
+            "software": {
+                "header": "Software Projects",
+                "body": "The Software will run on the embedded computer that \
+                    the robot carries in its chassis. It defines every movement and decision that\
+                    the robot makes. Without the software, the robot is a potato.",
+            },
+            "electrical": {
+                "header": "Electrical Projects",
+                "body": "The electrical team develops the electrical systems that \
+                    allow the robot to read and respond to the world. The team designs \
+                    circuits to control thrusters, process hydrophone signal, read sensor\
+                    information, and protect valuable electrical components from unexpected\
+                    power surges. Robust and reliable electrical systems are critical for \
+                    allowing a robot to react well to a dynamic environment.",
+            },
+            "mechanical": {
+                "header": "Mechanical Projects",
+                "body": "The mechanical team is responsible for making the body of the robot\
+                    that the electrical and software systems control. We handle buoyancy and static \
+                    stability, hydrodynamics, frame and enclosure design, actuation, electronics \
+                    integration, waterproofing and the overall esthetic of the robot. Designing mechanical \
+                    systems for underwater applications brings many design challenges and is critical in \
+                    allowing robots to exist underwater. ",
+            },
+            "carousels": {
+                "software": {
+                    "images": ["first_1.jpg"], // Add new pics
+                    "caption": "2019-now"
+                },
+                "electrical": {
+                    "images": ["first_2.jpg"], // Add new pics
+                    "caption": "2019-now"
+                },
+                "mechanical": {
+                    "images": ["first_3.jpg"], // Add new pics
+                    "caption": "2019-now"
+                }
+            }
+        },
+        "projectold": {
+            "image": "software.jpg",
+            "header": "Old subbot name",
+            "body": "This is a paragraph about our old subbot.",
+            "carousels": {
+                "first": {
+                    "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                    "caption": "2017-2018"
+                },
+                "second": {
+                     "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
+                     "caption": "2018-2019"
+                }
+            }
+        },
+        "projectfuture": {
+            "image": "software.jpg",
+            "header": "Projects for the Future",
+            "body": "Next-generation subbot."
+        }
     }
 }
