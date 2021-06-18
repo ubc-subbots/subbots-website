@@ -1,0 +1,144 @@
+@import "../../styles/index.scss";
+
+.MemberCard {
+    text-align: center;
+    background-color: $accent-color !important;
+    margin-bottom: 60px;
+    @include MarginLeftRight(10px);
+    width: 19vw;
+    height: 19vw;
+    padding-top: 20px;
+}
+
+.MemberCardBody {
+    display: table;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.MemberCardTitle {
+    font-size: 20px !important;
+    padding-top: 30px;
+    font-weight: 600 !important;
+    color: $secondary-text-color;
+}
+
+.MemberCardSubtitle{
+    font-size: 19px !important;
+    padding-top: 10px;
+    font-weight: 400 !important;
+    color: $secondary-text-color;
+}
+
+.MemberRow {
+    @include MarginTopBottom(40px); 
+}
+
+.MemberImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    width: 140px;
+    border-radius: 150px;
+}
+
+.MemberCardText{
+    font-style: italic;
+    font-size: 1vw;
+    padding-top: 15px;
+    font-weight: 400 !important;
+    color: $secondary-text-color;
+}
+
+.MemberIconLarge{
+    font-size: 6vw;
+    @include PaddingTopBottom(1vw);
+    color: $primary-color;
+}
+
+.MemberIconSmall{
+    font-size: 3.5vw;
+    @include PaddingTopBottom(0.5vw);
+    color: $primary-color;
+}
+
+.MemberCardHeader{
+    font-size: 2vw;
+    font-family: $primary-text-font;
+    background-color: $accent-color !important;
+    color: $secondary-text-color;
+}
+
+.MemberBodyHeader {
+    font-size: 2.7vw;
+    font-family: $secondary-text-font;
+}
+
+.MemberBodyText {
+    margin-top: 2vh;
+    font-size: $content-font-size;
+    font-family: $primary-text-font;
+}
+
+.MemberBodyItemHeader {
+    font-size: 1.4vw;
+    font-family: $primary-text-font;
+    font-weight: 500;
+}
+
+.MemberBodyItemFrame {
+    height: 35vh;
+    width: 45vw;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    @include MarginTopBottom(2vh);
+}
+
+.MemberBodyItemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.MemberBodyItem {
+    background-color: $secondary-color;
+    border-radius: 5px;
+    border: 1px solid rgb(173, 173, 173);
+    width: 97%;
+    padding: 1.5vh;
+    display: flex;
+}
+
+$member-body-item-icon-height: 6vh;
+
+.MemberBodyItemIconContainer {
+    height: $member-body-item-icon-height;
+    width: $member-body-item-icon-height;
+}
+
+.MemberBodyItemIcon {
+    border: 2px solid $accent-color;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.MemberBodyItemTextPrimary {
+    font-size: 1.2vw;
+    font-family: $primary-text-font;
+    margin-left: 1vw;
+    color: $secondary-text-color;
+    line-height: $member-body-item-icon-height;
+}
+
+.MemberBodyItemTextSecondary {
+    font-size: 0.9vw;
+    font-family: $primary-text-font;
+    margin-left: 1vw;
+    color: rgb(73, 73, 73);
+    line-height: $member-body-item-icon-height;
+}

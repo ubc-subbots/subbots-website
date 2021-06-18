@@ -6,7 +6,8 @@ import {
     Projects,
     Sponsors,
     Teams,
-    Join
+    Join,
+    Members
 } from '../features';
 
 export default function router(){
@@ -19,6 +20,7 @@ export default function router(){
                 <Route path="/projects" component={Projects} />
                 <Route path="/sponsors" component={Sponsors} />
                 <Route path="/join" component={Join} />
+                <Route path="/members" component={Members} />
             </Switch>
         </main>
     )

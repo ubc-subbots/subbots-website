@@ -4,7 +4,7 @@ export default
 {
     "home": {
         "image": "software.jpg",
-        "title": "Welcome To UBC Subbots",
+        "title": "Welcome To UBC Subbots!",
         "blurb": "UBC Subbots is an engineering student design team dedicated to \
             making an autonomous underwater vehicle (AUV) for the RoboSub competition \
             in San Diego, California each year. This competition challenges us to make \
@@ -236,6 +236,97 @@ export default
             {
                 "image": "vp.jpg",
                 "link": "https://apsc.ubc.ca/"
+            }
+        ]
+    },
+
+    "members": {
+        "image": "electrical.jpg",
+        "title": "Current Members",
+        "member_list": [
+            {
+                "name": "Cameron Fletcher",
+                "image": "Cameron_Fletcher.jpg",
+                "email": "camfletcher2020@gmail.com",
+                "program": "1st year BASc"
+            },
+            {
+                "name": "Angie Pinto",
+                "image": "Angie_Pinto.jpg",
+                "email": "pinto.angie.02@gmail.com",
+                "program": "Mechanical Engineering"
+            },
+            {
+                "name": "Dvir Hilu",
+                "image": "Dvir_Hilu.jpg",
+                "email": "dvirhilu16@gmail.com",
+                "program": "Engineering Physics"
+            },
+            {
+                "name": "Jacob Evans Cronin",
+                "image": "Jake_Cronin.png",
+                "email": "jcronin97@live.ca",
+                "program": "Electrical Engineering"
+            },
+            {
+                "name": "Kevin Huang",
+                "image": "Kevin_Huang.jfif",
+                "email": "kevinh42@student.ubc.ca",
+                "program": "Engineering Physics"
+            },
+            {
+                "name": "Nodir Musaev",
+                "image": "Nodir_Musaev.jpg",
+                "email": "musaevnod@gmail.com",
+                "program": "Geological Engineering "
+            },
+            {
+                "name": "Pavitar Kalra",
+                "image": "Pavitar_Kalra.JPG",
+                "email": "me@pavitar.ca",
+                "program": "Electrical Engineering "
+            },
+            {
+                "name": "Viktor Gabriel Moreno",
+                "image": "No_Photo.gif",
+                "email": "viktor.moreno123@gmail.com",
+                "program": "Civil Engineering"
+            },
+            {
+                "name": "Luke D. Gallant",
+                "image": "No_Photo.gif",
+                "email": "",
+                "program": "Mechatronics Engineering"
+            },
+            {
+                "name": "Hubert Shim",
+                "image": "No_Photo.gif",
+                "email": "hubertshim98@gmail.com",
+                "program": "Electrical Engineering"
+            },
+            {
+                "name": "Kota Chang",
+                "image": "No_Photo.gif",
+                "email": "kota.chang@alumni.ubc.ca",
+                "program": "Engineering Physics"
+            },
+            {
+                "name": "Prashant Wason",
+                "image": "No_Photo.gif",
+                "email": "pwason2000@gmail.com",
+                "program": "Electrical Engineering"
+            },
+            {
+                "name": "Colin Scott Ree",
+                "image": "No_Photo.gif",
+                "email": "colinree2901@gmail.com",
+                "program": "Mechanical Engineering"
+            },
+            {
+                "name": "Andy Zhou",
+                "image": "No_Photo.gif",
+                "email": "haonanzhou1998@gmail.com",
+                "program": "Electrical Engineering"
             },
         ]
     },
