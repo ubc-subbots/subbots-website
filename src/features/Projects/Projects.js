@@ -5,6 +5,8 @@ import Row from 'react-bootstrap/Row';
 import Carousel from 'react-bootstrap/Carousel';
 import { ViewHeader, ViewContainer, Image } from '../../components';
 import Modal from 'react-bootstrap/Modal'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCarBattery, faEye, faDharmachakra, faVrCardboard, faBolt, faWaveSquare, faCogs, faTools, faRocket } from '@fortawesome/free-solid-svg-icons';
 import './styles.scss';
 
 export default class Projects extends React.Component{
@@ -49,9 +51,30 @@ export default class Projects extends React.Component{
             )
         }
 
-        const ProjectDetailButtonList = (list) => {
+        const projectIcons = {
+            software: [
+                faEye, // Computer Vision
+                faDharmachakra, // Controls
+                faVrCardboard, // Simulations
+            ],
+            electrical: [
+                faBolt, 
+                faWaveSquare, // signals
+                faCarBattery, // power
+            ],
+            mechanical: [
+                faCogs, 
+                faTools,
+                faRocket,
+            ]
+        }
+
+        const ProjectDetailButtonList = (list, team) => {
             const proj_list = list.map((proj, index) => {
-                return <button className="ProjectDetailButton" onClick={()=>this.editAndShowPopup(proj)}>{proj.header}</button>
+                return <button className="ProjectDetailButton" onClick={()=>this.editAndShowPopup(proj)}>
+                    <FontAwesomeIcon className="TeamIconSmall" icon={projectIcons[team][index]} size="lg" />
+                    {proj.header}
+                    </button>
             })
             return(
                 <div className="ProjectDetailButtonList">
@@ -120,7 +143,7 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.software.body}</div>
-                                        {ProjectDetailButtonList(content.projects.project.software.detail)}
+                                        {ProjectDetailButtonList(content.projects.project.software.detail, 'software')}
                                     </Col>
                                 </Row>
                                 <h4 className="ProjectSubheader">
@@ -150,7 +173,7 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.electrical.body}</div>
-                                        {ProjectDetailButtonList(content.projects.project.electrical.detail)}
+                                        {ProjectDetailButtonList(content.projects.project.electrical.detail, 'electrical')}
                                     </Col>
                                 </Row>
                                 <h4 className="ProjectSubheader">
@@ -180,7 +203,7 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.mechanical.body}</div>
-                                        {ProjectDetailButtonList(content.projects.project.mechanical.detail)}
+                                        {ProjectDetailButtonList(content.projects.project.mechanical.detail, 'mechanical')}
                                     </Col>
                                 </Row>
                             </Col>

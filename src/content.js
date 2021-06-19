@@ -260,7 +260,7 @@ export default
                 // For Popup card only
                 "detail": [
                     {
-                        "header": "Demo here",
+                        "header": "Computer Vision",
                         "bodyFull": '\
                         <h1>Heading</h1>\
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
@@ -280,7 +280,7 @@ export default
                         },
                     },
                     {
-                        "header": "Project 2",
+                        "header": "Controls",
                         "bodyFull": "The Software will run on the embedded computer that \
                             the robot carries in its chassis. It defines every movement and decision that\
                             the robot makes. Without the software, the robot is a potato.",
@@ -291,7 +291,7 @@ export default
                         },
                     },
                     {
-                        "header": "Project 3",
+                        "header": "Simulations",
                         "bodyFull": "The Software will run on the embedded computer that \
                             the robot carries in its chassis. It defines every movement and decision that\
                             the robot makes. Without the software, the robot is a potato.",
@@ -313,7 +313,7 @@ export default
                     allowing a robot to react well to a dynamic environment.",
                 "detail": [
                     {
-                        "header": "We can",
+                        "header": "Circuit Boards",
                         "bodyFull": "changeme",
                         "carousel": 
                         {
@@ -322,7 +322,7 @@ export default
                         },
                     },
                     { 
-                        "header": "put a",
+                        "header": "Signals",
                         "bodyFull": "changeme",
                         "carousel": 
                         {
@@ -331,25 +331,7 @@ export default
                         },
                     },
                     { 
-                        "header": "lot of",
-                        "bodyFull": "changeme",
-                        "carousel": 
-                        {
-                        "images": [],
-                        "caption": ""
-                        },
-                    },
-                    { 
-                        "header": "projects",
-                        "bodyFull": "changeme",
-                        "carousel": 
-                        {
-                        "images": [],
-                        "caption": ""
-                        },
-                    },
-                    { 
-                        "header": "here",
+                        "header": "Power System",
                         "bodyFull": "changeme",
                         "carousel": 
                         {
@@ -369,7 +351,7 @@ export default
                     allowing robots to exist underwater. ",
                 "detail": [
                     {
-                        "header": "Project 1",
+                        "header": "Waterproofing and Enclosures",
                         "bodyFull": "Changeme",
                         "carousel": 
                         {
@@ -378,7 +360,16 @@ export default
                         },
                     },
                     {
-                        "header": "Project 2 with a long name",
+                        "header": "Actuators",
+                        "bodyFull": "Changeme",
+                        "carousel": 
+                        {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                        },
+                    },
+                    {
+                        "header": "Frames and Hydrodynamics",
                         "bodyFull": "Changeme",
                         "carousel": 
                         {
