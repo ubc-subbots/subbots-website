@@ -89,18 +89,15 @@
     margin-top: 3vh;
     text-align: center;
     font-size: calc(20px + 3vw);
-    color: $primary-color;
+    color: $accent-color;
     font-weight: 600px;
     font-family: $secondary-text-font;
 }
 
 .ProjectFutureBody{
-    @include MarginTopBottom(2vh);
-    color: $secondary-text-color;
+    margin: 5vh;
+    color: $primary-text-color;
     font-size: 20px;
-    /* font-size: $content-font-size; */
-    font-weight: 400;
-    display: block;
 }
 
 .ProjectDetailCarouselImageContainer{
