@@ -72,8 +72,10 @@ export default class Projects extends React.Component{
         const ProjectDetailButtonList = (list, team) => {
             const proj_list = list.map((proj, index) => {
                 return <button className="ProjectDetailButton" onClick={()=>this.editAndShowPopup(proj)}>
-                    <FontAwesomeIcon className="TeamIconSmall" icon={projectIcons[team][index]} size="lg" />
-                    {proj.header}
+                    <div className="ProjectButtonInnerIcon">
+                    <FontAwesomeIcon className="ProjectIconSmall" icon={projectIcons[team][index]} size="lg" />
+                    </div>
+                    <div className="ProjectButtonInnerText">{proj.header}</div>
                     </button>
             })
             return(
