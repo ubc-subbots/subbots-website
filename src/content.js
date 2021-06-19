@@ -382,15 +382,12 @@ export default
             "carousels": {
                 "software": {
                     "images": ["first_1.jpg"], // Add new pics
-                    "caption": "2019-now"
                 },
                 "electrical": {
                     "images": ["first_2.jpg"], // Add new pics
-                    "caption": "2019-now"
                 },
                 "mechanical": {
                     "images": ["first_3.jpg"], // Add new pics
-                    "caption": "2019-now"
                 }
             }
         },
