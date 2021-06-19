@@ -134,9 +134,6 @@ export default class Projects extends React.Component{
                                                             </Carousel.Item>
                                                         ))}
                                                     </Carousel>
-                                                    <h4 className="ProjectsImageCaption">
-                                                        {content.projects.project.carousels.software.caption}
-                                                    </h4>
                                                 </Col>
                                             </Row>
                                         </div>
@@ -164,9 +161,6 @@ export default class Projects extends React.Component{
                                                             </Carousel.Item>
                                                         ))}
                                                     </Carousel>
-                                                    <h4 className="ProjectsImageCaption">
-                                                        {content.projects.project.carousels.electrical.caption}
-                                                    </h4>
                                                 </Col>
                                             </Row>
                                         </div>
@@ -194,9 +188,6 @@ export default class Projects extends React.Component{
                                                             </Carousel.Item>
                                                         ))}
                                                     </Carousel>
-                                                    <h4 className="ProjectsImageCaption">
-                                                        {content.projects.project.carousels.mechanical.caption}
-                                                    </h4>
                                                 </Col>
                                             </Row>
                                         </div>
