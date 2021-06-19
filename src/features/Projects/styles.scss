@@ -56,10 +56,14 @@
 .ProjectDetailButton {
     background-color: $accent-color;
     font-weight: bold;
-    height: 5vh;
+    font-size: 2vh;
+    color: $primary-color;
+    /*height: 14.28%;*/
+    height: 15%;
+    box-sizing: border-box;
     border-radius: 1vh;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     border: none;
     &:hover {
@@ -68,6 +72,34 @@
     &:focus {
         outline: none;
     }
+}
+
+.ProjectDetailButton .ProjectButtonInnerText {
+    color: $primary-color;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-items: center;
+    border: none;
+}
+
+.ProjectDetailButton .ProjectButtonInnerIcon {
+    color: $primary-color;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 15%;
+    align-items: center;
+    border: none;
+}
+
+.ProjectIconSmall{
+    font-size: 3vw;
+    @include PaddingTopBottom(0.5vw);
+    color: $primary-color;
 }
 
 .ProjectOldHeader {
