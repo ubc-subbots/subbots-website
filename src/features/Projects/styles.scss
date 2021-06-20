@@ -59,7 +59,7 @@
     font-size: 2vh;
     color: $primary-color;
     /*height: 14.28%;*/
-    height: 15%;
+    height: 20%;
     box-sizing: border-box;
     border-radius: 1vh;
     display: flex;
@@ -77,9 +77,10 @@
 .ProjectDetailButton .ProjectButtonInnerText {
     color: $primary-color;
     font-weight: bold;
+    font-size: 3vh;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 50%;
     align-items: center;
     border: none;
