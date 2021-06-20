@@ -55,14 +55,29 @@ export default
                 successfully competed at RoboSub which taught the team a lot about what goes into making \
                 an AUV. We are currently working on our second robot which is built off of the original design. \
                 Unfortunately, the 2020 RoboSub competition was cancelled, but we are hoping to participate in 2021.",
-            "carousels": {
-                 "first": {
-                    "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                    "caption": "2017-2018"
-                },
-                "second": {
-                     "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
-                     "caption": "2018-2019"
+            "old_robot": {
+                "header": "NotTriton",
+                "body": "Short description of old robot. Someone please crop all the pictures in carousel to same size \
+                so it stops changing size!!",
+                "carousels": {
+                     "first": {
+                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "caption": "2017-2018"
+                    },
+                    "second": {
+                         "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
+                         "caption": "2018-2019"
+                    }
+                }
+            },
+            "current_robot": {
+                "header": "Triton",
+                "body": "Short description of Triton",
+                "carousels": {
+                     "first": {
+                        "images": ["first_5.jpg"], // Add trition pictures
+                        "caption": "2019-present"
+                    }
                 }
             }
         }
@@ -388,21 +403,6 @@ export default
                 },
                 "mechanical": {
                     "images": ["first_3.jpg"], // Add new pics
-                }
-            }
-        },
-        "projectold": {
-            "image": "software.jpg",
-            "header": "Old subbot name",
-            "body": "This is a paragraph about our old subbot.",
-            "carousels": {
-                "first": {
-                    "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                    "caption": "2017-2018"
-                },
-                "second": {
-                     "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"],
-                     "caption": "2018-2019"
                 }
             }
         },

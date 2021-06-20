@@ -210,59 +210,6 @@ export default class Projects extends React.Component{
                     </Col>
                     <Col>
                         <Row>
-                            <Col sm={6}>
-                                <div className="CarouselContainer">
-                                    <Row>
-                                        <Col>
-                                            <Carousel className="ProjectsCarousel" fade="true">
-                                                {content.projects.projectold.carousels.first.images.map((item, index) => (
-                                                    <Carousel.Item key={index}>
-                                                        <div className="ProjectsImageContainer">
-                                                            <Image src={item} folder="robots" />
-                                                        </div>
-                                                    </Carousel.Item>
-                                                ))}
-                                            </Carousel>
-                                            <h4 className="ProjectsImageCaption">
-                                                {content.projects.projectold.carousels.first.caption}
-                                            </h4>
-                                        </Col>
-                                    </Row>
-                                </div>
-                                <div className="CarouselContainer">
-                                    <Row>
-                                        <Col>
-                                            <Carousel className="ProjectsCarousel" fade="true">
-                                                {content.projects.projectold.carousels.second.images.map((item, index) => (
-                                                    <Carousel.Item key={index}>
-                                                        <div className="ProjectsImageContainer">
-                                                            <Image src={item} folder="robots" />
-                                                        </div>
-                                                    </Carousel.Item>
-                                                ))}
-                                            </Carousel>
-                                            <h4 className="ProjectsImageCaption">
-                                                {content.projects.projectold.carousels.second.caption}
-                                            </h4>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </Col>
-                            <Col>
-                                <h3 className="ProjectOldHeader">
-                                    {content.projects.projectold.header}
-                                </h3>
-                                <hr/>
-                                <div className="ProjectOldBody">{content.projects.projectold.body}</div>
-                            </Col>
-                        </Row>
-                    </Col>
-                    <Col sm={1}>
-                    </Col>
-                </Row>
-                <div className="ContentSeperatorTop"/>
-                    <div className="ContentContainer">
-                        <Row>
                             <Col sm={1}>
                             </Col>
                             <Col>
@@ -277,8 +224,10 @@ export default class Projects extends React.Component{
                             <Col sm={1}>
                             </Col>
                         </Row>
-                    </div>
-                <div className="ContentSeperatorBottom"/>
+                    </Col>
+                    <Col sm={1}>
+                    </Col>
+                </Row>
                 <Modal
                     className="ProjectDetailModal"
                     show={this.state.showPopup}
