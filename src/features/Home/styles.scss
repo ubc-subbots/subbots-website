@@ -31,14 +31,16 @@
 }
 
 .PitchImageContainer{
-    height: 98%;
+    /* height: 90%; */
+    /* width: 45vw;  */
 }
 
 .PitchHeader{
     font-family: $primary-text-font;
     text-align: left;
     color: $accent-color;
-    font-size: 2.6vw;
+    /* font-size: 2.6vw; */
+    font-size: calc(20px + 2.6vw);
     margin-top: 1vh;
     margin-left: 1vw;
     font-weight: 300;
@@ -47,18 +49,20 @@
 
 .PitchBody{
     color: $secondary-color;
-    font-size: $content-font-size;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
     font-weight: 600;
     display: block;
     margin-left: 1vw;
 }
 
 .GoalImageContainer{
-    height: 90%;
+    /* height: 90%; */
+    /* width: 45vw;  */
 }
 
 .GoalHeader{
-    font-size: 3vw;
+    /* font-size: 3vw; */
+    font-size: calc(20px + 3vw);
     padding-top:  4vh;
     font-family: $secondary-text-font;
 }
@@ -66,8 +70,7 @@
 .GoalBody{
     @include MarginTopBottom(2vh);
     color: $secondary-text-color;
-    font-size: $content-font-size;
-    font-weight: 400;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
     display: block;
 }
 
@@ -77,14 +80,14 @@
 
 .ProjectsCarousel{
     margin: auto;
-    height: 100%;
-    width: 100%;
+    /* height: 100%; */
+    /* width: 100%; */
 }
 
 .ProjectsImageContainer{
     margin: auto;
-    height: 68vh;
-    width: 90%;
+    /* height: 68vh; */
+    /* width: 90%; */
 }
 
 .ProjectsImageCaption{
@@ -95,7 +98,17 @@
 .ProjectsHeader{
     margin-top: -3vh;
     text-align: center;
-    font-size: 5vw;
+    /* font-size: 5vw; */
+    font-size: calc(20px + 3vw);
+    color: $accent-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.ProjectsSubheader{
+    text-align: center;
+    /* font-size: 5vw; */
+    font-size: calc(20px + 2.6vw);
     color: $accent-color;
     font-weight: 600px;
     font-family: $secondary-text-font;
@@ -103,6 +116,7 @@
 
 .ProjectsBody{
     margin: 5vh;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
     color: $primary-text-color;
 }
 
