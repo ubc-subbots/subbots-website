@@ -261,71 +261,59 @@ export default
         "Software": "ubc.subbots@gmail.com"
     },
     "projects": {
-        "title": "Projects",
-        "blurb": "Projects we are working on now and in the past.",
+        "title": "Our Projects",
+        "blurb": "Here you'll find more information about what we're working on, and what projects we plan to undertake in the future.",
         "project": {
             "image": "software.jpg", // Add a canonical image for subbot
-            "header": "Triton",
-            "body": "This is a description of our current subbot.",
+            "header": "Featured Project - Propulsion System",
+            "body": "Here's a video outlining the features and design rationale behind our current robot's (Triton) propulsion system from each sub-team's perspective. This video was originally made for the RoboSub 2021 AUV Competiton.",
             "software": {
                 "header": "Software Projects",
-                "body": "The Software will run on the embedded computer that \
-                    the robot carries in its chassis. It defines every movement and decision that\
-                    the robot makes. Without the software, the robot is a potato.",
+                "body": "With little pool access due to the COVID pandemic, \
+                we made the decision to shift our focus to developing our \
+                simulation environment. Simulation provides us with a cheaper and \
+                safer way to test our AUV, as well as ample synthetic data. Synthetic \
+                data has become increasingly used in machine learning, as it offers a \
+                solution to the issues of data collection and data variety. To collect \
+                ample synthetic data for use in future design decisions, we decided to delevop \
+                two simulations. One to emulate what our robot's onboard cameras see and another to \
+                simulate our robot's dynamics. You can learn more about each of these simulations below!",
                 // For Popup card only
                 "detail": [
                     {
                         "header": "Computer Vision",
-                        "bodyFull": '\
-                        <h1>Heading</h1>\
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\
-                        <br/>\
-                        <a href=\'https://subbots.ca\'>Back to home</a>\
-                        <h3>We can format text here using HTML</h3>\
-                        ',
+                        "bodyFull": "One quirk about underwater images is that the farther away an object is, the greener it looks. \
+                        Light behaves differently underwater due to scattering and absorption, meaning if we want our camera simulation \
+                        to look realistic, we need to model the behaviour of light. \
+                        A key component of our simulation is underwater image synthesis, which takes an RGBD \
+                        image (colour and depth) rendered in our simulation and generates an RGB image of an \
+                        underwater scene. Our implementation models the physical properties \
+                        of light, allowing us to simulate a variety of underwater environments by adjusting the \
+                        attenuation coefficients over the visible spectrum of light (ten different water types are \
+                        currently implemented). This ensures our synthetic data covers a range of different \
+                        conditions which will help our models generalize to differences in water quality. All \
+                        of this is crucial in training a computer vision algorithm to recognize objects in an underwater setting.",
+                        
                         "carousel": 
                         {
-                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                        "caption": "2017-2018"
+                        "images": ["CameraSim1.png", "CameraSim2.png", "CameraSim3.png", "CameraSim4.png"],
+                        "caption": "Our simulation in action: recognizing our test object among the generated scenery."
                         },
                     },
                     {
                         "header": "Controls",
-                        "bodyFull": "The Software will run on the embedded computer that \
-                            the robot carries in its chassis. It defines every movement and decision that\
-                            the robot makes. Without the software, the robot is a potato.",
+                        "bodyFull": "Words.",
                         "carousel": 
                         {
                         "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                        "caption": "2017-2018"
-                        },
-                    },
-                    {
-                        "header": "Simulations",
-                        "bodyFull": "The Software will run on the embedded computer that \
-                            the robot carries in its chassis. It defines every movement and decision that\
-                            the robot makes. Without the software, the robot is a potato.",
-                        "carousel": 
-                        {
-                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                        "caption": "2017-2018"
                         },
                     },
                 ],
             },
             "electrical": {
                 "header": "Electrical Projects",
-                "body": "The electrical team develops the electrical systems that \
-                    allow the robot to read and respond to the world. The team designs \
-                    circuits to control thrusters, process hydrophone signal, read sensor\
-                    information, and protect valuable electrical components from unexpected\
-                    power surges. Robust and reliable electrical systems are critical for \
-                    allowing a robot to react well to a dynamic environment.",
+                "body": "This needs to be a summary of what the electrical sub-team has been/is working on, \
+                and a brief explanation of what is in each 'learn more' button.",
                 "detail": [
                     {
                         "header": "Circuit Boards",
@@ -358,12 +346,8 @@ export default
             },
             "mechanical": {
                 "header": "Mechanical Projects",
-                "body": "The mechanical team is responsible for making the body of the robot\
-                    that the electrical and software systems control. We handle buoyancy and static \
-                    stability, hydrodynamics, frame and enclosure design, actuation, electronics \
-                    integration, waterproofing and the overall esthetic of the robot. Designing mechanical \
-                    systems for underwater applications brings many design challenges and is critical in \
-                    allowing robots to exist underwater. ",
+                "body": "This needs to be a summary of what the mechanical sub-team has been/is working on, \
+                and a brief explanation of what is in each 'learn more' button.",
                 "detail": [
                     {
                         "header": "Waterproofing and Enclosures",

@@ -104,7 +104,7 @@ export default class Projects extends React.Component{
                             </Col>
                             <Col sm={6}>
                                 <div className="ProjectImageContainer">
-                                    <Image src={content.projects.project.image}/>
+                                <iframe height="350" width="600"src="https://www.youtube.com/embed/3-rfBsWmo0M"> </iframe>
                                 </div>
                             </Col>
                         </Row>
