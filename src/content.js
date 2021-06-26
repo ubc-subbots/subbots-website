@@ -301,11 +301,48 @@ export default
                         },
                     },
                     {
-                        "header": "Controls",
-                        "bodyFull": "Words.",
+                        "header": "Control System",
+                        "bodyFull": "Having identified objects with computer vision, it is time for our AUV to move. \
+                        However, in order to go to specific locations, we have to control our thrusters precisely, like a driver \
+                        controlling the speed and direction of a car. This is achieved by our control system. \
+                        <br \><br \>\
+                        First, we made a dynamics model for our vehicle. It describes the equations of motion, damping, as well as \
+                        environmental wrench contributions for low-speed, submersible vehicles. \
+                        This model not only provides us with an accurate representation \
+                        of the AUV for us to more easily debug and tune our motion control system, but also gives us a means of \
+                        calculating restoring forces in our chosen simulation environment, Gazebo.\
+                        <br \><br \>\
+                        One constraint of our mathematical model is that it imposes no restrictions on the \"pitch\" axis \
+                        of motion (rotation about the <em>y</em> axis). However, by selecting a PD controller and a \
+                        Linear Quadratic Regulator to aid in controller tuning, we could address this constraint using a cost funtion\
+                         which applies a moderate cost to each of our 5 degrees of freedom, and a large cost on the pitch motion.\
+                        <br \><br \>\
+                        The controller implementation involves using a path planning algorithm to generate position setpoints and a \
+                        velocity profile for each step, then using a generic feedback model, perform PD control on the desired \
+                        setpoint using the gain values determined by the cost function. \
+                        Using the velocity profile and a thruster transformation matrix, we are able to calculate the force \
+                        contributions by each thruster to achieve the desired trajectory for each iteration of our control loop.\
+                        <br \><br \>\
+                        To develop and validate our control system, we first created a Simulink project to test it under \
+                        theoretical conditions. Then, we moved on to using a simulation environment and a 3D rendering of our vehicle. \
+                        This approach allowed us to incrementally develop the system and decouple different stages of the design. \
+                        <br \><br \>\
+                        We chose the open-source simulation tool, Gazebo. It allows us to easily import STL models from SolidWorks, \
+                        and apply mechanical properties like inertia and damping. Using Gazebo, we developed camera, position, gyroscope\
+                         and depth sensor emulators, as well as thruster driver emulators. These emulators interact with our control pipeline \
+                         via ROS2. In addition, we implemented buoyancy an hydrodynamic force plugins that calculate the environment forces \
+                         acting on the AUV at any given time.\
+                        <br \><br \>\
+                        The benefit of using Simulink and Gazebo together is that Gazebo can seamlessly integrate with ROS2, \
+                        as shown in the image above. we implemented the same equations in the Simulink project and in our \
+                        real-time control loop and hydrodynamics plugin used by Gazebo. With the use of ROS topics, we are \
+                        able to launch Gazebo alongside our autonomous control pipeline and communicate with the simulation \
+                        environment exactly as we would communicate with physical hardware. \
+                        This approach lets us visualize the vehicle's behaviour and gives us confidence to move on to physical testing.\
+                        ",
                         "carousel": 
                         {
-                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "images": ["SubbotsGazeboSimulationEnvironment-ControlSystem.png"],
                         },
                     },
                 ],

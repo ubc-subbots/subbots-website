@@ -83,7 +83,7 @@
 .ProjectDetailButton .ProjectButtonInnerText {
     color: $primary-color;
     font-weight: bold;
-    font-size: 2.8vh;
+    font-size: 2vh;
     box-sizing: border-box;
     display: flex;
     justify-content: left;
@@ -146,5 +146,6 @@
 }
 
 .ProjectDetailCarouselImageContainer .Image{
-    width: auto;
+    width: auto-fit;
+    height: auto;
 }
