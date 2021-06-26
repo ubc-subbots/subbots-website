@@ -2,7 +2,6 @@
 
 .CarouselContainer {
   width: 100%;
-  /* background-color: whitesmoke; */
   padding-bottom: 5vh;
   @include PaddingLeftRight(1.4vw);
 }
@@ -24,12 +23,6 @@
     font-family: $secondary-text-font;
 }
 
-.ProjectIntro {
-    margin: 5vh;
-    color: $primary-text-color;
-    font-size: 20px;
-}
-
 .ProjectSubheader {
     margin-top: 3vh;
     text-align: center;
@@ -42,7 +35,7 @@
 .ProjectBody{
     @include MarginTopBottom(2vh);
     color: $secondary-text-color;
-    font-size: 20px;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
     /* font-size: $content-font-size; */
     font-weight: 400;
     display: block;
@@ -112,7 +105,7 @@
 .VideoHeader {
     margin-top: 3vh;
     text-align: center;
-    font-size: calc(10px + 3vw);
+    font-size: calc(20px + 2vw);
     color: $accent-color;
     font-weight: 600px;
     font-family: $secondary-text-font;
@@ -136,7 +129,7 @@
 .ProjectFutureBody{
     margin: 5vh;
     color: $primary-text-color;
-    font-size: 20px;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
 }
 
 .ProjectDetailCarouselImageContainer{

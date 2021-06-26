@@ -92,13 +92,13 @@ export default class Projects extends React.Component{
                     <Col sm={1}>
                     </Col>
                     <Col>
-                        <h4 className="ProjectOldHeader">
+                        <h4 className="VideoHeader">
                             {content.projects.project.header}
                         </h4>
                         <hr/>
                         <Row>
                             <Col sm={6}>
-                                <div className="ProjectOldBody">
+                                <div className="VideoBody">
                                   {content.projects.project.body}
                                 </div>
                             </Col>
