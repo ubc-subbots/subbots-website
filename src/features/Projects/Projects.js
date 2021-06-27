@@ -131,7 +131,7 @@ export default class Projects extends React.Component{
                                                         {content.projects.project.carousels.software.images.map((item, index) => (
                                                             <Carousel.Item key={index}>
                                                                 <div className="ProjectsImageContainer">
-                                                                    <Image src={item} folder="robots" />
+                                                                    <Image src={item} folder="images" />
                                                                 </div>
                                                             </Carousel.Item>
                                                         ))}
@@ -158,7 +158,7 @@ export default class Projects extends React.Component{
                                                         {content.projects.project.carousels.electrical.images.map((item, index) => (
                                                             <Carousel.Item key={index}>
                                                                 <div className="ProjectsImageContainer">
-                                                                    <Image src={item} folder="robots" />
+                                                                    <Image src={item} folder="images" />
                                                                 </div>
                                                             </Carousel.Item>
                                                         ))}
@@ -251,7 +251,7 @@ export default class Projects extends React.Component{
                                         {this.state.popupContent.carousel.images.map((item, index) => (                                    
                                             <Carousel.Item key={index}>
                                                 <div className="ProjectDetailCarouselImageContainer">
-                                                    <Image src={item} folder="robots" />
+                                                    <Image src={item} folder="images" />
                                                 </div>
                                             </Carousel.Item>
                                         ))}

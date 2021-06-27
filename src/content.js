@@ -272,18 +272,17 @@ export default
                 "body": "With little pool access due to the COVID pandemic, \
                 we made the decision to shift our focus to developing our \
                 simulation environment. Simulation provides us with a cheaper and \
-                safer way to test our AUV, as well as ample synthetic data. Synthetic \
-                data has become increasingly used in machine learning, as it offers a \
-                solution to the issues of data collection and data variety. To collect \
+                safer way to test our AUV, as well as ample synthetic data. To collect \
                 ample synthetic data for use in future design decisions, we decided to delevop \
                 two simulations. One to emulate what our robot's onboard cameras see and another to \
-                simulate our robot's dynamics. You can learn more about each of these simulations below!",
+                simulate our robot's dynamics. You can learn more about each of these simulations below:",
                 // For Popup card only
                 "detail": [
                     {
                         "header": "Computer Vision",
-                        "bodyFull": "One quirk about underwater images is that the farther away an object is, the greener it looks. \
-                        Light behaves differently underwater due to scattering and absorption, meaning if we want our camera simulation \
+                        "bodyFull": "Shown above: Our computer vision simulation in action. The program manges to distinguish our test image 'Lena' from the underwater surroundings.<br \><br \>\
+                        One quirk about underwater images is that the farther away an object is, the greener it looks. \
+                        Light behaves differently underwater than on land due to scattering and absorption, meaning if we want our camera simulation \
                         to look realistic, we need to model the behaviour of light. \
                         A key component of our simulation is underwater image synthesis, which takes an RGBD \
                         image (colour and depth) rendered in our simulation and generates an RGB image of an \
@@ -291,18 +290,28 @@ export default
                         of light, allowing us to simulate a variety of underwater environments by adjusting the \
                         attenuation coefficients over the visible spectrum of light (ten different water types are \
                         currently implemented). This ensures our synthetic data covers a range of different \
-                        conditions which will help our models generalize to differences in water quality. All \
-                        of this is crucial in training a computer vision algorithm to recognize objects in an underwater setting.",
+                        conditions which will help our models generalize to differences in water quality. We then \
+                        used this simulation to render realistic underwater scenes. \
+                        <br \><br \>\
+                        After creating a realistic underwater environment, we trained a YOLO object detection model \
+                        to recognize our common test image, 'Lena'. We generated a dataset of 800 underwater images with varying \
+                        scenery and placements of Lena. Even when Lena was only partially in frame or occluded by other objects, \
+                        our program could still recognize her. In fact, after 2000 iterations on our 800 image dataset, our model \
+                        achieved a mean average precision (mAP) score of 95%. \
+                        <br \><br \>\
+                        Once pool is access is readily available again, we plan on collecting in-water data for use as a validation \
+                        dataset, as real-world performance will be the true test for our model.",
                         
                         "carousel": 
                         {
                         "images": ["CameraSim1.png", "CameraSim2.png", "CameraSim3.png", "CameraSim4.png"],
-                        "caption": "Our simulation in action: recognizing our test object among the generated scenery."
                         },
                     },
                     {
                         "header": "Control System",
-                        "bodyFull": "Having identified objects with computer vision, it is time for our AUV to move. \
+                        "bodyFull": "Shown above: a diagram displaying all the components of our control system.\
+                        <br \><br \>\
+                        Having identified objects with computer vision, it is time for our AUV to move. \
                         However, in order to go to specific locations, we have to control our thrusters precisely, like a driver \
                         controlling the speed and direction of a car. This is achieved by our control system. \
                         <br \><br \>\
@@ -349,33 +358,82 @@ export default
             },
             "electrical": {
                 "header": "Electrical Projects",
-                "body": "This needs to be a summary of what the electrical sub-team has been/is working on, \
-                and a brief explanation of what is in each 'learn more' button.",
+                "body": "The electrical team develops the electrical systems that allow the robot to read and respond to the world. \
+                The team designs systems to control and power thrusters, process signals, interface and communicate between sub-systems, \
+                and protect valuable electrical components from unexpected power surges. Robust and reliable electrical systems are critical \
+                for allowing a robot to react well to a dynamic environment. Here are some of the projects the electrical team is currently working on:",
                 "detail": [
                     {
-                        "header": "Circuit Boards",
-                        "bodyFull": "changeme",
+                        "header": "Power Distribution",
+                        "bodyFull": "Shown Above: A diagram showing how our power distribution system is connected within and between enclosures. \
+                        <br \><br \>\
+                        Power distribution is a crucial system for the robot as it organizes and delivers the appropriate electrical power to \
+                        all of the components. One of the key points of our power distribution system is the use of two separate batteries powering the whole \
+                        system. There are a couple of reasons why this separation is necessary. First, there are components that generally are power-heavy, such \
+                        as the thrusters, which usually require more power to run. These components require more powerful batteries, so it makes more sense to connect \
+                        them to a bigger battery, while smaller components such as the pressure sensors connect to a smaller battery. Second, having two separate batteries \
+                        allows us to completely isolate noise. Motors and thrusters usually generate a lot of noise which can interfere with more sensitive signals in the system. \
+                        Our team uses one battery for the noisy and power-heavy components, and the other for sensitive low-power components. The use of optocouplers enables \
+                        electrical isolation between the two batteries because optocouplers have an LED-phototransistor pair which allows us to make voltage references between \
+                        the two batteries without actually physically connecting the two. \
+                        <br \><br \>\
+                        Another important component of power distribution is wiring. It is important to ensure that power-heavy components are connected with appropriate wires that \
+                        are able to handle the required current and voltage. For sensitive components, it is important to make the wire connections as short as possible and physically \
+                        distant from power-heavy wires to ensure that the sensitive readings don’t pick up noise in the system. Within the main enclosure, components are laid out to \
+                        ensure these types of spacings are possible for all wiring. ",
                         "carousel": 
                         {
-                        "images": [],
+                        "images": ["PowerDistribution.png"],
                         "caption": ""
                         },
                     },
                     { 
-                        "header": "Signals",
-                        "bodyFull": "changeme",
+                        "header": "Sound Localization",
+                        "bodyFull": "Shown Above: One of the sound localization architectures we are considering.\
+                        <br \><br \>\
+                        In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies. \
+                        In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use \
+                        those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog \
+                        circuitry to firmware/software. \
+                        <br \><br \>\
+                        The high level diagram featured above shows one of the architectures we are currently considering for our system. At the moment, the project is still in its early stages \
+                        and a lot of the work we are currently doing is research based. In order to compare various implementations and techniques, we have built a simulator in Python from scratch \
+                        which puts an emphasis on modularity and flexibility. This will allow us to test a variety of configurations and implementations for the system to determine the optimal design. \
+                        <br \><br \>\
+                        Some of the tasks our members are currently working on include: designing the analog filters and pre-amplifier, maintaining and adding functionality to our simulator, researching \
+                        techniques to deal with reflections and multipath, researching various localization techniques such as multilateration and beamforming, and using our simulator to test the effectiveness \
+                        of different implementations.",
                         "carousel": 
                         {
-                        "images": [],
+                        "images": ["SoundLocalizationArch.png"],
                         "caption": ""
                         },
                     },
                     { 
-                        "header": "Power System",
-                        "bodyFull": "changeme",
+                        "header": "Battery Management",
+                        "bodyFull": "Shown Above: A diagram showing the major components of our battery management system.\
+                        <br \><br \>\
+                        LiPo (lithium polymer) batteries are incredibly efficient for use in robotics, they’re lightweight, small, and can output very high currents. However they can also be very dangerous if not \
+                        maintained and used safely. The battery management systems team’s purpose is to ensure that the robots batteries are being used safely, and to protect the rest of the robot from any potential \
+                        harm they could cause. This project is great for anyone interested in gaining hands-on experience with the entire lifecycle of circuit design! \
+                        <br \><br \>\
+                        Our team is currently focused on three main projects and are integrated into the power management system: \
+                        <br \><br \>\
+                        Voltage Monitoring: This project is the first one the BMS team took on. A purely electrical circuit solution that acts as a kill switch to the entire robot. The killswitch is triggered in the event \
+                        that any cell in the battery goes below a safe voltage potentially harming the LiPo’s or our system. Throughout this project team members got experience designing a solution from scratch, hands-on \
+                        testing with lab equipment, troubleshooting and iterating on design, designing a PCB in Altium, and soldering/assembling the final circuit. \
+                        <br \><br \>\
+                        Current Monitoring: The purpose of the current monitor is to adjust current draw to safe levels, and as a last resort a kill switch to the entire system. This is a newer project still in the early design \
+                        and simulation testing phases. Our design is leveraging the use of a negative feedback op amp to keep the voltage on two nodes identical. Then using a shunt resistor in parallel with a larger reference \
+                        resistance we could monitor changes in voltage and measure its relationship to current to get a reading of how much current was entering our system. Currently team members are working on testing this design \
+                        in LTSpice, and adding features such as a 12A fuse to act as a kill switch, an LED indicator to notify us quickly if that fuse breaks and more.\
+                        <br \><br \>\
+                        Temperature Monitoring: Still in the research phase, the purpose of temperature monitoring is to ensure that the batteries do not overheat and get damaged during operation. This is an especially important \
+                        feature since the robot is underwater, and the batteries are stored in small enclosures. The temperature data that is read electrically will then be sent to a microcontroller and subsequently the robot main \
+                        computer so we can adjust operation if the batteries begin to overheat. Currently team members are researching how to leverage the batteries’ integrated NTC thermistor to read temperature data.",
                         "carousel": 
                         {
-                        "images": [],
+                        "images": ["BMS-System.png"],
                         "caption": ""
                         },
                     },
@@ -392,7 +450,6 @@ export default
                         "carousel": 
                         {
                         "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                        "caption": "2017-2018"
                         },
                     },
                     {
@@ -401,7 +458,6 @@ export default
                         "carousel": 
                         {
                         "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                        "caption": "2017-2018"
                         },
                     },
                     {
@@ -410,17 +466,16 @@ export default
                         "carousel": 
                         {
                         "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
-                        "caption": "2017-2018"
                         },
                     },
                 ],
             },
             "carousels": {
                 "software": {
-                    "images": ["first_1.jpg"], // Add new pics
+                    "images": ["software.jpg"], // Add new pics
                 },
                 "electrical": {
-                    "images": ["first_2.jpg"], // Add new pics
+                    "images": ["elec1.PNG", "elec2.PNG", "elec3.jpg", "elec4.png", "elec5.jpg"], // Add new pics
                 },
                 "mechanical": {
                     "images": ["first_3.jpg"], // Add new pics
