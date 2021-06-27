@@ -263,6 +263,66 @@ export default
                 "program": "Software Co-Lead"
             },
             {
+                "name": "Andy Zhou",
+                "image": "No_Photo.gif",
+                "email": "haonanzhou1998@gmail.com",
+                "program": "Software Team"
+            },
+            {
+                "name": "Jared Chan",
+                "image": "No_Photo.gif",
+                "email": "jaredchan42@gmail.com",
+                "program": "Software Team"
+            },
+            {
+                "name": "Kota Chang",
+                "image": "No_Photo.gif",
+                "email": "kota.chang@alumni.ubc.ca",
+                "program": "Electrical Co-Lead"
+            },
+            {
+                "name": "Pavitar Kalra",
+                "image": "Pavitar_Kalra.JPG",
+                "email": "me@pavitar.ca",
+                "program": "Electrical Project Lead"
+            },
+            {
+                "name": "Hubert Shim",
+                "image": "No_Photo.gif",
+                "email": "hubertshim98@gmail.com",
+                "program": "Electrical Project Lead"
+            },
+            {
+                "name": "Prashant Wason",
+                "image": "No_Photo.gif",
+                "email": "pwason2000@gmail.com",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Ema Nikolic",
+                "image": "Ema_Niko.jpg",
+                "email": "ema.nikolic@alumni.ubc.ca",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Ryah James Murch",
+                "image": "Ryan_Murch.jpg",
+                "email": "murch.ryan.j@gmail.com",
+                "program": "Mechanical Lead"
+            },
+            {
+                "name": "Nodir Musaev",
+                "image": "Nodir_Musaev.jpg",
+                "email": "musaevnod@gmail.com",
+                "program": "Mechanical Project Lead"
+            },
+            {
+                "name": "Colin Scott Ree",
+                "image": "No_Photo.gif",
+                "email": "colinree2901@gmail.com",
+                "program": "Mechanical Project Lead"
+            },
+            {
                 "name": "Cameron Fletcher",
                 "image": "Cameron_Fletcher.jpg",
                 "email": "camfletcher2020@gmail.com",
@@ -273,20 +333,6 @@ export default
                 "image": "Angie_Pinto.jpg",
                 "email": "pinto.angie.02@gmail.com",
                 "program": "Mechanical Team"
-            },
-            
-            
-            {
-                "name": "Nodir Musaev",
-                "image": "Nodir_Musaev.jpg",
-                "email": "musaevnod@gmail.com",
-                "program": "Mechanical Project Lead"
-            },
-            {
-                "name": "Pavitar Kalra",
-                "image": "Pavitar_Kalra.JPG",
-                "email": "me@pavitar.ca",
-                "program": "Electrical Project Lead"
             },
             {
                 "name": "Viktor Gabriel Moreno",
@@ -300,48 +346,8 @@ export default
                 "email": "",
                 "program": "Mechanical Team"
             },
-            {
-                "name": "Hubert Shim",
-                "image": "No_Photo.gif",
-                "email": "hubertshim98@gmail.com",
-                "program": "Electrical Project Lead"
-            },
-            {
-                "name": "Kota Chang",
-                "image": "No_Photo.gif",
-                "email": "kota.chang@alumni.ubc.ca",
-                "program": "Electrical Co-Lead"
-            },
-            {
-                "name": "Prashant Wason",
-                "image": "No_Photo.gif",
-                "email": "pwason2000@gmail.com",
-                "program": "Electrical Team"
-            },
-            {
-                "name": "Colin Scott Ree",
-                "image": "No_Photo.gif",
-                "email": "colinree2901@gmail.com",
-                "program": "Mechanical Project Lead"
-            },
-            {
-                "name": "Andy Zhou",
-                "image": "No_Photo.gif",
-                "email": "haonanzhou1998@gmail.com",
-                "program": "Software Team"
-            },
-            {
-                "name": "Ema Nikolic",
-                "image": "Ema_Niko.jpg",
-                "email": "",
-                "program": "Electrical Team"
-            },
-            {
-                "name": "Jared Chan",
-                "image": "",
-                "email": "",
-                "program": "Software Team"
-            },
+
+
         ]
     },
     "emails": {
