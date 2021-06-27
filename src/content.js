@@ -245,18 +245,6 @@ export default
         "title": "Current Members",
         "member_list": [
             {
-                "name": "Cameron Fletcher",
-                "image": "Cameron_Fletcher.jpg",
-                "email": "camfletcher2020@gmail.com",
-                "program": "Mechanical Team"
-            },
-            {
-                "name": "Angie Pinto",
-                "image": "Angie_Pinto.jpg",
-                "email": "pinto.angie.02@gmail.com",
-                "program": "Mechanical Team"
-            },
-            {
                 "name": "Dvir Hilu",
                 "image": "Dvir_Hilu.jpg",
                 "email": "dvirhilu16@gmail.com",
@@ -274,6 +262,20 @@ export default
                 "email": "kevinh42@student.ubc.ca",
                 "program": "Software Co-Lead"
             },
+            {
+                "name": "Cameron Fletcher",
+                "image": "Cameron_Fletcher.jpg",
+                "email": "camfletcher2020@gmail.com",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Angie Pinto",
+                "image": "Angie_Pinto.jpg",
+                "email": "pinto.angie.02@gmail.com",
+                "program": "Mechanical Team"
+            },
+            
+            
             {
                 "name": "Nodir Musaev",
                 "image": "Nodir_Musaev.jpg",
@@ -308,25 +310,37 @@ export default
                 "name": "Kota Chang",
                 "image": "No_Photo.gif",
                 "email": "kota.chang@alumni.ubc.ca",
-                "program": "Engineering Physics"
+                "program": "Electrical Co-Lead"
             },
             {
                 "name": "Prashant Wason",
                 "image": "No_Photo.gif",
                 "email": "pwason2000@gmail.com",
-                "program": "Electrical Engineering"
+                "program": "Electrical Team"
             },
             {
                 "name": "Colin Scott Ree",
                 "image": "No_Photo.gif",
                 "email": "colinree2901@gmail.com",
-                "program": "Mechanical Engineering"
+                "program": "Mechanical Project Lead"
             },
             {
                 "name": "Andy Zhou",
                 "image": "No_Photo.gif",
                 "email": "haonanzhou1998@gmail.com",
-                "program": "Electrical Engineering"
+                "program": "Software Team"
+            },
+            {
+                "name": "Ema Nikolic",
+                "image": "Ema_Niko.jpg",
+                "email": "",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Jared Chan",
+                "image": "",
+                "email": "",
+                "program": "Software Team"
             },
         ]
     },
