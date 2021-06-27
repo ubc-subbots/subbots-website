@@ -241,68 +241,68 @@ export default
     },
 
     "members": {
-        "image": "electrical.jpg",
+        "image": "team_photo.jpg",
         "title": "Current Members",
         "member_list": [
             {
                 "name": "Cameron Fletcher",
                 "image": "Cameron_Fletcher.jpg",
                 "email": "camfletcher2020@gmail.com",
-                "program": "1st year BASc"
+                "program": "Mechanical Team"
             },
             {
                 "name": "Angie Pinto",
                 "image": "Angie_Pinto.jpg",
                 "email": "pinto.angie.02@gmail.com",
-                "program": "Mechanical Engineering"
+                "program": "Mechanical Team"
             },
             {
                 "name": "Dvir Hilu",
                 "image": "Dvir_Hilu.jpg",
                 "email": "dvirhilu16@gmail.com",
-                "program": "Engineering Physics"
+                "program": "Team Captain"
             },
             {
                 "name": "Jacob Evans Cronin",
                 "image": "Jake_Cronin.png",
                 "email": "jcronin97@live.ca",
-                "program": "Electrical Engineering"
+                "program": "Software Co-Lead"
             },
             {
                 "name": "Kevin Huang",
                 "image": "Kevin_Huang.jfif",
                 "email": "kevinh42@student.ubc.ca",
-                "program": "Engineering Physics"
+                "program": "Software Co-Lead"
             },
             {
                 "name": "Nodir Musaev",
                 "image": "Nodir_Musaev.jpg",
                 "email": "musaevnod@gmail.com",
-                "program": "Geological Engineering "
+                "program": "Mechanical Project Lead"
             },
             {
                 "name": "Pavitar Kalra",
                 "image": "Pavitar_Kalra.JPG",
                 "email": "me@pavitar.ca",
-                "program": "Electrical Engineering "
+                "program": "Electrical Project Lead"
             },
             {
                 "name": "Viktor Gabriel Moreno",
                 "image": "No_Photo.gif",
                 "email": "viktor.moreno123@gmail.com",
-                "program": "Civil Engineering"
+                "program": "Mechanical Team"
             },
             {
                 "name": "Luke D. Gallant",
                 "image": "No_Photo.gif",
                 "email": "",
-                "program": "Mechatronics Engineering"
+                "program": "Mechanical Team"
             },
             {
                 "name": "Hubert Shim",
                 "image": "No_Photo.gif",
                 "email": "hubertshim98@gmail.com",
-                "program": "Electrical Engineering"
+                "program": "Electrical Project Lead"
             },
             {
                 "name": "Kota Chang",
