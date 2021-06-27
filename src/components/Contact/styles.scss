@@ -7,6 +7,9 @@
     z-index: 1000;
     text-align: left !important;
     @extend .PrimaryButton;
+    border-color: #aaff00 !important;
+    
+
 }
 
 .ContactText{
@@ -17,6 +20,7 @@
 .MailIcon{
     margin-right: 0.6vw;
     color: $secondary-text-color;
+    //color: blue;
 }
 
 .ContactModalBody{
