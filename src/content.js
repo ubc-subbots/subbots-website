@@ -4,7 +4,7 @@ export default
 {
     "home": {
         "image": "software.jpg",
-        "title": "Welcome To UBC Subbots",
+        "title": "Welcome To UBC Subbots!",
         "blurb": "UBC Subbots is an engineering student design team dedicated to \
             making an autonomous underwater vehicle (AUV) for the RoboSub competition \
             in San Diego, California each year. This competition challenges us to make \
@@ -236,7 +236,118 @@ export default
             {
                 "image": "vp.jpg",
                 "link": "https://apsc.ubc.ca/"
+            }
+        ]
+    },
+
+    "members": {
+        "image": "team_photo.jpg",
+        "title": "Current Members",
+        "member_list": [
+            {
+                "name": "Dvir Hilu",
+                "image": "Dvir_Hilu.jpg",
+                "email": "dvirhilu16@gmail.com",
+                "program": "Team Captain"
             },
+            {
+                "name": "Jacob Evans Cronin",
+                "image": "Jake_Cronin.png",
+                "email": "jcronin97@live.ca",
+                "program": "Software Co-Lead"
+            },
+            {
+                "name": "Kevin Huang",
+                "image": "Kevin_Huang.jfif",
+                "email": "kevinh42@student.ubc.ca",
+                "program": "Software Co-Lead"
+            },
+            {
+                "name": "Andy Zhou",
+                "image": "No_Photo.gif",
+                "email": "haonanzhou1998@gmail.com",
+                "program": "Software Team"
+            },
+            {
+                "name": "Jared Chan",
+                "image": "No_Photo.gif",
+                "email": "jaredchan42@gmail.com",
+                "program": "Software Team"
+            },
+            {
+                "name": "Kota Chang",
+                "image": "No_Photo.gif",
+                "email": "kota.chang@alumni.ubc.ca",
+                "program": "Electrical Co-Lead"
+            },
+            {
+                "name": "Pavitar Kalra",
+                "image": "Pavitar_Kalra.JPG",
+                "email": "me@pavitar.ca",
+                "program": "Electrical Project Lead"
+            },
+            {
+                "name": "Hubert Shim",
+                "image": "No_Photo.gif",
+                "email": "hubertshim98@gmail.com",
+                "program": "Electrical Project Lead"
+            },
+            {
+                "name": "Prashant Wason",
+                "image": "No_Photo.gif",
+                "email": "pwason2000@gmail.com",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Ema Nikolic",
+                "image": "Ema_Niko.jpg",
+                "email": "ema.nikolic@alumni.ubc.ca",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Ryah James Murch",
+                "image": "Ryan_Murch.jpg",
+                "email": "murch.ryan.j@gmail.com",
+                "program": "Mechanical Lead"
+            },
+            {
+                "name": "Nodir Musaev",
+                "image": "Nodir_Musaev.jpg",
+                "email": "musaevnod@gmail.com",
+                "program": "Mechanical Project Lead"
+            },
+            {
+                "name": "Colin Scott Ree",
+                "image": "Colin_Ree.jpg",
+                "email": "colinree2901@gmail.com",
+                "program": "Mechanical Project Lead"
+            },
+            {
+                "name": "Cameron Fletcher",
+                "image": "Cameron_Fletcher.jpg",
+                "email": "camfletcher2020@gmail.com",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Angie Pinto",
+                "image": "Angie_Pinto.jpg",
+                "email": "pinto.angie.02@gmail.com",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Viktor Gabriel Moreno",
+                "image": "No_Photo.gif",
+                "email": "viktor.moreno123@gmail.com",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Luke D. Gallant",
+                "image": "No_Photo.gif",
+                "email": "",
+                "program": "Mechanical Team"
+            },
+
+
         ]
     },
     "emails": {
