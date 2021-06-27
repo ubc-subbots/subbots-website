@@ -65,7 +65,7 @@ function ContactForm() {
 
 <div>
       <textarea rows="5"
-	cols="50"
+	cols="45"
         id="message"
         name="message"
 	placeholder="Enter message here"
