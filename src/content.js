@@ -318,7 +318,7 @@ export default
             },
             {
                 "name": "Colin Scott Ree",
-                "image": "No_Photo.gif",
+                "image": "Colin_Ree.jpg",
                 "email": "colinree2901@gmail.com",
                 "program": "Mechanical Project Lead"
             },
