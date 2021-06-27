@@ -1,20 +1,22 @@
 @import 'variables';
+$green: #aaff00;
+
 
 .PrimaryButton{
   font-size: 1.2vw;
-  border-color: $accent-color !important;
-  background-color: $accent-color !important;
+  border-color: $green !important;
+  background-color: $green !important;
   &:hover{
     opacity: 0.7;
   }
   &:active{
-    border-color: $accent-color !important;
-    background-color: $accent-color !important;
+    border-color: $green !important;
+    background-color: $green !important;
   }
   &:focus{
-    border-color: $accent-color !important;
-    background-color: $accent-color !important;
-    box-shadow: 0 0 0 0.2rem $accent-color !important;
+    border-color: $green !important;
+    background-color: $green !important;
+    box-shadow: 0 0 0 0.2rem $green !important;
   }
 }
 

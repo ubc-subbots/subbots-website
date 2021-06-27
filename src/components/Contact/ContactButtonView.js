@@ -30,7 +30,7 @@ export default class ContactButtonView extends React.Component {
                     onHide={this.hideModal}
                     onEscapeKeyDown={this.hideModal}
                     shouldcloseonoverlayclick="true"
-                    size="lg"
+                    size="1g"
                     aria-labelledby="contained-modal-title-vcenter"
                     centered
                 >
