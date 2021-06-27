@@ -7,7 +7,8 @@
     @include MarginLeftRight(10px);
     width: 19vw;
     height: 19vw;
-    padding-top: 20px;
+    // padding-top: 20px;
+    padding-top: 1vw;
 }
 
 .MemberCardBody {
@@ -17,15 +18,21 @@
 }
 
 .MemberCardTitle {
-    font-size: 20px !important;
-    padding-top: 30px;
+    // font-size: 20px !important;
+    // padding-top: 30px;
+    // font-weight: 600 !important;
+    font-size: 1.1vw !important;
+    padding-top: 1.4vw;
     font-weight: 600 !important;
     color: $secondary-text-color;
 }
 
 .MemberCardSubtitle{
-    font-size: 19px !important;
-    padding-top: 10px;
+    // font-size: 19px !important;
+    // padding-top: 10px;
+    // font-weight: 400 !important;
+    font-size: 1.05vw !important;
+    padding-top: 0.5vw;
     font-weight: 400 !important;
     color: $secondary-text-color;
 }
@@ -38,15 +45,19 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 140px;
-    width: 140px;
+    // height: 140px;
+    // width: 140px;
+    // border-radius: 150px;
+    height: 7.5vw;
+    width: 7.5vw;
     border-radius: 150px;
 }
 
 .MemberCardText{
     font-style: italic;
     font-size: 1vw;
-    padding-top: 15px;
+    // padding-top: 15px;
+    padding-top: 0.5vw;
     font-weight: 400 !important;
     color: $secondary-text-color;
 }
