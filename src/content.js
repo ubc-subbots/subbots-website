@@ -57,6 +57,10 @@ export default
                 Unfortunately, the 2020 RoboSub competition was cancelled, but we are hoping to participate in 2021.",
             "old_robot": {
                 "header": "Orca",
+                "body": "Subbot's first attempt at creating an AUV, the design was a bare bones approach for the \
+                RoboSub 2018 competition. The robot consisted of two custom machined camera enclosures, two 6\" \
+                enclosures splitting the power and control electronics, and a basic ball collection system on an H \
+                shaped frame. To reduce cost 4 thrustors were used to provide 4-DOF control of the design.",
                 "carousels": {
                     "second": {
                          "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
@@ -66,6 +70,13 @@ export default
             },
             "current_robot": {
                 "header": "Triton",
+                "body": "UBC Subbots's submission to RoboSub 2021 is the Triton Autonomous Underwater Vehicle (AUV). \
+                Novel elements designed in-house include mechanical components, such as our enclosure and pull-out \
+                mounting plate, and electronics, such as our battery management system. Our software pipeline, running \
+                on a Jetson TX2, takes advantage of ROS2's modular design, introspection tools, and integration with the \
+                Gazebo simulator. With the constraints set by the COVID-19 pandemic, we focused heavily on development of \
+                realistic and physically-informed software simulations for AUV control, computer vision,and sound \
+                localization, laying the groundwork for testing and verification of future iterations of our AUV.",
                 "carousels": {
                      "first": {
                         "images": ["second_1.jpg", "second_2.jpg", "second_3.jpg", "second_4.jpg", "second_5.jpg", "second_6.jpg"], // Add trition pictures
