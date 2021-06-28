@@ -19,7 +19,7 @@ export default class Footer extends React.Component{
                     <Row className="IconRow">
                             <Col sm={3}  className="my-auto">
                                 <div className="CopyrightText">
-                                    Copyright © UBC Subbots 2018
+                                    Copyright © UBC Subbots 2021
                                 </div>
                             </Col>
                             <Col>

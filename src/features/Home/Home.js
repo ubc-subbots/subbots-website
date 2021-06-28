@@ -42,7 +42,7 @@ export default class Home extends React.Component{
                         <div className="PitchHeader">{content.home.pitch.header}</div>
                         <div className="PitchBody">{content.home.pitch.body}</div>
                     </Col>
-                    <Col sm={2}></Col>
+                    <Col sm={1}></Col>
                 </Row>
                 <div className="ContentSeperatorTop"/>
                     <div className="ContentContainer">
@@ -51,16 +51,18 @@ export default class Home extends React.Component{
                         </h4>
                         <hr/>
                         <Row>
+                            <Col sm={1}></Col>
                             <Col sm={6}>
                                 <div className="GoalBody">
                                   {content.home.goal.body}
                                 </div>
                             </Col>
-                            <Col sm={6}>
+                            <Col sm={4}>
                                 <div className="GoalImageContainer">
                                     <Image src={content.home.goal.image}/>
                                 </div>
                             </Col>
+                            <Col sm={1}></Col>
                         </Row>
                     </div>
                 <div className="ContentSeperatorBottom"/>
@@ -76,6 +78,21 @@ export default class Home extends React.Component{
                             <h4 className="ProjectsSubheader">
                                 {content.home.projects.old_robot.header}
                             </h4>
+                            <div className="ProjectsBody">
+                                {content.home.projects.old_robot.body}
+                            </div>
+                        </Col>
+                        <Col sm={6}>
+                            <h4 className="ProjectsSubheader">
+                                {content.home.projects.current_robot.header}
+                            </h4>
+                            <div className="ProjectsBody">
+                                {content.home.projects.current_robot.body}
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col sm={6}>
                             <Carousel className="ProjectsCarousel" fade="true">
                                 {content.home.projects.old_robot.carousels.second.images.map((item, index) => (
                                     <Carousel.Item key={index}>
@@ -90,9 +107,6 @@ export default class Home extends React.Component{
                             </h4>
                         </Col>
                         <Col sm={6}>
-                            <h4 className="ProjectsSubheader">
-                                {content.home.projects.current_robot.header}
-                            </h4>
                             <Carousel className="ProjectsCarousel" fade="true">
                                 {content.home.projects.current_robot.carousels.first.images.map((item, index) => (
                                     <Carousel.Item key={index}>
