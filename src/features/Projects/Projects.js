@@ -104,7 +104,7 @@ export default class Projects extends React.Component{
                             </Col>
                             <Col sm={6}>
                                 <div className="ProjectImageContainer">
-                                <iframe height="350" width="600"src="https://www.youtube.com/embed/3-rfBsWmo0M"> </iframe>
+                                <iframe height="400" width="700"src="https://www.youtube.com/embed/Oo7kQUQVeRs "> </iframe>
                                 </div>
                             </Col>
                         </Row>
@@ -185,7 +185,7 @@ export default class Projects extends React.Component{
                                                         {content.projects.project.carousels.mechanical.images.map((item, index) => (
                                                             <Carousel.Item key={index}>
                                                                 <div className="ProjectsImageContainer">
-                                                                    <Image src={item} folder="robots" />
+                                                                    <Image src={item} folder="images" />
                                                                 </div>
                                                             </Carousel.Item>
                                                         ))}
@@ -204,30 +204,6 @@ export default class Projects extends React.Component{
                             </Col>
                         </Row>
                     </div>
-                <div className="ContentSeperatorBottom"/>
-                <Row>
-                    <Col sm={1}>
-                    </Col>
-                    <Col>
-                        <Row>
-                            <Col sm={1}>
-                            </Col>
-                            <Col>
-                                <h4 className="ProjectFutureHeader">
-                                    {content.projects.projectfuture.header}
-                                </h4>
-                                <hr/>
-                                <div className="ProjectFutureBody">
-                                  {content.projects.projectfuture.body}
-                                </div>
-                            </Col>
-                            <Col sm={1}>
-                            </Col>
-                        </Row>
-                    </Col>
-                    <Col sm={1}>
-                    </Col>
-                </Row>
                 <Modal
                     className="ProjectDetailModal"
                     show={this.state.showPopup}

@@ -302,7 +302,7 @@ export default
                     },
                     {
                         "header": "Control System",
-                        "bodyFull": "Shown above: a diagram displaying all the components of our control system.\
+                        "bodyFull": "Shown above: A diagram displaying all the components of our control system.\
                         <br \><br \>\
                         Having identified objects with computer vision, it is time for our AUV to move. \
                         However, in order to go to specific locations, we have to control our thrusters precisely, like a driver \
@@ -434,31 +434,75 @@ export default
             },
             "mechanical": {
                 "header": "Mechanical Projects",
-                "body": "This needs to be a summary of what the mechanical sub-team has been/is working on, \
-                and a brief explanation of what is in each 'learn more' button.",
+                "body": "With access to in-person workspaces limited during the COVID-era, we have focused primarily \
+                on CAD design, and on figuring out manufacturing techniques for said designs once in-person work is allowed \
+                again. The mechanical team is divided into three sub-teams, represented by the buttons below. Feel free to click \
+                on each one to see what they've been working on.",
                 "detail": [
                     {
                         "header": "Waterproofing and Enclosures",
-                        "bodyFull": "Changeme",
+                        "bodyFull": "Shown Above: A Solidworks rendering of our robot's enclosures and their locations relative to eachother. \
+                        <br \><br \>\
+                        In general, the projects we undertake involve creating watertight enclosures and electrical connections that are easy \
+                        to access and maintain. \
+                        <br \><br \>\
+                        In order to access the components within the main enclosure, we have decided that all of the electronics should sit on \
+                        a single platform. This platform rests on a pair or rails which allow the circuity to slide out of the enclosure. This provides \
+                        us with easy access to the electronics without having to remove the enclosure itself from the robot's frame. The two battery enlosures \
+                        (seen below the main enclosure) lack a rail system, as we determined they would rarely need to be accessed once installed. \
+                        <br \><br \>\
+                        The most recent addition to Triton's suite of enclosures is the killswitch enclosure. This enclosure is small, simple, but important. \
+                        It houses our robot's emergency off switch, which is useful from both a safety and convenience standpoint. This switch would be operated \
+                        in any scenario where the robot starts moving in a dangerous or otherwise undesired way. \
+                        <br \><br \>\
+                        Another newer addition is the camera enclosure (seen directly below the main enclosure) which houses Triton's eyes. This enclosure consists \
+                        of one front-facing camera and one downward facing camera. This enclosure has been fully built and awaits integration and testing with the rest \
+                        of Triton's systems. \
+                        ",
                         "carousel": 
                         {
-                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "images": ["Enclosures.JPG"],
                         },
                     },
                     {
                         "header": "Actuators",
-                        "bodyFull": "Changeme",
+                        "bodyFull": "Shown Above: A sketch of Triton's general-purpose manipulator arm. \
+                        <br \><br \>\
+                        There are several tasks in the Robosub competition that involve objects to be manipulated. To complete these tasks additional actuator systems are required. \
+                        One of our actuator systems is a robotic manipulator arm, designed to grip and move various objects. So far, we have designed a 2-degree of freedom arm, with \
+                        an end effector made for gripping. This project involves close collaboration with the electrical actuators team, making work on Triton’s actuators a very good \
+                        exercise in mechatronics engineering. \
+                        <br \><br \>\
+                        Triton’s general manipulation arm has three rotary actuators controlling the robot’s position, one at the base of the robot arm, one turning the robot’s wrist and \
+                        one opening and closing the robot’s gripper. The arm also utilizes a depth sensor to detect objects within its grasp and a flexible stretch sensor to control the \
+                        gripper’s force. The project itself is still in its early stages, and we are planning on adding more degrees of freedom to the robot to increase the arm’s range of \
+                        motion. Some of the tasks of this project include programming inverse/forward kinematics of the robot arm, spec-ing actuators and sensors, performing grip and stress \
+                        tests, analog circuit design for motor driver and sensor circuits and designing future iterations of the arm to include more degrees of freedom. \
+                        <br \><br \>\
+                        All other actuator projects are still in the early brainstorming phase, meaning that there are substantial opportunites for new members to contribute ideas and learn about \
+                        the exciting world of underwater actuation.",
                         "carousel": 
                         {
-                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "images": ["Manipulator_arm_sketch.png"],
                         },
                     },
                     {
                         "header": "Frames and Hydrodynamics",
-                        "bodyFull": "Changeme",
+                        "bodyFull": "Shown Above: Triton's frame structure and thruster configuration, Triton's passive stabilization system, and the frame design for our next generation robot.\
+                        <br \><br \>\
+                        The bulk of our projects focus on how to make our robot as hydrodynamic and structurally sound while moving through the water. We focus on initiatives such as fluid dynamics \
+                        modelling, stress simulations, and designing mounting hardware for enclosures. \
+                        <br \><br \>\
+                        Triton's frame design was developed to be as utilitarian and cost effective as possible. Although this led to sacrifices in hydrodynamics and aesthetics, it was done for a good reason. \
+                        Our plan is that this generation of robot will serve as a test-bed for components of future robots, such as new actuators or camera systems. Unfortunately, this pursuit of a low-cost design \
+                        resulted in a limited number of thrusters being installed. As a result, Triton has 4 degrees of freedom instead of the ideal 6. This was partially dealt with by the addition of a passive \
+                        stability system consisting of bouyant styrofoam (top of robot) and solid ballast (lower section). This system helps prevent triton from flipping upside down underwater. \
+                        <br \><br \>\
+                        If style and mobility are more your thing, then you'll be happy to know our next generation robot encompasses just that. This iteration will have a carbon-fibre shell mounted to a solid metal plate. \
+                        The shell is split into two pieces down the middle and will swing open for easy access to the enclosures within. Although thruster placement isn't final, we're certain that this version will be more agile than Triton.",
                         "carousel": 
                         {
-                        "images": ["first_1.jpg", "first_2.jpg", "first_3.jpg", "first_4.jpg", "first_5.jpg"],
+                        "images": ["Frame_Isolation.JPG", "Ballast.JPG", "New_Frame1.png", "New_Frame2.png"],
                         },
                     },
                 ],
@@ -471,14 +515,14 @@ export default
                     "images": ["elec1.PNG", "elec2.PNG", "elec3.jpg", "elec4.png", "elec5.jpg"], // Add new pics
                 },
                 "mechanical": {
-                    "images": ["first_3.jpg"], // Add new pics
+                    "images": ["mech1.jpg", "mech2.jpg", "mech3.jpg", "mech4.jpg", "mech5.jpg"], // Add new pics
                 }
             }
         },
-        "projectfuture": {
+        /*"projectfuture": {
             "image": "software.jpg",
             "header": "Projects for the Future",
-            "body": "Next-generation subbot."
-        }
-    }
-}
+            "body": "",
+        },*/
+    },
+};
