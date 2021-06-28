@@ -9,9 +9,11 @@
 .CarouselContainerDark {
   width: 100%;
   background-color: $background-color-top;
-  padding-bottom: 5vh;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  padding-left: 2.5vh;
+  padding-right: 1vh;
   border-radius: 5vh;
-  @include PaddingLeftRight(1.4vw);
 }
 
 .ProjectTitle {
