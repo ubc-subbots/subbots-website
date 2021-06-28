@@ -1,1 +1,144 @@
 @import "../../styles/index.scss";
+
+.CarouselContainer {
+  width: 100%;
+  padding-bottom: 5vh;
+  @include PaddingLeftRight(1.4vw);
+}
+
+.CarouselContainerDark {
+  width: 100%;
+  background-color: $background-color-top;
+  padding-bottom: 5vh;
+  border-radius: 5vh;
+  @include PaddingLeftRight(1.4vw);
+}
+
+.ProjectTitle {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 3vw);
+    color: $accent-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.ProjectSubheader {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 2vw);
+    color: $primary-color;
+    font-weight: 600px;
+    font-family: $brand-font;
+}
+
+.ProjectBody{
+    @include MarginTopBottom(2vh);
+    color: $secondary-text-color;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
+    /* font-size: $content-font-size; */
+    font-weight: 400;
+    display: block;
+}
+
+.ProjectDetailButtonList {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+}
+
+.ProjectDetailButton {
+    background-color: $accent-color;
+    font-weight: bold;
+    font-size: 2vh;
+    color: $primary-color;
+    /*height: 14.28%;*/
+    height: 20%;
+    box-sizing: border-box;
+    border-radius: 1vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: none;
+    &:hover {
+        background-color: $accent-hover-color;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+.ProjectDetailButton .ProjectButtonInnerText {
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    align-items: center;
+    border: none;
+}
+
+.ProjectDetailButton .ProjectButtonInnerIcon {
+    color: $primary-color;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    margin-left: 15%;
+    align-items: center;
+    border: none;
+}
+
+.ProjectIconSmall{
+    font-size: 3vw;
+    @include PaddingTopBottom(0.5vw);
+    color: $primary-color;
+}
+
+.VideoHeader {
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 2vw);
+    color: $accent-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.VideoBody{
+    margin: 5vh;
+    color: $primary-text-color;
+    font-size: 20px;
+}
+
+.ProjectFutureHeader{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: calc(20px + 3vw);
+    color: $accent-color;
+    font-weight: 600px;
+    font-family: $secondary-text-font;
+}
+
+.ProjectFutureBody{
+    margin: 5vh;
+    color: $primary-text-color;
+    font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
+}
+
+.ProjectDetailCarouselImageContainer{
+    margin: auto;
+    height: 50vh;
+    width: auto;
+}
+
+.ProjectDetailCarouselImageContainer .Image{
+    width: auto-fit;
+    height: auto;
+}

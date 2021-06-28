@@ -52,6 +52,7 @@ export default class Header extends React.Component{
                   <Link to='/members'className="NavLink">Members</Link>
                   <Link to='/join'className="NavLink">Join Us</Link>
                   <Link to='/sponsors'className="NavLink">Sponsorship</Link>
+                  <Link to='/projects'className="NavLink">Projects</Link>
                 </Nav>
                 <Button className="SignInButton" variant="outline-warning"
                         onClick={() => this.setState({isSignInOpened: true})}>

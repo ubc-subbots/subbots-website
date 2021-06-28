@@ -52,7 +52,9 @@ export default class Home extends React.Component{
                         <hr/>
                         <Row>
                             <Col sm={6}>
-                                <div className="GoalBody">{content.home.goal.body}</div>
+                                <div className="GoalBody">
+                                  {content.home.goal.body}
+                                </div>
                             </Col>
                             <Col sm={6}>
                                 <div className="GoalImageContainer">
@@ -71,8 +73,11 @@ export default class Home extends React.Component{
                     </div>
                     <Row>
                         <Col sm={6}>
+                            <h4 className="ProjectsSubheader">
+                                {content.home.projects.old_robot.header}
+                            </h4>
                             <Carousel className="ProjectsCarousel" fade="true">
-                                {content.home.projects.carousels.first.images.map((item, index) => (                                    
+                                {content.home.projects.old_robot.carousels.second.images.map((item, index) => (
                                     <Carousel.Item key={index}>
                                         <div className="ProjectsImageContainer">
                                             <Image src={item} folder="robots" />
@@ -81,12 +86,15 @@ export default class Home extends React.Component{
                                 ))}
                             </Carousel>
                             <h4 className="ProjectsImageCaption">
-                                {content.home.projects.carousels.first.caption}
+                                {content.home.projects.old_robot.carousels.second.caption}
                             </h4>
                         </Col>
                         <Col sm={6}>
+                            <h4 className="ProjectsSubheader">
+                                {content.home.projects.current_robot.header}
+                            </h4>
                             <Carousel className="ProjectsCarousel" fade="true">
-                                {content.home.projects.carousels.second.images.map((item, index) => (                                    
+                                {content.home.projects.current_robot.carousels.first.images.map((item, index) => (
                                     <Carousel.Item key={index}>
                                         <div className="ProjectsImageContainer">
                                             <Image src={item} folder="robots" />
@@ -95,7 +103,7 @@ export default class Home extends React.Component{
                                 ))}
                             </Carousel>
                             <h4 className="ProjectsImageCaption">
-                                {content.home.projects.carousels.second.caption}
+                                {content.home.projects.current_robot.carousels.first.caption}
                             </h4>
                         </Col>
                     </Row>
