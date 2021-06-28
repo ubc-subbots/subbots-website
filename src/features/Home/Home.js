@@ -42,7 +42,7 @@ export default class Home extends React.Component{
                         <div className="PitchHeader">{content.home.pitch.header}</div>
                         <div className="PitchBody">{content.home.pitch.body}</div>
                     </Col>
-                    <Col sm={2}></Col>
+                    <Col sm={1}></Col>
                 </Row>
                 <div className="ContentSeperatorTop"/>
                     <div className="ContentContainer">
@@ -51,16 +51,18 @@ export default class Home extends React.Component{
                         </h4>
                         <hr/>
                         <Row>
+                            <Col sm={1}></Col>
                             <Col sm={6}>
                                 <div className="GoalBody">
                                   {content.home.goal.body}
                                 </div>
                             </Col>
-                            <Col sm={6}>
+                            <Col sm={4}>
                                 <div className="GoalImageContainer">
                                     <Image src={content.home.goal.image}/>
                                 </div>
                             </Col>
+                            <Col sm={1}></Col>
                         </Row>
                     </div>
                 <div className="ContentSeperatorBottom"/>
