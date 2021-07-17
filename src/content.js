@@ -324,7 +324,7 @@ export default
                 "program": "Electrical Team"
             },
             {
-                "name": "Ryah James Murch",
+                "name": "Ryan James Murch",
                 "image": "Ryan_Murch.jpg",
                 "email": "murch.ryan.j@gmail.com",
                 "program": "Mechanical Lead"
