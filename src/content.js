@@ -168,12 +168,8 @@ export default
             or have previous design experience we encourage everyone who is interested in \
             the project to apply. Our team is built around mentoring new students so that \
             they can eventually take over as team leaders, so students of all skill levels \
-            are welcome. Recruitment is primarily done at the start of the school year in \
-            September but we continuously recruit throughout the year to fill roles as needed.\
-            Our recruitment process consists of an application form that is reviewed by our \
-            senior members and a potential interview if we feel you’d be a good fit for the \
-            team. If you have a passion for subsea and robotic design feel free to fill out \
-            the application below! ",
+            are welcome. The first round of applications ends August 25th, and the next \
+            round will end September 17th!",
     },
     
     "sponsors": {
