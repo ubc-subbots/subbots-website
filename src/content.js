@@ -163,13 +163,7 @@ export default
     "join": {
         "image": "software.jpg",
         "title": "Become Part Of The Team",
-        "blurb": " We are always looking for new members to fill the many challenges\
-            that come with designing underwater robots. Whether you’re new to engineering \
-            or have previous design experience we encourage everyone who is interested in \
-            the project to apply. Our team is built around mentoring new students so that \
-            they can eventually take over as team leaders, so students of all skill levels \
-            are welcome. The first round of applications ends August 25th, and the next \
-            round will end September 17th!",
+        "blurb": "We sadly are no longer actively recruiting, but if you fill out the form we will make sure to contact you for our next recruitment wave in January!",
     },
     
     "sponsors": {
