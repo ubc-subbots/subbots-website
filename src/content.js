@@ -162,8 +162,8 @@ export default
 
     "join": {
         "image": "software.jpg",
-        "title": "Become Part Of The Team",
-        "blurb": "We sadly are no longer actively recruiting, but if you fill out the form we will make sure to contact you for our next recruitment wave in January!",
+        "title": "Join Our Team!",
+        "blurb": "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2022!",
     },
     
     "sponsors": {
@@ -387,8 +387,8 @@ export default
             },
             {
                 "name": "Luke D. Gallant",
-                "image": "No_Photo.gif",
-                "email": "",
+                "image": "Luke_Gallant.jpg",
+                "email": "linkedin.com/in/luke-gallant",
                 "program": "Mechanical Project Lead"
             },
             {
