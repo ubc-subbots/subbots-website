@@ -284,6 +284,24 @@ export default
                 "program": "Software Team"
             },
             {
+                "name": "Savitoj Sachar",
+                "image": "No_Photo.gif",
+                "email": "linkedin.com/in/savitoj-sachar",
+                "program": "Software Team"
+            },
+            {
+                "name": "Ramit Brata Biswas",
+                "image": "Ramit_Biswas.jpg",
+                "email": "linkedin.com/in/ramit-brata-biswas",
+                "program": "Software Team"
+            },
+            {
+                "name": "Ryan James Murch",
+                "image": "Ryan_Murch.jpg",
+                "email": "murch.ryan.j@gmail.com",
+                "program": "Software Team"
+            },
+            {
                 "name": "Kota Chang",
                 "image": "No_Photo.gif",
                 "email": "kota.chang@alumni.ubc.ca",
@@ -314,29 +332,53 @@ export default
                 "program": "Electrical Team"
             },
             {
-                "name": "Ryan James Murch",
-                "image": "Ryan_Murch.jpg",
-                "email": "murch.ryan.j@gmail.com",
-                "program": "Mechanical Lead"
+                "name": "Cameron Fletcher",
+                "image": "Cameron_Fletcher.jpg",
+                "email": "linkedin.com/in/cvfletcher",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Madhav Kapoor",
+                "image": "No_Photo.gif",
+                "email": "",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Navraj Bains",
+                "image": "No_Photo.gif",
+                "email": "",
+                "program": "Electrical Team"
+            },
+            {
+                "name": "Umair Mazhar",
+                "image": "No_Photo.gif",
+                "email": "",
+                "program": "Electrical Team"
             },
             {
                 "name": "Nodir Musaev",
                 "image": "Nodir_Musaev.jpg",
                 "email": "musaevnod@gmail.com",
-                "program": "Mechanical Project Lead"
+                "program": "Mechanical Co-Lead"
             },
             {
                 "name": "Colin Scott Ree",
                 "image": "Colin_Ree.jpg",
                 "email": "colinree2901@gmail.com",
-                "program": "Mechanical Project Lead"
+                "program": "Mechanical Co-Lead"
             },
             {
-                "name": "Cameron Fletcher",
-                "image": "Cameron_Fletcher.jpg",
-                "email": "camfletcher2020@gmail.com",
+                "name": "Viktor Moreno",
+                "image": "No_Photo.gif",
+                "email": "viktor.moreno123@gmail.com, linkedin.com/in/vmoreno2001/",
                 "program": "Mechanical Team"
             },
+            {
+                "name": "Jonathan Wu",
+                "image": "No_Photo.gif",
+                "email": "linkedin.com/in/jonathan-wu",
+                "program": "Mechanical Team"
+            },           
             {
                 "name": "Angie Pinto",
                 "image": "Angie_Pinto.jpg",
@@ -344,17 +386,48 @@ export default
                 "program": "Mechanical Team"
             },
             {
-                "name": "Viktor Gabriel Moreno",
-                "image": "No_Photo.gif",
-                "email": "viktor.moreno123@gmail.com",
-                "program": "Mechanical Team"
-            },
-            {
                 "name": "Luke D. Gallant",
                 "image": "No_Photo.gif",
                 "email": "",
+                "program": "Mechanical Project Lead"
+            },
+            {
+                "name": "Charles Polloway",
+                "image": "Charles_Polloway.jpg",
+                "email": "linkedin.com/in/charles-polloway",
                 "program": "Mechanical Team"
             },
+            {
+                "name": "Ryan Leung",
+                "image": "No_Photo.gif",
+                "email": " ",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Mohammad Samin Sadik",
+                "image": "Mohammad_Sadik.jpg",
+                "email": "",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Mikhail Ignatyev",
+                "image": "Mikhail_Ignatyev.jpg",
+                "email": "linkedin.com/in/mikhail-ignatyev",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Dawud Qaimari",
+                "image": "No_Photo.gif",
+                "email": "linkedin.com/in/dawud-qaimari",
+                "program": "Mechanical Team"
+            },
+            {
+                "name": "Rafael Lorenzo Remo",
+                "image": "No_Photo.gif",
+                "email": "rafaelremo820@gmail.com",
+                "program": "Mechanical Team"
+            }
+
 
 
         ]
