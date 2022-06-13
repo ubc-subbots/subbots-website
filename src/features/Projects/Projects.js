@@ -158,7 +158,9 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.software.body}</div>
-                                        {ProjectDetailButtonList(content.projects.project.software.detail, 'software')}
+                                        <div>
+                                            {ProjectDetailButtonList(content.projects.project.software.detail, 'software')}
+                                        </div>
                                     </Col>
                                 </Row>
                                 <Row>
@@ -188,7 +190,9 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.electrical.body}</div>
-                                        {ProjectDetailButtonList(content.projects.project.electrical.detail, 'electrical')}
+                                        <div>
+                                            {ProjectDetailButtonList(content.projects.project.electrical.detail, 'electrical')}
+                                        </div>
                                     </Col>
                                 </Row>
                                 <Row>
@@ -218,7 +222,9 @@ export default class Projects extends React.Component{
                                     </Col>
                                     <Col>
                                         <div className="ProjectBody">{content.projects.project.mechanical.body}</div>
-                                        {ProjectDetailButtonList(content.projects.project.mechanical.detail, 'mechanical')}
+                                        <div>
+                                            {ProjectDetailButtonList(content.projects.project.mechanical.detail, 'mechanical')}
+                                        </div>
                                     </Col>
                                 </Row>
                             </Col>
