@@ -57,7 +57,7 @@
 
 .TeamBodyItemFrame {
     height: 35vh;
-    width: 45vw;
+    /*width: 45vw;*/
     border: 2px solid $primary-color;
     border-radius: 5px;
     @include MarginTopBottom(2vh);
@@ -79,9 +79,10 @@
     width: 97%;
     padding: 1.5vh;
     display: flex;
+    align-items: center;
 }
 
-$team-body-item-icon-height: 6vh;
+$team-body-item-icon-height: 3vh;
 
 .TeamBodyItemIconContainer {
     height: $team-body-item-icon-height;
@@ -100,7 +101,7 @@ $team-body-item-icon-height: 6vh;
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: $secondary-text-color;
-    line-height: $team-body-item-icon-height;
+    /*line-height: $team-body-item-icon-height;*/
 }
 
 .TeamBodyItemTextSecondary {
@@ -108,5 +109,5 @@ $team-body-item-icon-height: 6vh;
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: rgb(73, 73, 73);
-    line-height: $team-body-item-icon-height;
+    /*line-height: $team-body-item-icon-height;*/
 }

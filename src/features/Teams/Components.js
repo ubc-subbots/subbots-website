@@ -83,9 +83,11 @@ export class TeamBody extends React.Component {
                             descriptions={content.teams[this.props.team].items.descriptions.learn} 
                         />
                     </Row>
+                    {/*
                     <div className="TeamBodyText">
                         {content.teams[this.props.team.toLowerCase()].body}
                     </div>
+                    */}
                 </Col>
             </div>
         )

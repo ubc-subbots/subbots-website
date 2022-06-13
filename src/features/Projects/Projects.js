@@ -8,6 +8,8 @@ import Modal from 'react-bootstrap/Modal'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCarBattery, faEye, faDharmachakra, faVrCardboard, faBolt, faWaveSquare, faCogs, faTools, faRocket } from '@fortawesome/free-solid-svg-icons';
 import './styles.scss';
+import { TeamCard, TeamBody } from '../Teams/Components';
+import '../Teams/styles.scss'
 
 export default class Projects extends React.Component{
 
@@ -112,12 +114,26 @@ export default class Projects extends React.Component{
                     <Col sm={1}>
                     </Col>
                 </Row>
+                <Row>
+                    <Col sm={2}></Col>
+                    <Col sm={8}>
+                        <Row>
+                            <TeamCard team={'software'} />
+                            <TeamCard team={'electrical'} />
+                            <TeamCard team={'mechanical'} />
+                        </Row>
+                    </Col>
+                    <Col sm={2}></Col>
+                </Row>
                 <div className="ContentSeperatorTop"/>
                     <div className="ContentContainer">
                         <Row>
                             <Col sm={1}>
                             </Col>
                             <Col>
+                                <Row>
+                                    <TeamBody team={'software'} />
+                                </Row>
                                 <h4 className="ProjectSubheader">
                                     {content.projects.project.software.header}
                                 </h4>
@@ -145,6 +161,9 @@ export default class Projects extends React.Component{
                                         {ProjectDetailButtonList(content.projects.project.software.detail, 'software')}
                                     </Col>
                                 </Row>
+                                <Row>
+                                    <TeamBody team={'electrical'} />
+                                </Row>
                                 <h4 className="ProjectSubheader">
                                     {content.projects.project.electrical.header}
                                 </h4>
@@ -171,6 +190,9 @@ export default class Projects extends React.Component{
                                         <div className="ProjectBody">{content.projects.project.electrical.body}</div>
                                         {ProjectDetailButtonList(content.projects.project.electrical.detail, 'electrical')}
                                     </Col>
+                                </Row>
+                                <Row>
+                                    <TeamBody team={'mechanical'} />
                                 </Row>
                                 <h4 className="ProjectSubheader">
                                     {content.projects.project.mechanical.header}
