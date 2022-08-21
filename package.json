@@ -1,29 +1,24 @@
 {
-  "name": "subbots-website",
+  "name": "subbotsweb",
   "version": "0.1.0",
-  "private": true,
   "homepage": "https://subbots.ca",
+  "private": true,
   "dependencies": {
-    "@formspree/react": "^2.2.3",
-    "@fortawesome/fontawesome-svg-core": "^1.2.19",
-    "@fortawesome/free-brands-svg-icons": "^5.9.0",
-    "@fortawesome/free-solid-svg-icons": "^5.9.0",
-    "@fortawesome/react-fontawesome": "^0.1.4",
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "gh-pages": "^2.1.1",
-    "node-sass": "^4.14.0",
-    "react": "^16.8.6",
-    "react-animations": "^1.0.0",
-    "react-bootstrap": "^1.6.1",
-    "react-dom": "^16.8.6",
-    "react-reveal": "^1.2.2",
-    "react-router": "^5.0.1",
-    "react-router-bootstrap": "^0.25.0",
+    "@formspree/core": "^2.7.1",
+    "@formspree/react": "^2.3.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@stripe/stripe-js": "^1.35.0",
+    "gh-pages": "^4.0.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
     "react-router-dom": "^5.0.1",
-    "react-router-scroll-top": "^0.2.1",
-    "react-scripts": "3.0.1",
-    "react-scrollspy": "^3.4.0"
+    "react-scripts": "5.0.1",
+    "sass": "^1.54.5",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,7 +29,10 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -47,9 +45,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-plugin-root-import": "^6.2.0"
-  },
-  "proxy": "http://backend:80"
+  }
 }
