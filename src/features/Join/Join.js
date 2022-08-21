@@ -1,68 +1,87 @@
-import React from 'react';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Card from 'react-bootstrap/Card';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-import content from '../../content';
-import constants from '../../js/constants';
-import { ViewHeader, ViewContainer } from '../../components';
-import './styles.scss';
+import React from "react";
+import { Col, Row } from "reactstrap";
+import content from "../../content";
+import { ViewHeader, ViewContainer } from "../../components";
+import "./styles.scss";
 
-export default class Join extends React.Component{
+export default class Join extends React.Component {
+  constructor(props) {
+    super(props);
 
-    constructor(props){
-        super(props)
+    this.state = {
+      validated: false,
+      first_name: "",
+      last_name: "",
+      email: "",
+      year: 0,
+      team: "",
+      reason: "",
+    };
+  }
 
-        this.state = {
-            validated: false,
-            first_name: "",
-            last_name: "",
-            email: "",
-            year: 0,
-            team: "",
-            reason: ""
-        }
+  onFirstNameChange(event) {
+    this.setState({ first_name: event.target.value });
+  }
+
+  onLastNameChange(event) {
+    this.setState({ last_name: event.target.value });
+  }
+
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
+
+  onYearChange(event) {
+    this.setState({ year: event.target.value });
+  }
+
+  onTeamChange(event) {
+    this.setState({ team: event.target.value });
+  }
+
+  onReasonChange(event) {
+    this.setState({ reason: event.target.value });
+  }
+
+  onFormSubmit(event) {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+    this.setState({ validated: true });
+  }
+
+  render() {
+    let teamLeadEmail = content.emails[this.state.team];
+
+    if (!teamLeadEmail) {
+      teamLeadEmail = content.emails.Subbots;
     }
 
-    onFirstNameChange(event){this.setState({first_name: event.target.value})}
-
-    onLastNameChange(event){this.setState({last_name: event.target.value})}
-
-    onEmailChange(event){this.setState({email: event.target.value})}
-
-    onYearChange(event){this.setState({year: event.target.value})}
-
-    onTeamChange(event){this.setState({team: event.target.value})}
-
-    onReasonChange(event){this.setState({reason: event.target.value})}
-
-    onFormSubmit(event){
-        const form = event.currentTarget;
-        if (form.checkValidity() === false){
-            event.preventDefault();
-            event.stopPropagation();
-        } 
-        this.setState({validated: true});     
-    }
-
-    render() {
-        let teamLeadEmail = content.emails[this.state.team];
-
-        if (!teamLeadEmail) {
-            teamLeadEmail = content.emails.Subbots;
-        }
-
-        return (
-            <ViewContainer>
-                <ViewHeader title={content.join.title} blurb={content.join.blurb} image={content.join.image}/>
-                <Row>
-                    <Col sm={3}></Col>
-                    <Col sm={6}>
-                        <div>
-                            <iframe src="https://forms.gle/7s7gdepgdGp9gsHr7" width="640" height="1744" frameborder="0" marginHeight="0" marginWidth="0">Loading…</iframe>                        
-                        </div>
-                        {/* <div className="JoinFormContainer">
+    return (
+      <ViewContainer>
+        <ViewHeader
+          title={content.join.title}
+          blurb={content.join.blurb}
+          image={content.join.image}
+        />
+        <Row>
+          <Col sm={3}></Col>
+          <Col sm={6}>
+            <div>
+              <iframe
+                src="https://forms.gle/7s7gdepgdGp9gsHr7"
+                width="640"
+                height="1744"
+                frameborder="0"
+                marginHeight="0"
+                marginWidth="0"
+              >
+                Loading…
+              </iframe>
+            </div>
+            {/* <div className="JoinFormContainer">
                         <Card className="JoinFormCard">
                         <Card.Header className="JoinFormHeader">
                             UBC Subbots 2019-2020 Application
@@ -128,10 +147,10 @@ export default class Join extends React.Component{
                         </Form>
                         </Card>
                         </div> */}
-                    </Col>
-                    <Col sm={3}></Col>
-                </Row>
-            </ViewContainer>
-        )
-    }
+          </Col>
+          <Col sm={3}></Col>
+        </Row>
+      </ViewContainer>
+    );
+  }
 }
