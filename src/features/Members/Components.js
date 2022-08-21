@@ -2,11 +2,7 @@ import React from "react";
 import {
   Col,
   Card,
-  CardBody,
-  CardText,
-  CardTitle,
-  CardSubtitle,
-} from "reactstrap";
+} from "react-bootstrap";
 import "./styles.scss";
 
 import {
@@ -40,19 +36,19 @@ export class MemberCard extends React.Component {
     return (
       <Col sm={4}>
         <Card className="MemberCard">
-          <CardBody className="MemberCardBody">
+          <Card.Body className="MemberCardBody">
             <img
               className="MemberImage"
               src={process.env.PUBLIC_URL + "/members/" + this.props.image}
             ></img>
-            <CardTitle className="MemberCardTitle">
+            <Card.Title className="MemberCardTitle">
               {CutName(this.props.name)}
-            </CardTitle>
-            <CardSubtitle className="MemberCardSubtitle">
+            </Card.Title>
+            <Card.Subtitle className="MemberCardSubtitle">
               {this.props.email}
-            </CardSubtitle>
-            <CardText className="MemberCardText">{this.props.program}</CardText>
-          </CardBody>
+            </Card.Subtitle>
+            <Card.Text className="MemberCardText">{this.props.program}</Card.Text>
+          </Card.Body>
         </Card>
       </Col>
     );

@@ -1,6 +1,6 @@
 import React from "react";
 import content from "../../content";
-import { Col, Row, Carousel, CarouselItem } from "reactstrap";
+import { Col, Row, Carousel, CarouselItem } from "react-bootstrap";
 import { ViewHeader, ViewContainer, Image } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRocket } from "@fortawesome/free-solid-svg-icons";

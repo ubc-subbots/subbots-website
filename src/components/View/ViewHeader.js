@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Col, Row } from "react-bootstrap";
 import Image from "../Image/Image.js";
 import "./styles.scss";
 

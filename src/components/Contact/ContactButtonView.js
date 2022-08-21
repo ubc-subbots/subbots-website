@@ -1,5 +1,5 @@
 import ContactForm from "./ContactForm";
-import { Modal } from "reactstrap";
+import { Modal } from "react-bootstrap";
 import ContactButton from "./ContactButton";
 import React from "react";
 import "./styles.scss";

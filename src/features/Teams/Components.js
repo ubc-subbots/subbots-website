@@ -4,10 +4,7 @@ import {
   Row,
   Col,
   Card,
-  CardHeader,
-  CardText,
-  CardBody,
-} from "reactstrap";
+} from "react-bootstrap";
 import { Image } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -36,18 +33,18 @@ export class TeamCard extends React.Component {
     return (
       <Col>
         <Card className="TeamCard">
-          <CardHeader className="TeamCardHeader">
+          <Card.Header className="TeamCardHeader">
             {this.props.team.charAt(0).toUpperCase() + this.props.team.slice(1)}
-          </CardHeader>
-          <CardBody>
+          </Card.Header>
+          <Card.Body>
             <FontAwesomeIcon
               className="TeamIconLarge"
               icon={this.icons[this.props.team]}
               size="6x"
             />
-            <CardText className="TeamCardText">
+            <Card.Text className="TeamCardText">
               {content.teams[this.props.team.toLowerCase()].blurb}
-            </CardText>
+            </Card.Text>
             <Button
               className="SecondaryButton"
               variant="primary"
@@ -55,7 +52,7 @@ export class TeamCard extends React.Component {
             >
               Learn More
             </Button>
-          </CardBody>
+          </Card.Body>
         </Card>
       </Col>
     );

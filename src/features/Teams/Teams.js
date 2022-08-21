@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col } from "reactstrap";
+import { Row, Col } from "react-bootstrap";
 import content from "../../content";
 import constants from "../../js/constants";
 import { TeamCard, TeamBody } from "./Components";

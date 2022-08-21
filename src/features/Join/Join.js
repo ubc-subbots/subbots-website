@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "reactstrap";
+import { Col, Row } from "react-bootstrap"
 import content from "../../content";
 import { ViewHeader, ViewContainer } from "../../components";
 import "./styles.scss";
@@ -77,6 +77,7 @@ export default class Join extends React.Component {
                 frameborder="0"
                 marginHeight="0"
                 marginWidth="0"
+                title="JoinFormTitle"
               >
                 Loading…
               </iframe>

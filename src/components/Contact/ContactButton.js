@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "reactstrap";
+import { Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import "./styles.scss";

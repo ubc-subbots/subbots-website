@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Button } from "reactstrap";
+import { Modal, Button } from "react-bootstrap";
 import "./styles.scss";
 
 export default class MemberSignIn extends React.Component {

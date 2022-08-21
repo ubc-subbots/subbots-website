@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, Button, NavbarBrand } from "reactstrap";
+import { Navbar, Nav, Button, NavbarBrand } from "react-bootstrap";
 import MemberSignIn from "../MemberSignIn/MemberSignIn.js";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCog } from "@fortawesome/free-solid-svg-icons";

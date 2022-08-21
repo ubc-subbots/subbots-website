@@ -1,6 +1,6 @@
 import React from "react";
 import constants from "../../js/constants";
-import { Container } from "reactstrap";
+import { Container } from "react-bootstrap";
 import "./styles.scss";
 
 export default class ViewContainer extends React.Component {

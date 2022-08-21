@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Card, CardBody } from "reactstrap";
+import { Col, Card} from "react-bootstrap";
 import "./styles.scss";
 
 export class SponsorCard extends React.Component {
@@ -8,13 +8,13 @@ export class SponsorCard extends React.Component {
       <Col sm={3}>
         <a href={this.props.link}>
           <Card className="SponsorCard">
-            <CardBody className="SponsorCardBody">
+            <Card.Body className="SponsorCardBody">
               <img
                 className="SponsorImage"
                 src={process.env.PUBLIC_URL + "/sponsors/" + this.props.image}
                 alt={"Sponsor"}
               ></img>
-            </CardBody>
+            </Card.Body>
           </Card>
         </a>
       </Col>
