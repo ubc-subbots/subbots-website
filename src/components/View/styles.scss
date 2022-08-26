@@ -17,6 +17,16 @@
     width: 100%;
 }
 
+.ViewHeaderHeadingOne{
+    text-align: center;
+    color: $accent-color;
+    font-size: 2vw;
+    font-weight: 300;
+    font-family: $secondary-text-font;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
 .ViewHeaderBlurb{
     color: $secondary-color;
     font-size: 1.5vw;

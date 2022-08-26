@@ -8,6 +8,16 @@ $subtitle-size: 1vw;
     transition: all $transition-time ease-out;
 }
 
+.smallerLogo {
+    fill: url(#gradient);
+    width: 8vh;
+    height: 10vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* animation: pulse 8s infinite ease-in-out; */
+}
+
 .HeaderContainerShrunk{
     background-color: $primary-color;
     @include PaddingTopBottom(0vh !important);
@@ -73,16 +83,22 @@ $subtitle-size: 1vw;
     &:hover{
         color: $secondary-text-color !important;
     }
+    margin-right: 4vh
 }
 
 .UBCLogo{
-    -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
-    filter: brightness(0) invert(1);
+    /*-webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 
+    filter: brightness(0) invert(1); 
+    */
+    width: 43%;
+    height: auto;
 }
 
+
+
 .HeaderLogo{
-    max-height: 10vh;
-    min-width: 10vh;
+    max-height: 8vh;
+    min-width: 6vh;
     color: $accent-color;
     transition: transform 1s ease;
 }

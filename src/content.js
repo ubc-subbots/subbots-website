@@ -4,8 +4,11 @@ export default {
   home: {
     image: "software.jpg",
     title: "Welcome To UBC Subbots!",
-    blurb:
-      "UBC Subbots is an engineering student design team dedicated to \
+    h1: "Where comprehensive subsea and robotic design and team collaboration happens",
+    
+    about:{
+      title: "About Us",
+      blurb: "UBC Subbots is an engineering student design team dedicated to \
             making an autonomous underwater vehicle (AUV) for the RoboSub competition \
             in San Diego, California each year. This competition challenges us to make \
             a robot that can navigate and interact with underwater obstacles without any\
@@ -14,6 +17,7 @@ export default {
             control over the design, manufacturing and testing of the robot. Since becoming\
             a team, we have learned a lot about designing for the underwater environment and \
             are continuously improving upon our existing designs. ",
+    },
     pitch: {
       image: "mechanical.jpg",
       header: "Why Subbots?",
