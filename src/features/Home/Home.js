@@ -60,9 +60,9 @@ export default class Home extends React.Component {
           /* blurb={content.home.blurb} */
           disableImage={true}
         />
-        <div className="ContentSeperatorTop" />
+        {/*<div className="ContentSeperatorTop" />*/}
           <div className="AboutUsHeader">{content.home.about.title}
-          </div>
+        </div>
         <Row>
             <Col sm={6}>
               <div className="AboutUsBody">{content.home.about.blurb}</div>
@@ -88,13 +88,12 @@ export default class Home extends React.Component {
           </Col>
           <Col sm={1}></Col>
         </Row>
-        <div className="ContentSeperatorTop" />
+        {/*<div className="ContentSeperatorTop" />*/}
         <div className="ContentContainer">
           <h4 className="GoalHeader">
-            <FontAwesomeIcon icon={faRocket} />
             {"  " + content.home.goal.header}
           </h4>
-          <hr />
+          < hr />
           <Row>
             <Col sm={1}></Col>
             <Col sm={6}>

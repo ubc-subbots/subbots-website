@@ -3,8 +3,8 @@ const constants = require("./js/constants");
 export default {
   home: {
     image: "software.jpg",
-    title: "Welcome To UBC Subbots!",
-    h1: "Where comprehensive subsea and robotic design and team collaboration happens",
+    title: "Welcome To UBC Subbots",
+    h1: "Where comprehensive subsea design and team collaboration happen",
     
     about:{
       title: "About Us",

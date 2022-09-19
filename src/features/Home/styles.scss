@@ -79,7 +79,7 @@
     font-weight: 600;
     display: block;
     margin-left: 1vw;
-    margin-bottom: vw;
+    margin-bottom: 3vw;
 }
 
 .GoalImageContainer{
@@ -92,6 +92,8 @@
     font-size: calc(20px + 3vw);
     padding-top:  4vh;
     font-family: $secondary-text-font;
+    background-color: clear;
+    text-align: center;
 }
 
 .GoalBody{
@@ -144,6 +146,6 @@
 .ProjectsBody{
     margin: 5vh;
     font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
-    color: $primary-text-color;
+    color: $secondary-color;
 }
 
