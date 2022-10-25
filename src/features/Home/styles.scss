@@ -3,8 +3,8 @@
 
 .Logo {
     fill: url(#gradient);
-    width: 40vh;
-    height: 40vh;
+    width: 51vw;
+    height: 51vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -148,4 +148,3 @@
     font-size: calc(#{$content-font-size-c} + #{$content-font-size-v});
     color: $secondary-color;
 }
-

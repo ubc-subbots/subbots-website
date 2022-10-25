@@ -72,8 +72,8 @@ export default class Join extends React.Component {
             <div>
               <iframe
                 src="https://forms.gle/7s7gdepgdGp9gsHr7"
-                width="640"
-                height="1744"
+                width= "100%"
+                height="400"
                 frameborder="0"
                 marginHeight="0"
                 marginWidth="0"

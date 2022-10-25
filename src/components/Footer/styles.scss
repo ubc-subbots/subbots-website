@@ -7,6 +7,12 @@
     border-top: 2px solid $primary-text-color;
 }
 
+.HeaderContainer{
+    background-color: transparent;
+    @include PaddingTopBottom(5vh !important);
+    transition: all $transition-time ease-out;
+}
+
 .SocialIcon{
     font-size: 2.1vw;
     color: $primary-text-color;

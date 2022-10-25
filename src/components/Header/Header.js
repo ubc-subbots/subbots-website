@@ -16,6 +16,9 @@ export default class Header extends React.Component {
       isSignInOpened: false,
     };
 
+    //determine state of header while scrolling
+    //this is for desktop
+
     window.onscroll = () => {
       let shrinkThresh = 60;
       if (
@@ -24,6 +27,7 @@ export default class Header extends React.Component {
       ) {
         this.setState({ navbarClass: "HeaderContainerShrunk" });
         this.setState({ navbrandClass: "NavBrandShrunk" });
+        //this.setState({ navbarClass: "dropbtnShrunk" });
       } else {
         this.setState({ navbarClass: "HeaderContainer" });
         this.setState({ navbrandClass: "NavBrand" });
@@ -81,6 +85,7 @@ export default class Header extends React.Component {
           />
           </a>
           </svg>
+
         </NavbarBrand>
         <NavbarBrand className="NavBrandContainer">
           <Link to="/" className={this.state.navbrandClass}>
@@ -90,25 +95,55 @@ export default class Header extends React.Component {
           </Link>
         </NavbarBrand>
     
-        <Nav className="mr-auto">
-          <Link to="/" className="NavLink">
+    <NavbarBrand>
+        <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+
+          <div class="dropdown-content">
+            <Link to="/" className="NavLink">
             Home
-          </Link>
-          <Link to="/projects" className="NavLink">
-            Projects
-          </Link>
-          {/*<Link to='/teams'className="NavLink">The Teams</Link>*/}
-          <Link to="/members" className="NavLink">
-            Members
-          </Link>
-          <Link to="/join" className="NavLink">
-            Join Us
-          </Link>
-          <Link to="/sponsors" className="NavLink">
-            Sponsorship
-          </Link>
-          {/* <Link to='/projects'className="NavLink">Projects</Link> */}
-        </Nav>
+            </Link>
+            <Link to="/projects" className="NavLink">
+              Projects
+            </Link>
+            {/*<Link to='/teams'className="NavLink">The Teams</Link>*/}
+            <Link to="/members" className="NavLink">
+              Members
+            </Link>
+            <Link to="/join" className="NavLink">
+              Join Us
+            </Link>
+            <Link to="/sponsors" className="NavLink">
+              Sponsorship
+            </Link>
+          </div>
+        </div> 
+        </NavbarBrand>
+
+
+      <div class = "links">
+        <Link to="/" className="NavLink">
+            Home
+            </Link>
+            <Link to="/projects" className="NavLink">
+              Projects
+            </Link>
+            {/*<Link to='/teams'className="NavLink">The Teams</Link>*/}
+            <Link to="/members" className="NavLink">
+              Members
+            </Link>
+            <Link to="/join" className="NavLink">
+              Join Us
+            </Link>
+            <Link to="/sponsors" className="NavLink">
+              Sponsorship
+            </Link>
+        </div>
+
+
+        {/*commenting out member sign and UBC link in until its use is needed*/}
+
+        {/*
         <Button
           className="SignInButton"
           variant="outline-warning"
@@ -117,12 +152,15 @@ export default class Header extends React.Component {
           Member Sign In
         </Button>
         <MemberSignIn show={this.state.isSignInOpened} />
+
         <a href="https://www.ubc.ca/">
           <img
             className="UBCLogo"
             src={process.env.PUBLIC_URL + "/images/ubc-new-logo.png"}
           />
         </a>
+*/}
+        
       </Navbar>
     );
   }

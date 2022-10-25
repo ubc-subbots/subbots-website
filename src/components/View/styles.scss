@@ -1,17 +1,17 @@
 @import '../../styles/index.scss';
 
 .ViewContainer {
-    padding-top: 1vh;
+    padding-top: 2vh;
 }
 
 .ViewImageContainer {
-    height: 56vh;
+    height: 50%;
 }
 
 .ViewHeaderTitle{
     text-align: center;
     color: $accent-color;
-    font-size: 4vw;
+    font-size: 4vh;
     font-weight: 300;
     font-family: $secondary-text-font;
     width: 100%;
@@ -29,7 +29,7 @@
 
 .ViewHeaderBlurb{
     color: $secondary-color;
-    font-size: 1.5vw;
+    font-size: 3vh;
     font-weight: 600;
     display: block;
     @include MarginTopBottom(3vh);
