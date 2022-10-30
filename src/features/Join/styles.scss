@@ -7,14 +7,14 @@ $form-opacity: 0.6;
 .JoinForm{
     display: block;
     margin: auto;
-    height: 225vh;
+    height: 50vh;
     width: 50vw;
     background-color:rgba($form-color, 0) !important;
 }
 
 .JoinFormContainer{
     margin-top: 2vh;
-    margin-bottom: 25vh;
+    margin-bottom: 50vh;
 }
 
 .JoinFormCard{
@@ -32,4 +32,36 @@ $form-opacity: 0.6;
 
 .ApplyButtonText{
     @include SecondarySubTitle(1.1vw);
+}
+
+@media only screen and (max-width: 1026px) {
+    .JoinForm{
+        display: block;
+        margin: auto;
+        height: 225vh;
+        width: 50vw;
+        background-color:rgba($form-color, 0) !important;
+    }
+    
+    .JoinFormContainer{
+        margin-top: 2vh;
+        margin-bottom: 25vh;
+    }
+    
+    .JoinFormCard{
+        border-radius: $form-border-radius !important;
+        background-color:rgba($form-color, $form-opacity) !important;
+    }
+    
+    .JoinFormHeader{
+        border-top-left-radius: $form-border-radius !important;
+        border-top-right-radius: $form-border-radius !important;
+        font-weight: 500;
+        background-color: $accent-color !important;
+        @include SecondarySubTitle(1.5vw);
+    }
+    
+    .ApplyButtonText{
+        @include SecondarySubTitle(1.1vw);
+    }
 }

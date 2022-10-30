@@ -16,6 +16,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { TeamCard, TeamBody } from "../Teams/Components";
 import "./styles.scss";
+import { faLastfmSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -122,11 +123,20 @@ export default class Projects extends React.Component {
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
+          <div className = "DesktopProjectList">
             <Row>
               <TeamCard team={"software"} />
               <TeamCard team={"electrical"} />
               <TeamCard team={"mechanical"} />
             </Row>
+            </div>
+            <div className = "MobileProjectList">
+            <Col>
+              <TeamCard team={"software"} />
+              <TeamCard team={"electrical"} />
+              <TeamCard team={"mechanical"} />
+            </Col>
+            </div>
           </Col>
           <Col sm={2}></Col>
         </Row>

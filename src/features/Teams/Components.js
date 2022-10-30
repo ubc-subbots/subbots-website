@@ -103,7 +103,7 @@ export class TeamBody extends React.Component {
                 content.teams[this.props.team].items.descriptions.learn
               }
             />
-          </Row>
+            </Row>
           {/*
                     <div className="TeamBodyText">
                         {content.teams[this.props.team.toLowerCase()].body}
@@ -142,6 +142,33 @@ function TeamBodyItemList(props) {
   );
 }
 
+function TeamBodyItemListMobile(props) {
+  return (
+    <Col sm={6}>
+      <h4 className="TeamBodyItemHeader text-center">{props.title}</h4>
+      <div className="TeamBodyItemFrame">
+        <div className="TeamBodyItemContainer">
+          <TeamBodyItemMobile
+            image={props.images[0]}
+            name={props.names[0]}
+            description={props.descriptions[0]}
+          />
+          <TeamBodyItemMobile
+            image={props.images[1]}
+            name={props.names[1]}
+            description={props.descriptions[1]}
+          />
+          <TeamBodyItemMobile
+            image={props.images[2]}
+            name={props.names[2]}
+            description={props.descriptions[2]}
+          />
+        </div>
+      </div>
+    </Col>
+  );
+}
+
 function TeamBodyItem(props) {
   return (
     <div className="TeamBodyItemContainer">
@@ -158,4 +185,25 @@ function TeamBodyItem(props) {
       </div>
     </div>
   );
+  }
+  
+  function TeamBodyItemMobile(props) {
+    return (
+      <div className="TeamBodyItemContainer">
+        <div className="TeamBodyItem">
+          <div className="TeamBodyItemIconContainer">
+            <img
+              className="TeamBodyItemIcon"
+              src={process.env.PUBLIC_URL + "/images/" + props.image}
+              alt="Error!"
+            />
+          </div>
+          <Col>
+          <div className="TeamBodyItemTextPrimary">{props.name}</div>
+          <div className="TeamBodyItemTextSecondary">{props.description}</div>
+          </Col>
+        </div>
+      </div>
+    );
+
 }

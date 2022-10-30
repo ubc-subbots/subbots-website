@@ -176,9 +176,9 @@ $subtitle-size: 1vw;
 
 
 
-//adjust all elements for mobile devices
+//adjust all elements for mobile devices, portrait mode only
 
-@media only screen and (max-width: 1026px) {
+@media only screen and (max-width: 500px) {
 
     .links{
         display: none;
@@ -195,8 +195,8 @@ $subtitle-size: 1vw;
     .smallerLogo {
         fill: url(#gradient);
         width: 6vh;
-        height: 8vh;
-        display: block;
+        height: 7vh;
+        display: contents;
         left: 0%;
         position: relative;
         background-color: transparent;
@@ -224,14 +224,14 @@ $subtitle-size: 1vw;
         @extend %NavBrand;
         font-size: 3vh;
         transition: font-size $transition-time;
-        margin-right: -7vw;
+        margin-right: 0vw;
         position: relative;
         background-color: transparent;
     }
     .NavBrandShrunk {
         @extend %NavBrand;
         font-size: 2vh;
-        left: 10%;
+        left: 0%;
         position: relative;
         transition: font-size $transition-time;
     }
@@ -271,10 +271,11 @@ $subtitle-size: 1vw;
     .dropbtn {
         background-color: transparent;
         color: rgb(255, 255, 255);
-        font-size: 1.5 vw;
+        font-size: 1.5 vh;
         border: none;
         margin-left: 20%;
         position: relative;
+        display: contents;
     }
 
     .dropbtnShrunk{
@@ -292,6 +293,7 @@ $subtitle-size: 1vw;
         display: block;
         margin-right: auto;
         margin-left: 0%;
+        width: 5vh;
     }
     
     /* Dropdown Content (Hidden by Default) */
@@ -299,7 +301,7 @@ $subtitle-size: 1vw;
         display: none;
         //position: absolute;
         background-color: #f1f1f1;
-        max-width: 100px;
+        max-width: 10vh;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
@@ -310,7 +312,7 @@ $subtitle-size: 1vw;
         //padding: 12px 16px;
         text-decoration: none;
         display: block;
-        font-size: 20%;
+        font-size: 0%;
     }
     
     /* Change color of dropdown links on hover */
