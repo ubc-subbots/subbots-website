@@ -1,5 +1,4 @@
 import React from "react";
-import constants from "../../js/constants";
 import { Container } from "react-bootstrap";
 import "./styles.scss";
 
