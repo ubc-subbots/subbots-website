@@ -73,6 +73,7 @@ export default class Header extends React.Component {
           <img
             className="UBCLogo"
             src={process.env.PUBLIC_URL + "/images/ubc-logo.png"}
+            alt="UBCLogo"
           />
         </a>
       </Navbar>
