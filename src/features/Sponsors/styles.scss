@@ -5,8 +5,8 @@
     background-color: $accent-color !important;
     margin-bottom: 50px;
     @include MarginLeftRight(10px);
-    width: 14vw;
-    height: 14vw;
+    width: max(14vw, 120px);
+    height: max(14vw, 120px);
     transition: transform $transition-time;
     &:hover{
         transform: scale(1.15);

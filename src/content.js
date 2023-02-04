@@ -16,7 +16,7 @@ const content = {
               +"control over the design, manufacturing and testing of the robot. Since becoming "
               +"a team, we have learned a lot about designing for the underwater environment and "
               +"are continuously improving upon our existing designs. ",
-      image: "team_photo_2022.jpeg",
+      image: "team_photo_2022_flat.jpeg",
     },
     pitch: {
       image: "robot.jpg",
