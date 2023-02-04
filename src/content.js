@@ -736,7 +736,7 @@ const content = {
       },
       carousels: {
         software: {
-          images: ["software.jpg"], // Add new pics
+          images: ["soft_gate_detection.png"], // Add new pics
         },
         electrical: {
           images: [
