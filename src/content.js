@@ -2,7 +2,7 @@
 
 const content = {
   home: {
-    image: "software.jpg",
+    image: "team_photo_2022.jpg",
     title: "Welcome To UBC Subbots!",
     h1: "Where comprehensive subsea design and team collaboration happen",
     about:{
@@ -16,9 +16,10 @@ const content = {
               +"control over the design, manufacturing and testing of the robot. Since becoming "
               +"a team, we have learned a lot about designing for the underwater environment and "
               +"are continuously improving upon our existing designs. ",
+      image: "team_photo_2022.jpeg",
     },
     pitch: {
-      image: "mechanical.jpg",
+      image: "robot.jpg",
       header: "Why Subbots?",
       body: " Subbots provides the chance for students to work on unique design "
                 +"problems that can’t be found anywhere else at UBC. The team originated from "
@@ -32,7 +33,7 @@ const content = {
                 +"your work is significant and directly related to the success of our robot!"
     },
     goal: {
-      image: "electrical.jpg",
+      image: "goal.jpg",
       header: "Our Goal",
       body: "As a UBC engineering design team we look to create an interesting and "
                 +"engaging environment for all of our members. The team believes our project is a "
