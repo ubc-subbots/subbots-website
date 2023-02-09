@@ -27,3 +27,11 @@
 .SponsorImage {
     width: 100%;
 }
+
+.SponsorClass .ImageContainer {
+    border: none;
+    height: auto;
+    &:hover{
+        animation: spin 1s ease-in;
+    }
+}

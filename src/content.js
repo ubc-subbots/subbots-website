@@ -209,7 +209,9 @@ const content = {
   },
 
   sponsors: {
-    image: "electrical.jpg",
+    image: "SPONSOR_NOW.png",
+    image_link: "https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC%20Subbots%20Design%20team%20G2561",
+    sponsor_class: "SponsorClass",
     title: "See Who Makes Us Possible",
     blurb:
       " To make our designs a reality Subbots relies on the support "
@@ -232,6 +234,10 @@ const content = {
       {
         image: "ubc-applied-sciences-footer-logo.png",
         link: "https://apsc.ubc.ca/",
+      },
+      {
+        image: "Altium_Logo_BLK.svg",
+        link: "https://www.altium.com/",
       },
       {
         image: "4imprint.png",

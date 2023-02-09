@@ -6,7 +6,7 @@ import "./styles.scss";
 export default class ViewHeader extends React.Component {
   render() {
     return (
-      <div>
+      <div className={this.props.className}>
         <Row>
           <Col sm={1}></Col>
           {!this.props.disableImage && (
@@ -28,9 +28,18 @@ export default class ViewHeader extends React.Component {
         </Row>
         <Row>
           <Col sm={1}></Col>
-          <Col s={10}>
+          <Col s={5}>
             <div className="ViewHeaderBlurb">{this.props.blurb}</div>
           </Col>
+          {this.props.sideImage && (
+            <Col sm={5}>
+              <div className="ViewImageContainer">
+                <a href={this.props.imageLink}>
+                  <Image src={this.props.image} />
+                </a>
+              </div>
+            </Col>
+          )}
           <Col sm={1}></Col>
         </Row>
         <div className="HeaderSeparator"/>
