@@ -15,7 +15,7 @@ export default class Footer extends React.Component {
         <Container fluid>
           <Row className="IconRow">
             <Col sm={3} className="my-auto">
-              <div className="CopyrightText">Copyright © UBC Subbots 2022</div>
+              <div className="CopyrightText">Copyright © UBC Subbots 2023</div>
             </Col>
             <Col>
               <a href="https://www.facebook.com/ubc.subbots/">
