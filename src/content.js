@@ -359,7 +359,7 @@ const content = {
       {
         name: "Fei Kuan",
         image: "No_Photo.gif",
-        email: "",
+        email: "iatfei.com",
         program: "Software Project Lead",
       },
       {
