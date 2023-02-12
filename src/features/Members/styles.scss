@@ -4,15 +4,15 @@
     text-align: center;
     background-color: $accent-color !important;
     margin-bottom: 60px;
-    @include MarginLeftRight(10px);
+    //@include MarginLeftRight(10px);
     width: max(19vw, 150px);
-    height: max(19vw, 150px);
+    height: max(21vw, 150px);
     // padding-top: 20px;
     padding-top: 1vw;
 }
 
 .MemberCardBody {
-    display: table;
+    display: block;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -31,8 +31,8 @@
     // font-size: 19px !important;
     // padding-top: 10px;
     // font-weight: 400 !important;
-    font-size: max(1.05vw, 8px) !important;
-    padding-top: max(0.5vw, 2px);
+    font-size: max(0.85vw, 8px) !important;
+    padding-top: max(0vw, 0px);
     font-weight: 400 !important;
     color: $secondary-text-color;
 }
@@ -57,7 +57,7 @@
     font-style: italic;
     font-size: max(1vw, 10px);
     // padding-top: 15px;
-    padding-top: 0.5vw;
+    padding-top: 0vw;
     font-weight: 400 !important;
     color: $secondary-text-color;
 }

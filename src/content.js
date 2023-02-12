@@ -205,7 +205,7 @@ const content = {
     image: "software.jpg",
     title: "Join Our Team!",
     blurb:
-      "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2022!",
+      "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2023!",
   },
 
   sponsors: {
@@ -305,7 +305,7 @@ const content = {
       {
         name: "Viktor Moreno",
         image: "No_Photo.gif",
-        email: "viktor.moreno123@gmail.com, linkedin.com/in/vmoreno2001/",
+        email: "viktor.moreno123@gmail.com linkedin.com/in/vmoreno2001",
         program: "Team Captain",
       },
       {
@@ -392,12 +392,12 @@ const content = {
         email: "",
         program: "Mechanical Team",
       },
-      {
+      /*{
         name: "Evelyn McGregor",
         image: "No_Photo.gif",
         email: "",
         program: "Mechanical Team",
-      },
+      },*/
       {
         name: "Martin Monaco",
         image: "No_Photo.gif",
@@ -424,8 +424,8 @@ const content = {
       },
       {
         name: "Jaclyn Canlas",
-        image: "No_Photo.gif",
-        email: "",
+        image: "Jaclyn_Canlas.jpg",
+        email: "canlasjaclyn@gmail.com linkedin.com/in/jaclyncanlas",
         program: "Software Team",
       },
       {
