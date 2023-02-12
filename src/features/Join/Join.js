@@ -64,7 +64,8 @@ export default class Join extends React.Component {
         <ViewHeader
           title={content.join.title}
           blurb={content.join.blurb}
-          image={content.join.image}
+          disableImage={true}
+          // image={content.join.image}
         />
         <Row>
           <Col sm={3}></Col>

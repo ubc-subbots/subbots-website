@@ -5,8 +5,8 @@
     background-color: $accent-color !important;
     margin-bottom: 50px;
     @include MarginLeftRight(10px);
-    width: 14vw;
-    height: 14vw;
+    width: max(14vw, 120px);
+    height: max(14vw, 120px);
     transition: transform $transition-time;
     &:hover{
         transform: scale(1.15);
@@ -15,7 +15,8 @@
 }
 
 .SponsorCardBody {
-    display: table;
+    display : flex;
+    align-items : center;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -26,4 +27,12 @@
 
 .SponsorImage {
     width: 100%;
+}
+
+.SponsorClass .ImageContainer {
+    border: none;
+    height: auto;
+    &:hover{
+        animation: spin 1s ease-in;
+    }
 }

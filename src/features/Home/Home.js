@@ -67,7 +67,7 @@ export default class Home extends React.Component {
             </Col>
             <Col sm={4}>
               <div className="GoalImageContainer">
-                <Image src={content.home.goal.image} />
+                <Image src={content.home.about.image} />
               </div>
             </Col>
             <Col sm={1}></Col>
