@@ -16,7 +16,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { TeamCard, TeamBody } from "../Teams/Components";
 import "./styles.scss";
-import { faLastfmSquare } from "@fortawesome/free-brands-svg-icons";
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -111,6 +110,7 @@ export default class Projects extends React.Component {
                     height="400"
                     width="100%"
                     src="https://www.youtube.com/embed/Oo7kQUQVeRs "
+                    title="ProjectVideo"
                   >
                     {" "}
                   </iframe>

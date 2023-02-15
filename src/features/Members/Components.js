@@ -40,6 +40,7 @@ export class MemberCard extends React.Component {
             <img
               className="MemberImage"
               src={process.env.PUBLIC_URL + "/members/" + this.props.image}
+              alt="Error!"
             ></img>
             <Card.Title className="MemberCardTitle">
               {CutName(this.props.name)}
