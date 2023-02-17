@@ -5,7 +5,6 @@ import {
   Col,
   Card,
 } from "react-bootstrap";
-import { Image } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faWrench,
@@ -103,7 +102,7 @@ export class TeamBody extends React.Component {
                 content.teams[this.props.team].items.descriptions.learn
               }
             />
-          </Row>
+            </Row>
           {/*
                     <div className="TeamBodyText">
                         {content.teams[this.props.team.toLowerCase()].body}
@@ -158,4 +157,5 @@ function TeamBodyItem(props) {
       </div>
     </div>
   );
-}
+  }
+  

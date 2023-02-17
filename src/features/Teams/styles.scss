@@ -1,113 +1,250 @@
 @import "../../styles/index.scss";
 
-.TeamCardText{
-    font-size: 1.2vw;
-    font-weight: 400 !important;
-    color: $secondary-text-color;
+@media only screen and (min-width: 1026px){
+    .TeamCardText{
+        font-size: 1.2vw;
+        font-weight: 400 !important;
+        color: $secondary-text-color;
+    }
+
+    .TeamIconLarge{
+        font-size: 6vw;
+        @include PaddingTopBottom(1vw);
+        color: $primary-color;
+    }
+
+    .TeamIconSmall{
+        font-size: 3.5vw;
+        @include PaddingTopBottom(0.5vw);
+        color: $primary-color;
+    }
+
+    .TeamCardHeader{
+        font-size: 2vw;
+        font-family: $primary-text-font;
+        background-color: $accent-color !important;
+        color: $secondary-text-color;
+    }
+
+    .TeamCard{
+        width: 95%;
+        height: 90%;
+        text-align: center;
+        background-color: $accent-color !important;
+        margin: 1vw;
+        transition: transform $transition-time;
+    }
+
+    .TeamCard:hover{
+        transform: scale(1.15);
+    }
+
+    .TeamBodyHeader {
+        font-size: 2.7vw;
+        font-family: $secondary-text-font;
+    }
+
+    .TeamBodyText {
+        margin: 2vh;
+        font-size: $content-font-size;
+        font-family: $primary-text-font;
+    }
+
+    .TeamBodyItemHeader {
+        font-size: 1.4vw;
+        font-family: $primary-text-font;
+        font-weight: 500;
+    }
+
+    .TeamBodyItemFrame {
+        height: 40vh;
+        /*width: 45vw;*/
+        border: 2px solid $primary-color;
+        border-radius: 5px;
+        @include MarginTopBottom(2vh);
+        padding-top: 0%;
+    }
+
+    .TeamBodyItemContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .TeamBodyItem {
+        background-color: $secondary-color;
+        border-radius: 5px;
+        border: 1px solid rgb(173, 173, 173);
+        width: 97%;
+        padding: 1.5vh;
+        display: flex;
+        align-items: center;
+    }
+
+    $team-body-item-icon-height: 3vh;
+
+    .TeamBodyItemIconContainer {
+        height: $team-body-item-icon-height;
+        width: $team-body-item-icon-height;
+    }
+
+    .TeamBodyItemIcon {
+        border: 2px solid $accent-color;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+    .TeamBodyItemTextPrimary {
+        font-size: 1.2vw;
+        font-family: $primary-text-font;
+        margin-left: 1vw;
+        color: $secondary-text-color;
+        /*line-height: $team-body-item-icon-height;*/
+    }
+
+    .TeamBodyItemTextSecondary {
+        font-size: 0.9vw;
+        font-family: $primary-text-font;
+        margin-left: 1vw;
+        color: rgb(73, 73, 73);
+        /*line-height: $team-body-item-icon-height;*/
+    }
+
+    .TeamBodyItemListMobile {
+        display: none;
+    }
+
 }
+//adjust styling for mobile portrait mode
 
-.TeamIconLarge{
-    font-size: 6vw;
-    @include PaddingTopBottom(1vw);
-    color: $primary-color;
-}
+@media only screen and (max-width: 1026px){
+    .TeamCardText{
+        font-size: 2vh;
+        font-weight: 400 !important;
+        color: $secondary-text-color;
+    }
+    
+    .TeamIconLarge{
+        font-size: 6vw;
+        @include PaddingTopBottom(1vw);
+        color: $primary-color;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .TeamIconSmall{
+        font-size: 3.5vh;
+        @include PaddingLeftRight(0.5vh);
+        color: $primary-color;
+    }
+    
+    .TeamCardHeader{
+        font-size: 4vh;
+        font-family: $primary-text-font;
+        background-color: $accent-color !important;
+        color: $secondary-text-color;
+    }
+    
+    .TeamCard{
+        width: auto;
+        height: auto;
+        text-align: center;
+        background-color: $accent-color !important;
+        margin: 2vh;
+        transition: transform $transition-time;
+    }
+    
+    .TeamCard:hover{
+        transform: scale(1.15);
+    }
+    
+    .TeamBodyHeader {
+        font-size: 3.7vh;
+        font-family: $secondary-text-font;
+        text-align: center;
+    }
+    
+    .TeamBodyText {
+        margin-top: 2vh;
+        font-size: $content-font-size;
+        font-family: $primary-text-font;
+    }
+    
+    .TeamBodyItemHeader {
+        font-size: 2.5vh;
+        font-family: $primary-text-font;
+        font-weight: 500;
+    }
+    
+    .TeamBodyItemFrame {
+        height: auto;
+        width: 100%;
+        border: 2px solid $primary-color;
+        border-radius: 5px;
+        @include MarginTopBottom(2vh);
+    }
+    
+    .TeamBodyItemContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .TeamBodyItem {
+        background-color: $secondary-color;
+        border-radius: 5px;
+        border: 1px solid rgb(173, 173, 173);
+        width: 97%;
+        padding: 1.5vh;
+        display: flex;
+        align-items: center;
+    }
+    
+    $team-body-item-icon-height: 3vh;
+    
+    .TeamBodyItemIconContainer {
+        height: $team-body-item-icon-height;
+        width: $team-body-item-icon-height;
+    }
+    
+    .TeamBodyItemIcon {
+        border: 2px solid $accent-color;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .TeamBodyItemTextPrimary {
+        font-size: 3vh;
+        font-family: $primary-text-font;
+        margin-left: 1vw;
+        color: $secondary-text-color;
+        /*line-height: $team-body-item-icon-height;*/
+    }
+    
+    .TeamBodyItemTextSecondary {
+        font-size: 1.5vh;
+        font-family: $primary-text-font;
+        margin-left: 1vw;
+        color: rgb(73, 73, 73);
+        /*line-height: $team-body-item-icon-height;*/
+    }
+    .SecondaryButton{
+        size: 20%;
+    }
 
-.TeamIconSmall{
-    font-size: 3.5vw;
-    @include PaddingTopBottom(0.5vw);
-    color: $primary-color;
-}
+    .TeamBodyItemList{
+        display: none;
+    }
 
-.TeamCardHeader{
-    font-size: 2vw;
-    font-family: $primary-text-font;
-    background-color: $accent-color !important;
-    color: $secondary-text-color;
-}
-
-.TeamCard{
-    width: 95%;
-    height: 90%;
-    text-align: center;
-    background-color: $accent-color !important;
-    margin: 1vw;
-    transition: transform $transition-time;
-}
-
-.TeamCard:hover{
-    transform: scale(1.15);
-}
-
-.TeamBodyHeader {
-    font-size: 2.7vw;
-    font-family: $secondary-text-font;
-}
-
-.TeamBodyText {
-    margin-top: 2vh;
-    font-size: $content-font-size;
-    font-family: $primary-text-font;
-}
-
-.TeamBodyItemHeader {
-    font-size: 1.4vw;
-    font-family: $primary-text-font;
-    font-weight: 500;
-}
-
-.TeamBodyItemFrame {
-    height: 35vh;
-    /*width: 45vw;*/
-    border: 2px solid $primary-color;
-    border-radius: 5px;
-    @include MarginTopBottom(2vh);
-}
-
-.TeamBodyItemContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-}
-
-.TeamBodyItem {
-    background-color: $secondary-color;
-    border-radius: 5px;
-    border: 1px solid rgb(173, 173, 173);
-    width: 97%;
-    padding: 1.5vh;
-    display: flex;
-    align-items: center;
-}
-
-$team-body-item-icon-height: 3vh;
-
-.TeamBodyItemIconContainer {
-    height: $team-body-item-icon-height;
-    width: $team-body-item-icon-height;
-}
-
-.TeamBodyItemIcon {
-    border: 2px solid $accent-color;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
-}
-
-.TeamBodyItemTextPrimary {
-    font-size: 1.2vw;
-    font-family: $primary-text-font;
-    margin-left: 1vw;
-    color: $secondary-text-color;
-    /*line-height: $team-body-item-icon-height;*/
-}
-
-.TeamBodyItemTextSecondary {
-    font-size: 0.9vw;
-    font-family: $primary-text-font;
-    margin-left: 1vw;
-    color: rgb(73, 73, 73);
-    /*line-height: $team-body-item-icon-height;*/
+    .TeamBodyItemListMobile{
+        font-size: 2.5vh;
+    }
 }

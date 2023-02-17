@@ -2,19 +2,24 @@
 
 const content = {
   home: {
-    image: "software.jpg",
+    image: "team_photo_2022.jpg",
     title: "Welcome To UBC Subbots!",
-    blurb: "UBC Subbots is an engineering student design team dedicated to " 
-            +"making an autonomous underwater vehicle (AUV) for the RoboSub competition "
-            +"in San Diego, California each year. This competition challenges us to make "
-            +"a robot that can navigate and interact with underwater obstacles without any "
-            +"human intervention whatsoever. The team was founded in 2017 and is made up of "
-            +"engineering and computer science students from multiple disciplines who have full "
-            +"control over the design, manufacturing and testing of the robot. Since becoming "
-            +"a team, we have learned a lot about designing for the underwater environment and "
-            +"are continuously improving upon our existing designs. ",
+    h1: "Where comprehensive subsea design and team collaboration happen",
+    about:{
+      title: "About Us",
+      blurb: "UBC Subbots is an engineering student design team dedicated to " 
+              +"making an autonomous underwater vehicle (AUV) for the RoboSub competition "
+              +"in San Diego, California each year. This competition challenges us to make "
+              +"a robot that can navigate and interact with underwater obstacles without any "
+              +"human intervention whatsoever. The team was founded in 2017 and is made up of "
+              +"engineering and computer science students from multiple disciplines who have full "
+              +"control over the design, manufacturing and testing of the robot. Since becoming "
+              +"a team, we have learned a lot about designing for the underwater environment and "
+              +"are continuously improving upon our existing designs. ",
+      image: "team_photo_2022_flat.jpeg",
+    },
     pitch: {
-      image: "mechanical.jpg",
+      image: "robot.jpg",
       header: "Why Subbots?",
       body: " Subbots provides the chance for students to work on unique design "
                 +"problems that can’t be found anywhere else at UBC. The team originated from "
@@ -28,7 +33,7 @@ const content = {
                 +"your work is significant and directly related to the success of our robot!"
     },
     goal: {
-      image: "electrical.jpg",
+      image: "goal.jpg",
       header: "Our Goal",
       body: "As a UBC engineering design team we look to create an interesting and "
                 +"engaging environment for all of our members. The team believes our project is a "
@@ -200,11 +205,13 @@ const content = {
     image: "software.jpg",
     title: "Join Our Team!",
     blurb:
-      "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2022!",
+      "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2023!",
   },
 
   sponsors: {
-    image: "electrical.jpg",
+    image: "SPONSOR_NOW.png",
+    image_link: "https://donate.support.ubc.ca/page/20924/donate/1?transaction.dirgift=UBC%20Subbots%20Design%20team%20G2561",
+    sponsor_class: "SponsorClass",
     title: "See Who Makes Us Possible",
     blurb:
       " To make our designs a reality Subbots relies on the support "
@@ -227,6 +234,10 @@ const content = {
       {
         image: "ubc-applied-sciences-footer-logo.png",
         link: "https://apsc.ubc.ca/",
+      },
+      {
+        image: "Altium_Logo_BLK.svg",
+        link: "https://www.altium.com/",
       },
       {
         image: "4imprint.png",
@@ -294,7 +305,7 @@ const content = {
       {
         name: "Viktor Moreno",
         image: "No_Photo.gif",
-        email: "viktor.moreno123@gmail.com, linkedin.com/in/vmoreno2001/",
+        email: "viktor.moreno123@gmail.com linkedin.com/in/vmoreno2001",
         program: "Team Captain",
       },
       {
@@ -348,7 +359,7 @@ const content = {
       {
         name: "Fei Kuan",
         image: "No_Photo.gif",
-        email: "",
+        email: "iatfei.com",
         program: "Software Project Lead",
       },
       {
@@ -381,12 +392,12 @@ const content = {
         email: "",
         program: "Mechanical Team",
       },
-      {
+      /*{
         name: "Evelyn McGregor",
         image: "No_Photo.gif",
         email: "",
         program: "Mechanical Team",
-      },
+      },*/
       {
         name: "Martin Monaco",
         image: "No_Photo.gif",
@@ -413,8 +424,8 @@ const content = {
       },
       {
         name: "Jaclyn Canlas",
-        image: "No_Photo.gif",
-        email: "",
+        image: "Jaclyn_Canlas.jpg",
+        email: "canlasjaclyn@gmail.com linkedin.com/in/jaclyncanlas",
         program: "Software Team",
       },
       {
@@ -732,7 +743,7 @@ const content = {
       },
       carousels: {
         software: {
-          images: ["software.jpg"], // Add new pics
+          images: ["soft_gate_detection.png"], // Add new pics
         },
         electrical: {
           images: [

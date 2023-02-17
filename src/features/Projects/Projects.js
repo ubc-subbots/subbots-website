@@ -110,6 +110,7 @@ export default class Projects extends React.Component {
                     height="400"
                     width="100%"
                     src="https://www.youtube.com/embed/Oo7kQUQVeRs "
+                    title="ProjectVideo"
                   >
                     {" "}
                   </iframe>
@@ -122,11 +123,20 @@ export default class Projects extends React.Component {
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
+          <div className = "DesktopProjectList">
             <Row>
               <TeamCard team={"software"} />
               <TeamCard team={"electrical"} />
               <TeamCard team={"mechanical"} />
             </Row>
+            </div>
+            <div className = "MobileProjectList">
+            <Col>
+              <TeamCard team={"software"} />
+              <TeamCard team={"electrical"} />
+              <TeamCard team={"mechanical"} />
+            </Col>
+            </div>
           </Col>
           <Col sm={2}></Col>
         </Row>

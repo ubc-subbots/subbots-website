@@ -1,11 +1,21 @@
 @import "../../styles/index.scss";
 
-$subtitle-size: 1vw;
+$subtitle-size: max(1vw,6px);
 
 .HeaderContainer{
     background-color: transparent;
     @include PaddingTopBottom(5vh !important);
     transition: all $transition-time ease-out;
+}
+
+.smallerLogo {
+    fill: url(#gradient);
+    width: 6vw;
+    height: 14vh;
+    display: block;
+    position: relative;
+    margin-right: auto;
+    /*animation: pulse 8s infinite ease-in-out; */
 }
 
 .HeaderContainerShrunk{
@@ -22,8 +32,9 @@ $subtitle-size: 1vw;
 
 .NavBrand {
     @extend %NavBrand;
-    font-size: 2.6vw;
+    font-size: 4vh;
     transition: font-size $transition-time;
+    margin-left: auto; 
 }
 
 .NavBrandShrunk {
@@ -62,7 +73,7 @@ $subtitle-size: 1vw;
 
 .NavContainer:hover{
     opacity: 1;
-    background-color: transparent;
+    background-color: transparent ;
     border-width: 10px;
     border-radius: 5px;
 }
@@ -71,19 +82,248 @@ $subtitle-size: 1vw;
     @extend .PrimaryOutlineButton;
     @include PrimarySubTitle($subtitle-size);
     &:hover{
-        color: $secondary-text-color !important;
+        color: $primary-text-color !important;
+    }
+    font-family: 'Aboreto';
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+
+@media only screen and (max-width: 1026px) {
+    .SignInButton {
+        display: none;
     }
 }
 
+//ignore for now, put in footer later
 .UBCLogo{
-    -webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 */
-    filter: brightness(0) invert(1);
+    /*-webkit-filter: brightness(0) invert(1); /* Safari 6.0 - 9.0 
+    filter: brightness(0) invert(1); 
+    */
+    width: 70px;
+    height: auto;
+    bottom: 80%;
+    position: relative;
+    right: 10%;
+    background-color: #04AA6D;
 }
 
-.HeaderLogo{
-    max-height: 10vh;
-    min-width: 10vh;
-    color: $accent-color;
-    transition: transform 1s ease;
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: .5vh;
+    height: 0.7vh;
+    font-size: 2 vw;
+    border: none;
+    margin-left: auto;
+    font-family: $secondary-text-font;
 }
 
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #252ba8;} 
+
+// hide dropdown menu for desktop
+@media only screen and (min-width: 1026px) {
+    .dropbtn {
+        display: none;
+    }
+    .dropdown {
+        display: none;
+    }
+    .dropdown-content{
+        display: none;
+    }
+    .dropdown:hover{
+        display: none;
+    }
+}
+
+
+
+
+
+
+//adjust all elements for mobile devices, portrait mode only
+
+@media only screen and (max-width: 500px) {
+
+    .links{
+        display: none;
+    }
+
+    .HeaderContainer{
+        background-color: transparent;
+        //@include PaddingTopBottom(5vh !important);
+        //@include PaddingLeftRight(7vw !important);
+        transition: all $transition-time ease-out;
+        position: fixed;
+        width: 100%;
+    }
+    .smallerLogo {
+        fill: url(#gradient);
+        width: 6vh;
+        height: 7vh;
+        display: contents;
+        left: 0%;
+        position: relative;
+        background-color: transparent;
+        /* animation: pulse 8s infinite ease-in-out; */
+    }
+    .HeaderContainerShrunk{
+        background-color: $primary-color;
+        //@include PaddingTopBottom(0vh !important);
+        //@include PaddingLeftRight(7vw !important);
+        transition: all $transition-time ease-out;
+        position: fixed;
+        width: 100%;
+    }
+    
+    %NavBrand {
+        text-decoration: none !important;
+        //color: $accent-color;
+        color: white;
+        font-family: $brand-font;
+    }
+    .UBCLogo {
+        display: none;
+    }
+    .NavBrand {
+        @extend %NavBrand;
+        font-size: 3vh;
+        transition: font-size $transition-time;
+        margin-right: 0vw;
+        position: relative;
+        background-color: transparent;
+    }
+    .NavBrandShrunk {
+        @extend %NavBrand;
+        font-size: 2vh;
+        left: 0%;
+        position: relative;
+        transition: font-size $transition-time;
+    }
+    .NavLink{
+        @include PaddingLeftRight(1vw);
+        text-decoration: none !important;
+        @include PrimarySubTitle($subtitle-size);
+        &:hover{
+            color: $primary-text-hover-color;
+        }
+        &:active{
+            color: $primary-text-color;
+        }
+        &:focus{
+            color: $primary-text-color;
+        }
+    }
+    .HeaderLogo{
+        //max-height: 10vh;
+        //min-width: 6vw;
+        top: auto;
+        color: $accent-color;
+        transition: transform 1s ease;
+        position: relative;
+        background-color: transparent;
+        
+    }
+    .NavContainer:hover{
+        opacity: 1;
+        background-color: transparent ;
+        border-width: 10px;
+        border-radius: 5px;
+    }
+    //W3Schools Tutorial
+    
+    /* Dropdown Button */
+    .dropbtn {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        font-size: 1.5 vh;
+        border: none;
+        margin-left: 20%;
+        position: relative;
+        display: contents;
+    }
+
+    .dropbtnShrunk{
+        background-color: #2882cc;
+        color: rgb(255, 255, 255);
+        font-size: 1.5 vw;
+        border: none;
+        left: 0%;
+        position: relative;
+    }
+    
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: block;
+        margin-right: auto;
+        margin-left: 0%;
+        width: 5vh;
+    }
+    
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        //position: absolute;
+        background-color: #f1f1f1;
+        max-width: 10vh;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-content a {
+        color: black;
+        //padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        // font-size: 20%;
+        height: max(0.7vh, 10px);
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+    
+    /* Show the dropdown menu on hover */
+    .dropbtn:hover .dropdown-content {display: block !important;}
+
+    .dropbtnShrunk:hover .dropdown-content {display: block !important;}
+    
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: transparent;} 
+}

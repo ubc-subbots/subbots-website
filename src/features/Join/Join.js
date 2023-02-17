@@ -64,7 +64,8 @@ export default class Join extends React.Component {
         <ViewHeader
           title={content.join.title}
           blurb={content.join.blurb}
-          image={content.join.image}
+          disableImage={true}
+          // image={content.join.image}
         />
         <Row>
           <Col sm={3}></Col>
@@ -72,8 +73,8 @@ export default class Join extends React.Component {
             <div>
               <iframe
                 src="https://forms.gle/7s7gdepgdGp9gsHr7"
-                width="640"
-                height="1744"
+                width= "100%"
+                height="400"
                 frameborder="0"
                 marginHeight="0"
                 marginWidth="0"

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./styles.scss";
 import {
   faFacebookF,
   faGithub,
@@ -14,7 +15,7 @@ export default class Footer extends React.Component {
         <Container fluid>
           <Row className="IconRow">
             <Col sm={3} className="my-auto">
-              <div className="CopyrightText">Copyright © UBC Subbots 2021</div>
+              <div className="CopyrightText">Copyright © UBC Subbots 2023</div>
             </Col>
             <Col>
               <a href="https://www.facebook.com/ubc.subbots/">

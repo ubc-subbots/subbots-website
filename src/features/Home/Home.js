@@ -2,8 +2,6 @@ import React from "react";
 import content from "../../content";
 import { Col, Row, Carousel, CarouselItem } from "react-bootstrap";
 import { ViewHeader, ViewContainer, Image } from "../../components";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faRocket } from "@fortawesome/free-solid-svg-icons";
 import "./styles.scss";
 
 export default class Home extends React.Component {
@@ -56,9 +54,25 @@ export default class Home extends React.Component {
         {/* <img className="Logo" src={process.env.PUBLIC_URL + "/logo/vector_images/RGB(for_screen)/SVG/subbots-logo-rgb-yellow-large.svg"}/> */}
         <ViewHeader
           title={content.home.title}
-          blurb={content.home.blurb}
+          h1 = {content.home.h1}
+          /* blurb={content.home.blurb} */
           disableImage={true}
         />
+        {/*<div className="ContentSeperatorTop" />*/}
+          <div className="AboutUsHeader">{content.home.about.title}
+        </div>
+        <Row>
+            <Col sm={6}>
+              <div className="AboutUsBody">{content.home.about.blurb}</div>
+            </Col>
+            <Col sm={4}>
+              <div className="GoalImageContainer">
+                <Image src={content.home.about.image} />
+              </div>
+            </Col>
+            <Col sm={1}></Col>
+          </Row>
+        <Col sm={4}></Col>
         <Row>
           <Col sm={1}></Col>
           <Col sm={4}>
@@ -72,13 +86,12 @@ export default class Home extends React.Component {
           </Col>
           <Col sm={1}></Col>
         </Row>
-        <div className="ContentSeperatorTop" />
+        {/*<div className="ContentSeperatorTop" />*/}
         <div className="ContentContainer">
           <h4 className="GoalHeader">
-            <FontAwesomeIcon icon={faRocket} />
             {"  " + content.home.goal.header}
           </h4>
-          <hr />
+          < hr />
           <Row>
             <Col sm={1}></Col>
             <Col sm={6}>

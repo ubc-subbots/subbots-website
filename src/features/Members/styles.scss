@@ -4,15 +4,15 @@
     text-align: center;
     background-color: $accent-color !important;
     margin-bottom: 60px;
-    @include MarginLeftRight(10px);
-    width: 19vw;
-    height: 19vw;
+    //@include MarginLeftRight(10px);
+    width: max(19vw, 150px);
+    height: max(21vw, 150px);
     // padding-top: 20px;
     padding-top: 1vw;
 }
 
 .MemberCardBody {
-    display: table;
+    display: block;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -21,8 +21,8 @@
     // font-size: 20px !important;
     // padding-top: 30px;
     // font-weight: 600 !important;
-    font-size: 1.1vw !important;
-    padding-top: 1.4vw;
+    font-size: max(1.1vw, 10px) !important;
+    padding-top: max(1.4vw, 7px);
     font-weight: 600 !important;
     color: $secondary-text-color;
 }
@@ -31,8 +31,8 @@
     // font-size: 19px !important;
     // padding-top: 10px;
     // font-weight: 400 !important;
-    font-size: 1.05vw !important;
-    padding-top: 0.5vw;
+    font-size: max(0.85vw, 8px) !important;
+    padding-top: max(0vw, 0px);
     font-weight: 400 !important;
     color: $secondary-text-color;
 }
@@ -48,59 +48,59 @@
     // height: 140px;
     // width: 140px;
     // border-radius: 150px;
-    height: 7.5vw;
-    width: 7.5vw;
+    height: max(7.5vw, 50px);
+    width: max(7.5vw, 50px);
     border-radius: 150px;
 }
 
 .MemberCardText{
     font-style: italic;
-    font-size: 1vw;
+    font-size: max(1vw, 10px);
     // padding-top: 15px;
-    padding-top: 0.5vw;
+    padding-top: 0vw;
     font-weight: 400 !important;
     color: $secondary-text-color;
 }
 
 .MemberIconLarge{
-    font-size: 6vw;
+    font-size: max(6vw, 60px);
     @include PaddingTopBottom(1vw);
     color: $primary-color;
 }
 
 .MemberIconSmall{
-    font-size: 3.5vw;
+    font-size: max(3.5vw, 35px);
     @include PaddingTopBottom(0.5vw);
     color: $primary-color;
 }
 
 .MemberCardHeader{
-    font-size: 2vw;
+    font-size: max(2vw, 20px);
     font-family: $primary-text-font;
     background-color: $accent-color !important;
     color: $secondary-text-color;
 }
 
 .MemberBodyHeader {
-    font-size: 2.7vw;
+    font-size: max(2.7vw, 27px);
     font-family: $secondary-text-font;
 }
 
 .MemberBodyText {
-    margin-top: 2vh;
+    margin-top: max(2vh, 20px);
     font-size: $content-font-size;
     font-family: $primary-text-font;
 }
 
 .MemberBodyItemHeader {
-    font-size: 1.4vw;
+    font-size: max(1.4vw, 14px);
     font-family: $primary-text-font;
     font-weight: 500;
 }
 
 .MemberBodyItemFrame {
-    height: 35vh;
-    width: 45vw;
+    height: max(35vh, 350px);
+    width: max(45vw, 450px);
     border: 2px solid $primary-color;
     border-radius: 5px;
     @include MarginTopBottom(2vh);
@@ -139,7 +139,7 @@ $member-body-item-icon-height: 6vh;
 }
 
 .MemberBodyItemTextPrimary {
-    font-size: 1.2vw;
+    font-size: max(1.2vw, 12px);
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: $secondary-text-color;
@@ -147,7 +147,7 @@ $member-body-item-icon-height: 6vh;
 }
 
 .MemberBodyItemTextSecondary {
-    font-size: 0.9vw;
+    font-size: max(0.9vw, 9px);
     font-family: $primary-text-font;
     margin-left: 1vw;
     color: rgb(73, 73, 73);

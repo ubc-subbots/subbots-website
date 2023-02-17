@@ -17,6 +17,10 @@ export default class Sponsors extends React.Component {
           title={content.sponsors.title}
           blurb={content.sponsors.blurb}
           image={content.sponsors.image}
+          imageLink={content.sponsors.image_link}
+          disableImage={true}
+          sideImage={true}
+          className={content.sponsors.sponsor_class}
         />
         <Row>
           <Col sm={2}></Col>
