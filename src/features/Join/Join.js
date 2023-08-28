@@ -1,7 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap"
 import content from "../../content";
-import { ViewHeader, ViewContainer } from "../../components";
+import { ViewHeader, ViewContainer, Image } from "../../components";
 import "./styles.scss";
 
 export default class Join extends React.Component {
@@ -66,6 +66,7 @@ export default class Join extends React.Component {
           blurb={content.join.blurb}
           disableImage={true}
           // image={content.join.image}
+          // imageLink={content.join.link}
         />
         <Row>
           <Col sm={2}></Col>
@@ -77,6 +78,17 @@ export default class Join extends React.Component {
           <Col sm={2}></Col>
         </Row>
         <Row>
+          <Col sm={2}></Col>
+          <Col sm={8}>
+            <div className="JoinImage">
+              <a href={content.join.link} target="_blank" rel="noreferrer">
+                <Image src={content.join.image} />
+              </a>
+            </div>
+          </Col>
+          <Col sm={2}></Col>
+        </Row>
+        {/* <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
             <div>
@@ -94,7 +106,7 @@ export default class Join extends React.Component {
             </div>
           </Col>
           <Col sm={2}></Col>
-        </Row>
+        </Row> */}
       </ViewContainer>
     );
   }
