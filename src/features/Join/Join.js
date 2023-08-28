@@ -80,15 +80,6 @@ export default class Join extends React.Component {
           <Col sm={2}></Col>
           <Col sm={8}>
             <div>
-            alsdfjalsdjflksdj
-            </div>
-          </Col>
-          <Col sm={2}></Col>
-        </Row>
-        <Row>
-          <Col sm={2}></Col>
-          <Col sm={8}>
-            <div>
               <iframe
                 src={content.join.link}
                 width= "100%"
