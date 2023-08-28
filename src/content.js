@@ -206,6 +206,8 @@ const content = {
     title: "Join Our Team!",
     blurb:
       "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2023!",
+    link:
+      "https://forms.gle/7s7gdepgdGp9gsHr7",
   },
 
   sponsors: {

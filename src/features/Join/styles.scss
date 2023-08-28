@@ -34,6 +34,17 @@ $form-opacity: 0.6;
     @include SecondarySubTitle(1.1vw);
 }
 
+.AltLink{
+    text-align: center;
+    color: $accent-color;
+    font-size: 2vw;
+    font-weight: 300;
+    font-family: $subheadings;
+    width: 100%;
+    margin-bottom: 3vh;
+}
+
+
 @media only screen and (max-width: 1026px) {
     .JoinForm{
         display: block;
