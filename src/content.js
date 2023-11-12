@@ -298,11 +298,11 @@ const content = {
         link: "https://apsc.ubc.ca/",
       },
       {
-        image: "vp.jpg",
+        image: "onshape-logo.png",
         link: "https://www.onshape.com/en/",
       },
       {
-        image: "vp.jpg",
+        image: "pressing_media.jpg",
         link: "https://pressing-media.com/",
       },
     ],
