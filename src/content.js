@@ -297,6 +297,14 @@ const content = {
         image: "vp.jpg",
         link: "https://apsc.ubc.ca/",
       },
+      {
+        image: "onshape-logo.png",
+        link: "https://www.onshape.com/en/",
+      },
+      {
+        image: "pressing_media.jpg",
+        link: "https://pressing-media.com/",
+      },
     ],
   },
 
