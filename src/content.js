@@ -480,6 +480,12 @@ const content = {
         email: "",
         program: "Electrical Team",
       },
+      {
+        name: "Brandon Jong",
+        image: "No_Photo.gif",
+        email: "",
+        program: "Software Team",
+      },
     ],
   },
   emails: {
