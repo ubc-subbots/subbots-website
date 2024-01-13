@@ -205,7 +205,7 @@ const content = {
     image: "join.jpg",
     title: "Join Our Team!",
     blurb:
-      "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in September 2023!",
+      "If you are interested in joining our team, please fill out the form and we will make sure to contact you for our next recruitment wave in January 2024!",
     link:
       "https://forms.gle/bRnWSZ7WxERzu23K6",
   },
