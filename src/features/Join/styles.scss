@@ -4,6 +4,12 @@ $form-color: $secondary-color;
 $form-border-radius: 5px;
 $form-opacity: 0.6;
 
+.disabled{
+    pointer-events: none;
+    cursor: default;
+    color:gray
+}
+
 .JoinForm{
     display: block;
     margin: auto;

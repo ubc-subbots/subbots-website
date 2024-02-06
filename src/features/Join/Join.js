@@ -63,7 +63,7 @@ export default class Join extends React.Component {
       <ViewContainer>
         <ViewHeader
           title={content.join.title}
-          blurb={content.join.blurb}
+          blurb={content.join.blurb} 
           disableImage={true}
           // image={content.join.image}
           // imageLink={content.join.link}
@@ -72,7 +72,7 @@ export default class Join extends React.Component {
           <Col sm={2}></Col>
           <Col sm={8}>
             <div className="AltLink">
-              <a href={content.join.link} target="_blank" rel="noreferrer">Open form in a new tab</a>
+              <a href={content.join.link} className="disabled" target="_blank" rel="noreferrer">Open form in a new tab</a>
             </div>
           </Col>
           <Col sm={2}></Col>
