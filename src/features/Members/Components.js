@@ -34,7 +34,7 @@ export class MemberCard extends React.Component {
     };
 
     return (
-      <Col sm={4}>
+      <Col sm={12}>
         <Card className="MemberCard">
           <Card.Body className="MemberCardBody">
             <img
@@ -47,9 +47,10 @@ export class MemberCard extends React.Component {
             </Card.Title>
             <Card.Text className="MemberCardText">{this.props.program}</Card.Text>
             <Card.Subtitle className="MemberCardSubtitle">
-              {this.props.email}
+              <a href={"mailto:" + this.props.email}>{this.props.email}</a>
+              <br></br>
+              <a href={this.props.link}>{this.props.link}</a>
             </Card.Subtitle>
-            
           </Card.Body>
         </Card>
       </Col>

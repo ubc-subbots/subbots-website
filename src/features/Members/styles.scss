@@ -3,12 +3,25 @@
 .MemberCard {
     text-align: center;
     background-color: $accent-color !important;
-    margin-bottom: 60px;
-    //@include MarginLeftRight(10px);
-    width: max(19vw, 150px);
-    height: max(21vw, 150px);
+    margin-bottom: 4vw; // 60px
+    // @include MarginLeftRight(10px);
+    width: 16.7vw; // 19vw, 150px
+    height: max(21vw, 225px); //21vw, 150px
     // padding-top: 20px;
     padding-top: 1vw;
+    margin-left: 2vw;
+}
+
+.MemberCard a:link {
+  color: navy;
+}
+
+.MemberCard a:visited {
+  color: navy;
+}
+
+.MemberCard a:hover {
+  color: royalblue;
 }
 
 .MemberCardBody {
@@ -38,7 +51,7 @@
 }
 
 .MemberRow {
-    @include MarginTopBottom(40px); 
+    @include MarginTopBottom(40px);
 }
 
 .MemberImage {
