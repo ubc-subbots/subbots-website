@@ -5,6 +5,12 @@ import { ViewHeader, ViewContainer } from "../../components";
 import { MemberCard } from "./Components";
 import { TeamBody } from "../Teams/Components";
 import "./styles.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWrench,
+  faLaptopCode,
+  faCarBattery,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default class Members extends React.Component {
   render() {
@@ -74,13 +80,13 @@ export default class Members extends React.Component {
                 <h4 className="VideoHeader">Admin + Business</h4>
               </Col>
               <Col sm={3}>
-                <h4 className="VideoHeader">Mechanical</h4>
+                <h4 className="VideoHeader"><FontAwesomeIcon icon={faWrench} /> Mechanical</h4>
               </Col>
               <Col sm={3}>
-                <h4 className="VideoHeader">Electrical</h4>
+                <h4 className="VideoHeader"><FontAwesomeIcon icon={faCarBattery} /> Electrical</h4>
               </Col>
               <Col sm={3}>
-                <h4 className="VideoHeader">Software</h4>
+                <h4 className="VideoHeader"><FontAwesomeIcon icon={faLaptopCode} /> Software</h4>
               </Col>
             </Row>
           </Col>
