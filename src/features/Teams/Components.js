@@ -82,7 +82,7 @@ export class TeamBody extends React.Component {
               icon={this.icons[this.props.team]}
               size="lg"
             />
-            {this.text[this.props.team]}
+            {" " + this.text[this.props.team]}
           </h3>
           <hr />
           <Row>

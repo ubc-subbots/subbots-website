@@ -1,14 +1,54 @@
 @import "../../styles/index.scss";
 
+.CenteredBlurb {
+  color: $secondary-color;
+  font-size: 3vh;
+  font-weight: 600;
+  display: block;
+  @include MarginTopBottom(3vh);
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.TeamTitle {
+  margin-top: 3vh;
+  text-align: center;
+  font-size: calc(7px + 2.5vw);
+  color: $accent-color;
+  font-weight: 600px;
+  font-family: $secondary-text-font;
+  display: block;
+  width: 20.8vw;
+  margin-right: 0px;
+  margin-bottom: 3vh;
+}
+
 .MemberCard {
     text-align: center;
     background-color: $accent-color !important;
-    margin-bottom: 60px;
-    //@include MarginLeftRight(10px);
-    width: max(19vw, 150px);
-    height: max(21vw, 150px);
+    margin-bottom: 4vw;
+    // @include MarginLeftRight(10px);
+    width: max(16.7vw, 105px);
+    height: max(22vw, 225px);
     // padding-top: 20px;
     padding-top: 1vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    white-space: pre-line;
+}
+
+.MemberCard a:link {
+  color: navy;
+}
+
+.MemberCard a:visited {
+  color: navy;
+}
+
+.MemberCard a:hover {
+  color: royalblue;
 }
 
 .MemberCardBody {
@@ -22,7 +62,7 @@
     // padding-top: 30px;
     // font-weight: 600 !important;
     font-size: max(1.1vw, 10px) !important;
-    padding-top: max(1.4vw, 7px);
+    padding-top: max(1.4vw, 7px); //1.4 7
     font-weight: 600 !important;
     color: $secondary-text-color;
 }
@@ -32,13 +72,13 @@
     // padding-top: 10px;
     // font-weight: 400 !important;
     font-size: max(0.85vw, 8px) !important;
-    padding-top: max(0vw, 0px);
+    padding-top: max(0.7vw, 0px);
     font-weight: 400 !important;
     color: $secondary-text-color;
 }
 
 .MemberRow {
-    @include MarginTopBottom(40px); 
+    @include MarginTopBottom(40px);
 }
 
 .MemberImage {
