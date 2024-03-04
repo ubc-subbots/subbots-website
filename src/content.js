@@ -29,7 +29,7 @@ const content = {
                 +"as autonomous underwater navigation, hydrodynamics and buoyancy, electronics "
                 +"waterproofing, actuation of mechanical systems and many more. Since Subbots is a "
                 +"relatively new design team, there is plenty of opportunity to improve upon existing"
-                +"designs and be a part of building the team. This means that even as new members, "
+                +" designs, and be a part of building the team. This means that even as new members, "
                 +"your work is significant and directly related to the success of our robot!"
     },
     goal: {
@@ -44,17 +44,17 @@ const content = {
                 +"the ground up for maximum learning experience. This enables each member of the team to  "
                 +"understand all aspects of the design, and further improve their technical skills. "
                 +"Each year we hope to grow as a team by recruiting motivated and hard working students  "
-                +"who share a passion for our project. \n\n On the technical side, our teams goal is to "
+                +"who share a passion for our project. \n\n On the technical side, our team's goal is to "
                 +"build a robot that is capable of competing in the RoboSub competition each year. To  "
                 +"do this our members must learn how to work within a team and multidisciplinary  "
-                +"environment to tackle unique design challenges. The teams goal is to facilitate  "
+                +"environment to tackle unique design challenges. The team's goal is to facilitate  "
                 +"learning in all aspects of AUV design and encourage good engineering practices that  "
                 +"can be passed onto future generations of team members. ",
     },
     projects: {
       header: "The Robots",
       body: "Since becoming a team in 2017, Subbots has had the chance to work on two robots. "
-                +"Our first robot for the 2017-2018 year was a huge learning curve for the team, but it  "
+                +"Our first robot for the 2017–2018 year was a huge learning curve for the team, but it  "
                 +"successfully competed at RoboSub which taught the team a lot about what goes into making  "
                 +"an AUV. We are currently working on our second robot which is built off of the original design.  "
                 +"Unfortunately, the 2020 RoboSub competition was cancelled, but we are hoping to participate in 2021.",
@@ -311,10 +311,11 @@ const content = {
   members: {
     image: "team_photo_2022_flat.jpeg",
     title: "Current Members",
+    blurb: " and counting! Meet the people who make it all come together.",
     othr_members: [
       {
         name: "Viktor Moreno",
-        image: "No_Photo.gif",
+        image: "Viktor_Moreno.jpg",
         email: "viktor.moreno123@gmail.com",
         link: "linkedin.com/in/vmoreno2001",
         program: "Team Captain",
@@ -322,74 +323,81 @@ const content = {
       {
         name: "Parker Gu",
         image: "No_Photo.gif",
-        email: "parkergupdc@gmail.com",
+        email: "",
         link: "",
         program: "Business Member",
       },
       {
-        name: "Zizhuo Yun",
-        image: "No_Photo.gif",
-        email: "zizhuoyun@gmail.com",
+        name: "Marcus Liang",
+        image: "Marcus_Liang.JPG",
+        email: "marcusliang26@gmail.com",
         link: "",
-        program: "Team Member", //! UPDATE
-      },
-      {
-        name: "Samuel Wu",
-        image: "No_Photo.gif",
-        email: "samuelwu011@gmail.com",
-        link: "",
-        program: "Team Member", //! UPDATE
+        program: "Life Sciences Outreach",
       },
     ],
     mech_members: [
       {
         name: "Charles Polloway",
         image: "Charles_Polloway.jpg",
-        email: "charles_polloway@icloud.com",
+        email: "",
         link: "linkedin.com/in/charles-polloway",
         program: "Mechanical Lead",
       },
       {
         name: "Dawud Qaimari",
         image: "No_Photo.gif",
-        email: "dawudq2002@gmail.com",
+        email: "",
         link: "linkedin.com/in/dawud-qaimari",
         program: "Mechanical Lead / Business Lead",
       },
       {
-        name: "Rafael Lorenzo Remo",
+        name: "Rafael Remo",
+        image: "Rafael_Remo.jpeg",
+        email: "",
+        link: "linkedin.com/in/rafaelremo",
+        program: "Actuators Lead",
+      },
+      {
+        name: "Mehar Ahuja",
         image: "No_Photo.gif",
-        email: "rafaelremo820@gmail.com",
+        email: "",
         link: "",
-        program: "Mechanical Lead",
+        program: "Mechanical Member",
+      },
+      {
+        name: "Cameron Fletcher",
+        image: "Cameron_Fletcher.jpg",
+        email: "",
+        link: "linkedin.com/in/cvfletcher",
+        program: "Mechanical Member",
+      },
+      {
+        name: "Conner Fransoo",
+        image: "No_Photo.gif",
+        email: "",
+        link: "",
+        program: "Mechanical Member",
       },
       {
         name: "Mihaela Gavrilova",
         image: "No_Photo.gif",
-        email: "mihaelagavrilova2005@gmail.com",
+        email: "",
         link: "",
         program: "Mechanical Member / Admin Member",
       },
       {
         name: "Joshua Han",
         image: "No_Photo.gif",
-        email: "han.joshua.c@gmail.com",
-        link: "",
+        email: "",
+        link: "linkedin.com/in/joshua-han-410a00289",
         program: "Mechanical Member",
       },
       {
         name: "Yasin Kurji",
-        image: "No_Photo.gif",
+        image: "Yasin_Kurji.jpeg",
         email: "yasinkurji@gmail.com",
         link: "",
-        program: "Mechanical Member",
-      },
-      {
-        name: "Marcus Liang",
-        image: "No_Photo.gif",
-        email: "marcuslian26@gmail.com",
-        link: "",
-        program: "Mechanical Member / Business Member",
+        program: "Actuators Member",
       },
       {
         name: "Ryan Edric Nashota",
@@ -401,51 +409,37 @@ const content = {
       {
         name: "Puneet Sidhu",
         image: "No_Photo.gif",
-        email: "puneetksidhu27@gmail.com",
+        email: "",
         link: "",
         program: "Mechanical Member",
       },
       {
         name: "Ivan Su",
         image: "No_Photo.gif",
-        email: "ivansu.isu@gmail.com",
+        email: "",
         link: "",
         program: "Mechanical Member",
       },
       {
         name: "Brenna Sullivan",
-        image: "No_Photo.gif",
-        email: "brennas@cox.net",
+        image: "Brenna_Sullivan.jpg",
+        email: "bsull@student.ubc.ca",
         link: "",
-        program: "Mechanical Member",
+        program: "Frames & Enclosures Member",
       },
       {
         name: "Jonathan Wu",
-        image: "No_Photo.gif",
-        email: "jonathan2005y01@gmail.com",
-        link: "",
-        program: "Mechanical Member / Safety Officer",
-      },
-      {
-        name: "Mehar Ahuja",
-        image: "No_Photo.gif",
-        email: "ahuja.mehar@gmail.com",
-        link: "",
+        image: "Jonathan_Wu.jpg",
+        email: "",
+        link: "linkedin.com/in/jonathanwu146",
         program: "Mechanical Member",
       },
       {
-        name: "Cameron Fletcher",
-        image: "Cameron_Fletcher.jpg",
-        email: "camfletcher13@gmail.com",
-        link: "linkedin.com/in/cvfletcher",
-        program: "Mechanical Member",
-      },
-      {
-        name: "Conner Fransoo",
-        image: "No_Photo.gif",
-        email: "connerjf03@gmail.com",
-        link: "",
-        program: "Mechanical Member",
+        name: "Jerry Zizhuo Yun",
+        image: "Jerry_Zizhuo_Yun.jpeg",
+        email: "",
+        link: "linkedin.com/in/yun-zizhuo",
+        program: "Actuators Member",
       },
     ],
     elec_members: [
@@ -458,15 +452,15 @@ const content = {
       },
       {
         name: "Peter van den Doel",
-        image: "No_Photo.gif",
-        email: "PetervandenDoel24@gmail.com",
-        link: "",
-        program: "Electrical Lead",
+        image: "Peter_van_den_Doel.jpg",
+        email: "",
+        link: "linkedin.com/in/peter-van-den-doel",
+        program: "Sound Localization Lead",
       },
       {
         name: "Rylan Bowen-Colthurst",
         image: "No_Photo.gif",
-        email: "rylanbc@student.ubc.ca",
+        email: "",
         link: "",
         program: "Electrical Member",
       },
@@ -480,56 +474,63 @@ const content = {
       {
         name: "Diego Christiansen-Barker",
         image: "No_Photo.gif",
-        email: "diego.cbarker@gmail.com",
+        email: "",
         link: "",
         program: "Electrical Member / Business Member",
       },
       {
         name: "Faraz Fasihzadeh",
         image: "No_Photo.gif",
-        email: "farazfasih2005@gmail.com",
+        email: "",
         link: "",
         program: "Electrical Member",
       },
       {
         name: "Linda Nguyen",
         image: "No_Photo.gif",
-        email: "lindatnguyen04@gmail.com",
+        email: "",
         link: "",
         program: "Electrical Member",
       },
       {
         name: "Abhishek Raghuwanshi",
-        image: "No_Photo.gif",
-        email: "abhi112r@gmail.com",
-        link: "",
+        image: "Abhishek_Raghuwanshi.jpeg",
+        email: "",
+        link: "linkedin.com/in/a112r",
         program: "Electrical Member",
       },
       {
         name: "Danial Ramzan",
         image: "No_Photo.gif",
-        email: "danialramzan@gmail.com",
+        email: "",
         link: "",
         program: "Electrical Member",
       },
       {
         name: "Kieran Ross",
         image: "No_Photo.gif",
-        email: "kieranross5451@gmail.com",
+        email: "",
         link: "",
         program: "Electrical Member",
       },
       {
         name: "Connor Seto",
-        image: "No_Photo.gif",
-        email: "connor_set@hotmail.com",
-        link: "",
-        program: "Electrical Member",
+        image: "Connor_Seto.jpg",
+        email: "",
+        link: "linkedin.com/in/connor-seto-554241212",
+        program: "Sound Localization Member",
       },
       {
         name: "Chloe Sun",
-        image: "No_Photo.gif",
+        image: "Chloe_Sun.jpeg",
         email: "chlo1sfy@gmail.com",
+        link: "",
+        program: "Sound Localization Member / Software Member",
+      },
+      {
+        name: "Samuel Wu",
+        image: "No_Photo.gif",
+        email: "samuelwu011@gmail.com",
         link: "",
         program: "Electrical Member",
       },
@@ -537,9 +538,9 @@ const content = {
     sftw_members: [
       {
         name: "Hashaam Zafar",
-        image: "No_Photo.gif",
-        email: "hashaamzafar2003@gmail.com",
-        link: "",
+        image: "Hashaam_Zafar.jpeg",
+        email: "",
+        link: "linkedin.com/in/hashaamzafar",
         program: "Software Lead",
       },
       {
@@ -552,71 +553,71 @@ const content = {
       {
         name: "Brandon Jong",
         image: "No_Photo.gif",
-        email: "brandon.alexander.jong@gmail.com",
+        email: "",
         link: "",
         program: "Software Member",
       },
       {
         name: "Toby Lau",
-        image: "No_Photo.gif",
+        image: "Toby_Lau.jpg",
         email: "toby.lau075@gmail.com",
-        link: "",
+        link: "tobylau.netlify.app",
         program: "Software Member",
       },
       {
         name: "Kunal Lugani",
-        image: "No_Photo.gif",
-        email: "kunal.lugani1@gmail.com",
+        image: "Kunal_Lugani.jpg",
+        email: "kunal.lugani@gmail.com",
         link: "",
         program: "Software Member",
       },
       {
         name: "Robert Pan",
         image: "No_Photo.gif",
-        email: "rPan0827@gmail.com",
+        email: "rpan0827@gmail.com",
         link: "",
         program: "Software Member",
       },
       {
         name: "Rythem Shah",
-        image: "No_Photo.gif",
-        email: "Rythemshah2004@gmail.com",
+        image: "Rythem_Shah.jpeg",
+        email: "rythemshah2004@gmail.com",
         link: "",
         program: "Software Member",
       },
       {
         name: "Ajay Sharma",
         image: "No_Photo.gif",
-        email: "ajay.sharma.rck.1998@gmail.com",
+        email: "",
         link: "",
         program: "Software Member",
       },
       {
         name: "Seun Somefun",
         image: "No_Photo.gif",
-        email: "seunsomefun2@gmail.com",
+        email: "",
         link: "",
         program: "Software Member",
       },
       {
         name: "Lily Watt",
-        image: "No_Photo.gif",
-        email: "lilywatt@student.ubc.ca",
-        link: "",
+        image: "Lily_Watt.jpeg",
+        email: "",
+        link: "linkedin.com/in/lily-watt",
         program: "Software Member",
       },
       {
         name: "Zachary Xie",
         image: "No_Photo.gif",
-        email: "raindragonxie@gmail.com",
+        email: "",
         link: "linkedin.com/in/zachary-xie-2321a3229",
         program: "Software Member",
       },
       {
         name: "Gyan Edbert Zesiro",
         image: "No_Photo.gif",
-        email: "gyan.gyan26@gmail.com",
-        link: "",
+        email: "",
+        link: "linkedin.com/in/gyan-edbert-zesiro-0b1394275",
         program: "Software Member",
       },
     ],

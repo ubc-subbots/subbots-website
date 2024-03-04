@@ -3,7 +3,6 @@ import { Col, Row } from "react-bootstrap";
 import content from "../../content";
 import { ViewHeader, ViewContainer } from "../../components";
 import { MemberCard } from "./Components";
-import { TeamBody } from "../Teams/Components";
 import "./styles.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -65,28 +64,33 @@ export default class Members extends React.Component {
       />
     ));
 
+    const MemberCount = () => {
+      return othr_members.length + mech_members.length + elec_members.length + sftw_members.length;
+    }
+
     return (
       <ViewContainer>
         <ViewHeader
           title={content.members.title}
-          blurb={content.members.blurb}
+          blurb=""
           image={content.members.image}
         />
+        <div class="CenteredBlurb">{MemberCount() + content.members.blurb}</div>
         <Row>
           <Col sm={1}></Col>
           <Col sm={10}>
             <Row>
               <Col sm={3}>
-                <h4 className="VideoHeader">Admin + Business</h4>
+                <h4 className="TeamTitle">Admin + Business</h4>
               </Col>
               <Col sm={3}>
-                <h4 className="VideoHeader"><FontAwesomeIcon icon={faWrench} /> Mechanical</h4>
+                <h4 className="TeamTitle"><FontAwesomeIcon icon={faWrench} /> Mechanical</h4>
               </Col>
               <Col sm={3}>
-                <h4 className="VideoHeader"><FontAwesomeIcon icon={faCarBattery} /> Electrical</h4>
+                <h4 className="TeamTitle"><FontAwesomeIcon icon={faCarBattery} /> Electrical</h4>
               </Col>
               <Col sm={3}>
-                <h4 className="VideoHeader"><FontAwesomeIcon icon={faLaptopCode} /> Software</h4>
+                <h4 className="TeamTitle"><FontAwesomeIcon icon={faLaptopCode} /> Software</h4>
               </Col>
             </Row>
           </Col>

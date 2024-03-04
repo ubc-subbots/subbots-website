@@ -49,8 +49,7 @@ export class MemberCard extends React.Component {
       else if (url.substring(0, 6) == "github") {
         return faGithub;
       }
-      else if (url != "")
-      {
+      else if (url != "") {
         return faLink;
       }
       return {};
@@ -64,6 +63,20 @@ export class MemberCard extends React.Component {
         return url.substring(11);
       }
       return url;
+    };
+
+    const EmailIcon = (address) => {
+      if (address != "") {
+        return faEnvelope;
+      }
+      return {};
+    }
+
+    const EmailDisp = (address) => {
+      if (address != "") {
+        return address + "\n\n";
+      }
+      return "";
     };
 
     return (
@@ -81,10 +94,9 @@ export class MemberCard extends React.Component {
             <Card.Text className="MemberCardText">{this.props.program}</Card.Text>
             <Card.Subtitle className="MemberCardSubtitle">
               <a href={"mailto:" + this.props.email}>
-                <FontAwesomeIcon icon={faEnvelope} /> {this.props.email}
+                <FontAwesomeIcon icon={EmailIcon(this.props.email)} /> {EmailDisp(this.props.email)}
               </a>
-              <br></br>
-              <a href={"https://" + this.props.link}>
+              <a href={"https://" + this.props.link} target="_blank">
                 <FontAwesomeIcon icon={LinkIcon(this.props.link)} /> {LinkDisp(this.props.link)}
               </a>
             </Card.Subtitle>
