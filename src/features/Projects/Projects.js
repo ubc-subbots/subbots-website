@@ -29,7 +29,7 @@ export default class Projects extends React.Component {
         bodyFull: "",
         carousel: {
           images: [],
-          caption: "",
+          captions: [],
         },
       },
     };
@@ -289,6 +289,9 @@ export default class Projects extends React.Component {
                     {this.state.popupContent.carousel.images.map(
                       (item, index) => (
                         <CarouselItem key={index}>
+                          <div className="ProjectDetailCarouselImageCaption">
+                            {this.state.popupContent.carousel.captions.at(index)}
+                          </div>
                           <div className="ProjectDetailCarouselImageContainer">
                             <Image src={item} folder="images" />
                           </div>

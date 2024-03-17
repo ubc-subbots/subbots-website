@@ -353,7 +353,7 @@ const content = {
       {
         name: "Rafael Remo",
         image: "Rafael_Remo.jpeg",
-        email: "",
+        email: "rafaelremo820@gmail.com",
         link: "linkedin.com/in/rafaelremo",
         program: "Actuators Lead",
       },
@@ -469,7 +469,7 @@ const content = {
         image: "No_Photo.gif",
         email: "averybcheng@gmail.com",
         link: "",
-        program: "Electrical Member",
+        program: "Sound Localization Member",
       },
       {
         name: "Diego Christiansen-Barker",
@@ -483,7 +483,14 @@ const content = {
         image: "No_Photo.gif",
         email: "",
         link: "",
-        program: "Electrical Member",
+        program: "Sound Localization Member",
+      },
+      {
+        name: "Luc McDonald",
+        image: "No_Photo.gif",
+        email: "",
+        link: "",
+        program: "Sound Localization Member",
       },
       {
         name: "Linda Nguyen",
@@ -504,7 +511,7 @@ const content = {
         image: "No_Photo.gif",
         email: "",
         link: "",
-        program: "Electrical Member",
+        program: "Sound Localization Member",
       },
       {
         name: "Kieran Ross",
@@ -679,6 +686,11 @@ const content = {
                 "CameraSim3.png",
                 "CameraSim4.png",
               ],
+              captions: [
+                "",
+                "",
+                "",
+              ],
             },
           },
           {
@@ -725,6 +737,7 @@ const content = {
                         +"This approach lets us visualize the vehicle's behaviour and gives us confidence to move on to physical testing.",
             carousel: {
               images: ["SubbotsGazeboSimulationEnvironment-ControlSystem.png"],
+              captions: [""],
             },
           },
         ],
@@ -757,15 +770,13 @@ const content = {
                         +"ensure these types of spacings are possible for all wiring. ",
             carousel: {
               images: ["PowerDistribution.png"],
-              caption: "",
+              captions: [""],
             },
           },
           {
             header: "Sound Localization",
             bodyFull:
-              "Shown Above: One of the sound localization architectures we are considering. "
-                        +"<br ><br > "
-                        +"In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies.  "
+              "In order to locate some of the tasks at Robosub, we are developing a system that will allow us to locate underwater pingers emitting sounds at known frequencies.  "
                         +"In order to do that, we are designing circuits to process signals coming out of a hydrophone (underwater microphone) and researching a variety of techniques to use  "
                         +"those signals for localization. This project is one of the more challenging and well rounded projects on the team, involving a wide range of design topics from analog  "
                         +"circuitry to firmware/software.  "
@@ -778,8 +789,18 @@ const content = {
                         +"techniques to deal with reflections and multipath, researching various localization techniques such as multilateration and beamforming, and using our simulator to test the effectiveness  "
                         +"of different implementations.",
             carousel: {
-              images: ["SoundLocalizationArch.png"],
-              caption: "",
+              images: [
+                "SoundLocalizationTeam.jpg",
+                "SoundLocalizationPCB.jpg",
+                "SoundLocalizationFilters.jpg",
+                "SoundLocalizationTest.png",
+              ],
+              captions: [
+                "Team meeting at the UBC fountain.",
+                "Underwater microphone amplifiers and filters.",
+                "Filter reality vs. simulation.",
+                "Data acquisition system and test data",
+              ],
             },
           },
           {
@@ -807,7 +828,7 @@ const content = {
                         +"computer so we can adjust operation if the batteries begin to overheat. Currently team members are researching how to leverage the batteries’ integrated NTC thermistor to read temperature data.",
             carousel: {
               images: ["BMS-System.png"],
-              caption: "",
+              captions: [""],
             },
           },
         ],
