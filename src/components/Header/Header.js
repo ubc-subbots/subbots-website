@@ -116,6 +116,7 @@ export default class Header extends React.Component {
             <Link to="/sponsors" className="NavLink">
               Sponsorship
             </Link>
+            <a class="NavLink" target="_blank" href="mailto:ubc.subbots@gmail.com">Contact Us</a>
           </div>
         </div> 
         </NavbarBrand>
@@ -138,6 +139,7 @@ export default class Header extends React.Component {
             <Link to="/sponsors" className="NavLink">
               Sponsorship
             </Link>
+            <a class="NavLink" target="_blank" href="mailto:ubc.subbots@gmail.com">Contact Us</a>
         </div>
 
 
