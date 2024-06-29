@@ -791,11 +791,13 @@ const content = {
             carousel: {
               images: [
                 "SoundLocalizationTeam.jpg",
+                "SoundLocalizationTeam2.png",
                 "SoundLocalizationPCB.jpg",
                 "SoundLocalizationFilters.jpg",
                 "SoundLocalizationTest.png",
               ],
               captions: [
+                "Team meeting at the UBC fountain.",
                 "Team meeting at the UBC fountain.",
                 "Underwater microphone amplifiers and filters.",
                 "Filter reality vs. simulation.",
