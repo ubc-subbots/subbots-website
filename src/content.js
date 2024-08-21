@@ -207,7 +207,7 @@ const content = {
     blurb:
       "Our application cycle has ended. Thank you to all who applied. Be sure to follow our social media for more information!",
     link:
-      "https://forms.gle/bRnWSZ7WxERzu23K6",
+      "https://forms.gle/7Se9pCNASBqfKgP1A",
   },
 
   sponsors: {
