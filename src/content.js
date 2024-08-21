@@ -205,7 +205,7 @@ const content = {
     image: "join.jpg",
     title: "Join Our Team!",
     blurb:
-      "Our application cycle has ended. Thank you to all who applied. Be sure to follow our social media for more information!",
+      "Our application cycle is open!. Be sure to apply on the link below!",
     link:
       "https://forms.gle/7Se9pCNASBqfKgP1A",
   },
