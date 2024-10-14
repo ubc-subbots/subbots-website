@@ -6,7 +6,6 @@ import {
   faFacebookF,
   faGithub,
   faLinkedin,
-  faInstagram
 } from "@fortawesome/free-brands-svg-icons";
 
 export default class Footer extends React.Component {
@@ -37,13 +36,6 @@ export default class Footer extends React.Component {
                 <FontAwesomeIcon
                   className="SocialIcon"
                   icon={faLinkedin}
-                  size="2x"
-                />
-              </a>
-              <a href="https://www.instagram.com/ubcsubbots/">
-                <FontAwesomeIcon
-                  className="SocialIcon"
-                  icon={faInstagram}
                   size="2x"
                 />
               </a>
