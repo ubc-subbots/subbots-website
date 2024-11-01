@@ -2,7 +2,7 @@
 
 const content = {
   home: {
-    image: "team_photo_2022.jpg",
+    image: "team_photo_2024.jpg",
     title: "Welcome To UBC Subbots!",
     h1: "Where comprehensive subsea design and team collaboration happen",
     about:{
@@ -16,7 +16,7 @@ const content = {
               +"control over the design, manufacturing and testing of the robot. Since becoming "
               +"a team, we have learned a lot about designing for the underwater environment and "
               +"are continuously improving upon our existing designs. ",
-      image: "team_photo_2022_flat.jpeg",
+      image: "team_photo_2024.jpg",
     },
     pitch: {
       image: "robot.jpg",
@@ -94,9 +94,15 @@ const content = {
               "second_3.jpg",
               "second_4.jpg",
               "second_5.jpg",
-              "second_6.jpg",
+              "second_6.jpg",              
+              "third_1.jpg",
+              "third_2.jpg",
+              "third_3.jpg",
+              "third_4.jpg",
+              "third_5.jpg",
+              "third_6.jpg",
             ], // Add trition pictures
-            caption: "2018-2021",
+            caption: "2018-2024",
           },
         },
       },
@@ -309,7 +315,7 @@ const content = {
   },
 
   members: {
-    image: "team_photo_2022_flat.jpeg",
+    image: "team_photo_2024.jpg",
     title: "Current Members",
     blurb: " and counting! Meet the people who make it all come together.",
     othr_members: [
