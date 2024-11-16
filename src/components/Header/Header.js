@@ -37,7 +37,7 @@ export default class Header extends React.Component {
 
   render() {
     return (
-      <Navbar fixed="top" expand="lg" className={this.state.navbarClass}>
+      <Navbar fixed="top" expand="md" className={this.state.navbarClass}>
         <NavbarBrand className="smallerLogo">
         <svg
           className="HeaderLogo"
