@@ -450,6 +450,13 @@ const content = {
     ],
     elec_members: [
       {
+        name: "Abhishek Raghuwanshi",
+        image: "Abhishek_Raghuwanshi.jpeg",
+        email: "",
+        link: "linkedin.com/in/a112r",
+        program: "Electrical Lead",
+      },
+      {
         name: "David Chung",
         image: "No_Photo.gif",
         email: "davidc2332@gmail.com",
@@ -503,13 +510,6 @@ const content = {
         image: "No_Photo.gif",
         email: "",
         link: "",
-        program: "Electrical Member",
-      },
-      {
-        name: "Abhishek Raghuwanshi",
-        image: "Abhishek_Raghuwanshi.jpeg",
-        email: "",
-        link: "linkedin.com/in/a112r",
         program: "Electrical Member",
       },
       {
