@@ -514,10 +514,10 @@ const content = {
       },
       {
         name: "Danial Ramzan",
-        image: "No_Photo.gif",
+        image: "Danial_Ramzan.jpeg",
         email: "",
-        link: "",
-        program: "Sound Localization Member",
+        link: "linkedin.com/in/danialramzan",
+        program: "Sound Localization Member / Software Member",
       },
       {
         name: "Kieran Ross",
